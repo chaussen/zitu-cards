@@ -311,6 +311,7 @@ def prepare_character(
         "blueprint":        man.get("blueprint") or raw.get("blueprint", ""),
         "formula":          man.get("formula") or raw.get("formula", ""),
         "mnemonic":         man.get("mnemonic") or raw.get("mnemonic", ""),
+        "confusables":      man.get("confusables") or raw.get("confusables", []),
         "pack":             raw.get("pack", ""),
         "pack_position":    position,
     }

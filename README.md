@@ -4,6 +4,8 @@ Printable flashcard packs for learning Chinese characters. Each card shows the f
 
 Cards print duplex on landscape A4, cut to 135×190 mm (portrait). Front: character in 米字格 + stroke construction sequence. Back: script styles (宋/黑/楷/美/行), stroke reference, blueprint, word web, cultural note.
 
+Each pack also includes a **practice sheet** — one A4 portrait page per character with seven writing and recognition zones — generated separately as `packs/pack-NN/practice.html`.
+
 ---
 
 ## Quick start
@@ -20,9 +22,12 @@ python scripts/generate_pack.py --pack 02 --skip-fetch
 
 # 4. Build a pack with glyph images
 python scripts/generate_pack.py --pack 02
+
+# 5. Also build practice sheets
+python scripts/generate_pack.py --pack 02 --practice
 ```
 
-Output lands in `packs/pack-02/index.html`. Open it in a browser, print at 100% scale on landscape A4, flip on the long edge.
+Cards land in `packs/pack-02/index.html`; practice sheets in `packs/pack-02/practice.html`. Open each in a browser and print at 100% scale.
 
 ---
 
@@ -37,8 +42,15 @@ python scripts/generate_pack.py --pack N
 | `--pack N` | Generate pack N (assign if needed → fetch images → build HTML) |
 | `--skip-fetch` | Skip image download; rebuild HTML from existing data |
 | `--force-fetch` | Re-download images even if they already exist |
+| `--practice` | Also build practice sheets (`packs/pack-NN/practice.html`) |
 | `--list` | Show all packs and their assigned characters |
 | `--assign-only` | Run pack assignment and write manifest, then stop |
+
+To build practice sheets without rebuilding the full pack:
+
+```bash
+python scripts/build_practice.py --pack 01
+```
 
 ---
 
@@ -50,7 +62,8 @@ zitu-cards/
     generate_pack.py    ← main CLI entry point
     assign_packs.py     ← assigns characters to packs, seeds characters.json
     fetch_resources.py  ← downloads oracle/bronze glyph images
-    build_cards.py      ← renders Jinja2 HTML from character data
+    build_cards.py      ← renders Jinja2 HTML for flashcard sheets
+    build_practice.py   ← renders Jinja2 HTML for practice sheets
 
   data/
     characters.json     ← global character database (content fallback — see below)
@@ -59,7 +72,8 @@ zitu-cards/
 
   packs/
     pack-01/
-      index.html                        ← script-generated output
+      index.html                        ← flashcard sheets (script-generated)
+      practice.html                     ← practice sheets (script-generated)
       data/
         characters-manual.json          ← pack-specific content overrides (edit this)
         characters-prepared.json        ← merged, ready-to-render data (auto-generated)
@@ -166,15 +180,24 @@ Or to rebuild just the HTML for a pack whose data is already prepared:
 python scripts/build_cards.py --pack 03
 ```
 
-### 5. Iterate
+### 5. Build practice sheets
+
+```bash
+python scripts/build_practice.py --pack 03
+```
+
+This reads from the same `characters-prepared.json` and outputs `packs/pack-03/practice.html` — one A4 portrait page per character. The find-it grid (Zone C) is generated from each character's `confusables` list (see field reference below). Curate confusables in `data/characters.json` or in the pack's `characters-manual.json`, then re-run `prepare_pack.py` and `build_practice.py`.
+
+### 6. Iterate
 
 Edit `packs/pack-NN/data/characters-manual.json`, then rebuild:
 
 ```bash
 python scripts/build_cards.py --pack 03
+python scripts/build_practice.py --pack 03
 ```
 
-The builder is fast (~instant). `prepare_pack.py` (which merges data and extracts stroke paths) only needs to re-run if the underlying stroke data changes.
+Both builders are fast (~instant). `prepare_pack.py` (which merges data and extracts stroke paths) only needs to re-run if the underlying stroke data changes.
 
 ---
 
@@ -190,6 +213,7 @@ These are the fields you edit. All are optional — omit any you haven't filled 
 | `blueprint` | string | Etymology annotation; HTML allowed |
 | `formula` | string | Component formula line; HTML allowed, use `<span class="han">` for glyphs |
 | `mnemonic` | string | Mnemonic caption; stored but not currently rendered |
+| `confusables` | array | Strings — lookalike characters used in the practice sheet find-it grid (Zone C); 7–10 entries recommended |
 
 ---
 
@@ -213,6 +237,7 @@ These are the fields you edit. All are optional — omit any you haven't filled 
 | `blueprint` | string | HTML allowed |
 | `formula` | string | HTML allowed |
 | `mnemonic` | string | Stored, not rendered |
+| `confusables` | array | Strings — visually similar characters used in the practice sheet find-it grid (Zone C) |
 
 ---
 
@@ -234,9 +259,19 @@ These are the fields you edit. All are optional — omit any you haven't filled 
 
 ## Printing
 
+### Flashcards (`index.html`)
+
 1. Open `packs/pack-NN/index.html` in Chrome or Firefox
 2. File → Print (or Cmd/Ctrl+P)
 3. Paper size: **A4**; Orientation: **Landscape**; Scale: **100%**; Margins: **None**
 4. Enable **background graphics**
 5. Duplex: **flip on long edge** — back sheets are in the same column order as fronts, no mirroring needed
 6. Cut along the **vertical dashed centre line** — finished card size 135×190 mm (portrait)
+
+### Practice sheets (`practice.html`)
+
+1. Open `packs/pack-NN/practice.html` in Chrome or Firefox
+2. File → Print (or Cmd/Ctrl+P)
+3. Paper size: **A4**; Orientation: **Portrait**; Scale: **100%**; Margins: **None**
+4. Enable **background graphics**
+5. Single-sided — one character per page

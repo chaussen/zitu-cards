@@ -5,6 +5,7 @@ generate_pack.py — main entry point for the ZìTú pack generation pipeline.
 Examples:
     python generate_pack.py --pack 02               # assign → fetch → build
     python generate_pack.py --pack 02 --skip-fetch  # assign → build only
+    python generate_pack.py --pack 02 --practice    # also build practice sheets
     python generate_pack.py --list                  # show all packs
     python generate_pack.py --assign-only           # update manifest, then stop
     python generate_pack.py --pack 02 --force-fetch # re-download existing images
@@ -19,6 +20,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 import assign_packs
 import build_cards
+import build_practice
 import fetch_resources
 
 DATA = ROOT / "data"
@@ -45,7 +47,12 @@ def cmd_assign_only():
     assign_packs.assign(dry_run=False)
 
 
-def cmd_generate(pack_num: str, skip_fetch: bool = False, force_fetch: bool = False):
+def cmd_generate(
+    pack_num: str,
+    skip_fetch: bool = False,
+    force_fetch: bool = False,
+    practice: bool = False,
+):
     manifest = load_json(DATA / "pack_manifest.json")
     pack_key = f"pack-{int(pack_num):02d}"
 
@@ -68,10 +75,17 @@ def cmd_generate(pack_num: str, skip_fetch: bool = False, force_fetch: bool = Fa
         print(f"\n=== Fetching glyph images for {pack_key} ===")
         fetch_resources.fetch_pack(pack_num, force=force_fetch)
 
-    # 3. Build HTML
+    # 3. Build cards HTML
     print(f"\n=== Building HTML for {pack_key} ===")
     out_path = build_cards.build_pack(pack_num)
-    print(f"\n✓ Done → {out_path.relative_to(ROOT)}")
+
+    # 4. Build practice sheets (optional)
+    if practice:
+        print(f"\n=== Building practice sheets for {pack_key} ===")
+        practice_path = build_practice.build_practice(pack_num)
+        print(f"\n✓ Done → {out_path.relative_to(ROOT)}, {practice_path.relative_to(ROOT)}")
+    else:
+        print(f"\n✓ Done → {out_path.relative_to(ROOT)}")
 
 
 def main():
@@ -85,6 +99,7 @@ def main():
     parser.add_argument("--force-fetch", action="store_true", help="Re-download existing images")
     parser.add_argument("--list", action="store_true", help="List all packs and exit")
     parser.add_argument("--assign-only", action="store_true", help="Run assignment only and exit")
+    parser.add_argument("--practice", action="store_true", help="Also build practice sheets")
 
     args = parser.parse_args()
 
@@ -104,6 +119,7 @@ def main():
         pack_num=args.pack,
         skip_fetch=args.skip_fetch,
         force_fetch=args.force_fetch,
+        practice=args.practice,
     )
 
 

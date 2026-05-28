@@ -56,6 +56,15 @@
     "blueprint": "Two strokes — a person walking, seen in profile. The sweeping left stroke is the torso and leading leg; the right is the trailing leg. Compressed to <strong>亻</strong> on the left of person-related characters.",
     "formula": "left leg <span class=\"han\">丿</span> + right leg <span class=\"han\">㇏</span> = <span class=\"han\">人</span>",
     "mnemonic": "Two legs walking — a person seen from the side. The strokes ARE the legs.",
+    "confusables": [
+      "入",
+      "大",
+      "个",
+      "八",
+      "从",
+      "介",
+      "天"
+    ],
     "pack": "01",
     "pack_position": 1
   },
@@ -130,6 +139,15 @@
     "blueprint": "A central downward current flanked by two droplets — water seen in cross-section. Its contracted radical <strong>氵</strong> (three drops) marks over 1,000 water-related characters.",
     "formula": "central current <span class=\"han\">亅</span> + droplets <span class=\"han\">丶丶</span> = <span class=\"han\">水</span>",
     "mnemonic": "A river in cross-section — the central current with droplets breaking off each side.",
+    "confusables": [
+      "永",
+      "冰",
+      "米",
+      "求",
+      "丰",
+      "木",
+      "术"
+    ],
     "pack": "01",
     "pack_position": 2
   },
@@ -204,6 +222,15 @@
     "blueprint": "Two sparks above a flame body shaped like 人 — fire caught mid-leap. Contracted to <strong>灬</strong> (four dots) beneath characters it heats: 热 rè hot, 蒸 zhēng steam.",
     "formula": "sparks <span class=\"han\">丶丶</span> + flame <span class=\"han\">人</span> = <span class=\"han\">火</span>",
     "mnemonic": "A fire leaping — sparks at the top, the flame's legs spreading below.",
+    "confusables": [
+      "大",
+      "太",
+      "犬",
+      "木",
+      "夫",
+      "天",
+      "本"
+    ],
     "pack": "01",
     "pack_position": 3
   },
@@ -271,6 +298,15 @@
     "blueprint": "Three peaks rising from a single baseline — one of the least-changed characters from oracle bone to today. 山 is its own radical, appearing in characters for peaks, ridges, and rugged terrain.",
     "formula": "left peak + tallest peak + right peak = <span class=\"han\">山</span>",
     "mnemonic": "A mountain range — three peaks sharing one base.",
+    "confusables": [
+      "出",
+      "凸",
+      "屮",
+      "三",
+      "上",
+      "丘",
+      "土"
+    ],
     "pack": "01",
     "pack_position": 4
   },
@@ -345,6 +381,15 @@
     "blueprint": "A cross-section of a standing tree: the horizontal stroke is the branches, the vertical is the trunk, and the two lower strokes are the roots. 木 appears in nearly every character related to wood or plants.",
     "formula": "branches <span class=\"han\">一</span> + trunk <span class=\"han\">丨</span> + roots <span class=\"han\">丿㇏</span> = <span class=\"han\">木</span>",
     "mnemonic": "A standing tree — trunk, spreading branch, and roots fanning below.",
+    "confusables": [
+      "本",
+      "末",
+      "未",
+      "十",
+      "朱",
+      "术",
+      "米"
+    ],
     "pack": "01",
     "pack_position": 5
   },
@@ -419,6 +464,15 @@
     "blueprint": "A circle with a dot at centre — the sun's disc and its blinding core. Squared off in clerical script. The central line distinguishes 日 (sun) from 口 (mouth), which is just an open box.",
     "formula": "disc <span class=\"han\">⼝</span> + core <span class=\"han\">一</span> = <span class=\"han\">日</span>",
     "mnemonic": "The sun — a bright disc with a gleam of light at its very centre.",
+    "confusables": [
+      "目",
+      "口",
+      "白",
+      "曰",
+      "田",
+      "旦",
+      "甲"
+    ],
     "pack": "01",
     "pack_position": 6
   },
@@ -493,6 +547,15 @@
     "blueprint": "A crescent laid on its back, with two strokes inside indicating the moon's phases. 月 also doubles as the 'flesh/body' radical 肉 in many anatomical characters — same shape, different meaning.",
     "formula": "crescent <span class=\"han\">⺆</span> + phases <span class=\"han\">二</span> = <span class=\"han\">月</span>",
     "mnemonic": "A crescent moon laid on its back — the arc and two faint lines of its phases.",
+    "confusables": [
+      "用",
+      "日",
+      "勿",
+      "凡",
+      "丹",
+      "目",
+      "肉"
+    ],
     "pack": "01",
     "pack_position": 7
   },
@@ -560,6 +623,15 @@
     "blueprint": "A person (人) standing upright with arms flung wide — indicating size by embodying it. The oracle-bone form is explicitly a front-facing figure, arms outstretched.",
     "formula": "person <span class=\"han\">人</span> + arms spread wide = <span class=\"han\">大</span>",
     "mnemonic": "A person standing with arms wide — showing how big they are.",
+    "confusables": [
+      "人",
+      "太",
+      "犬",
+      "天",
+      "夫",
+      "火",
+      "木"
+    ],
     "pack": "01",
     "pack_position": 8
   },
@@ -627,6 +699,15 @@
     "blueprint": "Three scattered dots — things dispersed and diminished. The central hook anchors what little remains; the outer dots drift apart. An antonym of 大 built entirely from absence.",
     "formula": "central mark <span class=\"han\">亅</span> + two dots <span class=\"han\">丶丶</span> = <span class=\"han\">小</span>",
     "mnemonic": "Three small scattered dots — things broken into pieces, made small.",
+    "confusables": [
+      "少",
+      "水",
+      "心",
+      "才",
+      "川",
+      "山",
+      "土"
+    ],
     "pack": "01",
     "pack_position": 9
   },
@@ -701,6 +782,15 @@
     "blueprint": "Oracle bone script drew the actual heart: a curved body with three blood vessels branching off. The hook is the heart itself; the dots are the aortic branches. As a radical (忄) it marks emotional states.",
     "formula": "heart body <span class=\"han\">⺄</span> + vessels <span class=\"han\">丶丶丶</span> = <span class=\"han\">心</span>",
     "mnemonic": "A heart with three blood vessels — an ancient anatomical drawing.",
+    "confusables": [
+      "必",
+      "以",
+      "火",
+      "水",
+      "求",
+      "么",
+      "夕"
+    ],
     "pack": "01",
     "pack_position": 10
   }
