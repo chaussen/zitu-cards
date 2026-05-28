@@ -1324,84 +1324,14 @@
     .card {
       break-inside: avoid;
       page-break-inside: avoid;
-      background: white;
     }
     .card:last-child {
       break-after: avoid;
       page-break-after: avoid;
     }
 
+    /* Remove texture/gradient overlays — not needed on paper */
     .card::before { display: none; }
-
-    /* ── Force white backgrounds on all dark elements ── */
-    .etym {
-      background: white !important;
-      border-color: var(--rule) !important;
-    }
     .etym::before { display: none; }
-    .etym .lbl {
-      color: var(--etym-ink) !important;
-      border-bottom-color: var(--rule) !important;
-    }
-    .etym .stages::before { background: var(--rule) !important; }
-    .etym .stg .gl { color: var(--etym-ink) !important; }
-    .etym .stg .er { color: var(--etym-ink) !important; }
-    .etym .stg .er em { color: var(--etym-ink) !important; }
-
-    /* Poster dark panel */
-    .poster .pright {
-      background: white !important;
-      color: var(--ink) !important;
-    }
     .poster .pright::before { display: none; }
-    .poster .pright .lbl {
-      color: var(--ink) !important;
-      border-bottom-color: var(--rule) !important;
-    }
-    .poster .pright .pst .gl { color: var(--ink) !important; }
-    .poster .pright .pst .info { color: var(--ink) !important; }
-    .poster .pright .pst .info em { color: var(--ink-soft) !important; opacity: 1 !important; }
-
-    /* Coloured badges → outlined on white */
-    .type-badge {
-      background: white !important;
-      color: var(--ink) !important;
-      outline: 0.3mm solid var(--ink);
-    }
-    .type-badge .han { color: var(--ink) !important; }
-
-    /* Seal stamps → outlined on white */
-    .seal-stamp {
-      background: white !important;
-      color: var(--ink) !important;
-      box-shadow: inset 0 0 0 0.4mm var(--ink) !important;
-    }
-
-    /* Tone dots → outlined circles */
-    .tone-dot {
-      background: white !important;
-      color: var(--ink) !important;
-      box-shadow: inset 0 0 0 0.5mm var(--ink) !important;
-    }
-
-    /* Brand mark + seal pip (screen cover, already hidden, but safety) */
-    .brand .mark, .brand .seal-pip { background: white !important; }
-
-    /* Zone 1 formation type labels → outlined on white */
-    .formation .type-lbl {
-      background: white !important;
-      color: var(--ink) !important;
-      outline: 0.3mm solid var(--ink);
-    }
-    .formation .type-lbl .han { color: var(--ink) !important; }
-
-    /* Zone 2 script strip → white background, keep light border */
-    .script-strip {
-      background: white !important;
-      border-color: var(--rule) !important;
-    }
-    .script-strip .strip-head { color: var(--ink) !important; }
-    .script-strip .slot .glyph { color: var(--ink) !important; }
-    .script-strip .slot .style-zh { color: var(--ink-soft) !important; }
-    .script-strip .slot .style-ro, .script-strip .slot .context { color: var(--ink-mute) !important; }
   }
