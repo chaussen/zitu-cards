@@ -55,10 +55,10 @@
     --type-phon:    #7a5275;
 
     /* ── geometry ────────────────────────────── */
-    --card-w:    92mm;
-    --card-h:   135mm;
-    --card-gap-h: 6mm;
-    --card-gap-v: 7mm;
+    --card-w:   135mm;
+    --card-h:   190mm;
+    --card-gap-h: 7mm;
+    --card-gap-v: 0mm;
 
     /* ── type stacks ─────────────────────────── */
     --f-han:        "KaiTi", "STKaiti", "Kaiti SC", "楷体", "Ma Shan Zheng", serif;
@@ -233,12 +233,13 @@
     overflow: hidden;
   }
   .sheet.a4 {
-    width: 190mm; height: 277mm;
-    padding: 0;
+    width: 297mm; height: 210mm;
+    padding: 10mm;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: var(--card-w) var(--card-w);
-    grid-template-rows: var(--card-h) var(--card-h);
-    gap: var(--card-gap-v) var(--card-gap-h);
+    grid-template-rows: var(--card-h);
+    gap: 0 var(--card-gap-h);
     justify-content: center; align-content: center;
   }
   .sheet.a4-portrait-solo {
@@ -260,6 +261,16 @@
     pointer-events: none;
   }
   .sheet-mark .pip { color: var(--seal); }
+
+  .cut-line {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: calc(10mm + var(--card-w) + 3.5mm);
+    width: 0;
+    border-left: 0.2mm dashed var(--rule);
+    pointer-events: none;
+    z-index: 10;
+  }
 
   /* ===================================================================
      CARD — common chrome
@@ -331,8 +342,8 @@
   .grid-box .han {
     position: absolute; inset: 0;
     display: grid; place-items: center;
-    font-family: var(--f-han); 
-    font-size: 42mm; line-height: 1; color: var(--ink);
+    font-family: var(--f-han);
+    font-size: 60mm; line-height: 1; color: var(--ink);
   }
   .card[data-tone="1"] .grid-box svg.mizige rect.frame { stroke: var(--tone-1); }
   .card[data-tone="2"] .grid-box svg.mizige rect.frame { stroke: var(--tone-2); }
@@ -1255,8 +1266,10 @@
   =================================================================== */
 
   /* Zero-margin pages: sheet dimensions == paper dimensions */
-  @page          { size: A4 portrait;   margin: 0; }
+  @page          { size: A4 landscape;  margin: 0; }
+  @page practice { size: A4 portrait;   margin: 0; }
   @page poster   { size: A3 landscape;  margin: 0; }
+  .sheet.a4-portrait-solo { page: practice; }
   .sheet.a3-landscape { page: poster; }
 
   @media print {
@@ -1278,13 +1291,11 @@
       page-break-after: auto;
     }
 
-    /* A4 landscape — card sheets (2 × 2 grid)
-       Full A4 = 210 × 297 mm.  10 mm padding each side absorbs the
-       former @page margin, leaving 190 × 277 mm content area —
-       identical to what the screen CSS uses for card layout.        */
+    /* A4 landscape — card sheets (2 portrait cards side-by-side)
+       Full A4 landscape = 297 × 210 mm.  10 mm padding each side.  */
     .sheet.a4 {
-      width: 210mm;
-      height: 297mm;
+      width: 297mm;
+      height: 210mm;
       padding: 10mm;
       box-sizing: border-box;
     }
@@ -1306,6 +1317,8 @@
       padding: 18mm 22mm;
       box-sizing: border-box;
     }
+
+    .cut-line { border-left-color: rgba(0,0,0,0.2); }
 
     /* Cards must not split across pages */
     .card {

@@ -237,10 +237,10 @@ def mirror_batch(batch: list) -> list:
 
 def compute_sheets(cards: list) -> list:
     sheets = []
-    pair_count = (len(cards) + 3) // 4
+    pair_count = (len(cards) + 1) // 2
     for pair_idx in range(pair_count):
-        start = pair_idx * 4
-        batch = cards[start:start + 4]
+        start = pair_idx * 2
+        batch = cards[start:start + 2]
         first_pos = batch[0]["pack_position"]
         last_pos = batch[-1]["pack_position"]
         sheet_num = pair_idx * 2 + 1
@@ -254,18 +254,17 @@ def compute_sheets(cards: list) -> list:
             "first_pos": first_pos,
             "last_pos": last_pos,
         })
-        mirrored = mirror_batch(batch)
         back_range = (
-            f"{mirrored[0]['pack_position']:02d}–{mirrored[1]['pack_position']:02d}"
-            if len(mirrored) >= 2
-            else f"{mirrored[0]['pack_position']:02d}"
+            f"{batch[0]['pack_position']:02d}–{batch[1]['pack_position']:02d}"
+            if len(batch) >= 2
+            else f"{batch[0]['pack_position']:02d}"
         )
         sheets.append({
             "type": "back",
             "pair_idx": pair_idx + 1,
             "sheet_num": sheet_num + 1,
             "total_pairs": pair_count,
-            "cards": mirrored,
+            "cards": batch,
             "screen_label": f"{sheet_num + 1:02d} Backs {first_pos}–{last_pos}",
             "back_range": back_range,
             "first_pos": first_pos,
@@ -369,8 +368,8 @@ _TEMPLATE = r"""<!doctype html>
 
   <section class="instructions">
     <div class="stp"><div class="n">壹</div><h4>Print</h4><p>A4 stock at <strong>100% scale</strong>, 120 gsm or heavier. 米字格 grids print at hairline weight so they don't compete with the character.</p></div>
-    <div class="stp"><div class="n">贰</div><h4>Duplex</h4><p>Two-sided · <strong>flip on long edge</strong>. Back sheets are pre-mirrored so each blueprint lines up with its front.</p></div>
-    <div class="stp"><div class="n">叁</div><h4>Cut &amp; sort</h4><p>Trim along borders. Cards finish at <strong>100×142mm</strong>. Stack by tone, by formation type, or by HSK level — the system supports all three.</p></div>
+    <div class="stp"><div class="n">贰</div><h4>Duplex</h4><p>Landscape A4 · <strong>flip on long edge</strong>. Back sheets print in the same column order as fronts — no mirroring needed.</p></div>
+    <div class="stp"><div class="n">叁</div><h4>Cut &amp; sort</h4><p>Cut along the vertical dashed centre line. Cards finish at <strong>135×190mm</strong> (portrait). Stack by tone, formation type, or HSK level.</p></div>
     <div class="stp"><div class="n">肆</div><h4>Use</h4><p>Quiz with the front. Study with the back. Drill on the practice sheet. Display the poster. <strong>One pack a week.</strong></p></div>
   </section>
 
@@ -401,6 +400,7 @@ _TEMPLATE = r"""<!doctype html>
     <span>字图 · PACK {{ pack_num }} · {{ pack_meta.title | upper }} · FRONT {{ sheet.pair_idx }}/{{ sheet.total_pairs }}</span>
     <span><span class="pip">●</span> {{ '%02d'|format(sheet.first_pos) }}–{{ '%02d'|format(sheet.last_pos) }}</span>
   </div>
+  <div class="cut-line"></div>
   {% for c in sheet.cards %}
   {{ render_front(c) }}
   {% endfor %}
@@ -409,7 +409,7 @@ _TEMPLATE = r"""<!doctype html>
 {%- else %}
 <!--
 ═══════════════════════════════════════════════════════════════
-  SHEET {{ sheet.sheet_num }} — BACKS · cards {{ '%02d'|format(sheet.first_pos) }}–{{ '%02d'|format(sheet.last_pos) }}  (mirrored col-order)
+  SHEET {{ sheet.sheet_num }} — BACKS · cards {{ '%02d'|format(sheet.first_pos) }}–{{ '%02d'|format(sheet.last_pos) }}
 ═══════════════════════════════════════════════════════════════
 -->
 <section class="sheet a4" data-screen-label="{{ sheet.screen_label }}">
@@ -417,6 +417,7 @@ _TEMPLATE = r"""<!doctype html>
     <span><span class="pip">●</span> {{ sheet.back_range }}</span>
     <span>字图 · PACK {{ pack_num }} · {{ pack_meta.title | upper }} · BACK {{ sheet.pair_idx }}/{{ sheet.total_pairs }}</span>
   </div>
+  <div class="cut-line"></div>
   {% for c in sheet.cards %}
   {{ render_back(c) }}
   {% endfor %}
@@ -495,7 +496,9 @@ _BACK_CARD = r"""
         </div>
       </div>
     </div>
-    <div class="zone-ph"></div>
+    <div class="stroke-ref">
+      {{ c.zone2_html | safe }}
+    </div>
     <section class="bp">
       <div class="lbl">Blueprint <em>{{ c.type_phrase }}</em></div>
       <div class="body">

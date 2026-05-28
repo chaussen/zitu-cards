@@ -1,0 +1,1559 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>字图 ZìTú — Pack 01 · Elements</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Long+Cang&family=Liu+Jian+Mao+Cao&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;700&family=Noto+Sans:wght@400;500&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="_system/zitu.css">
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#f3ece0"/>
+    <rect x="30" y="30" width="40" height="40" rx="2" fill="#1c1a24"/>
+    <line x1="50" y1="32" x2="50" y2="68" stroke="#c9a960" stroke-width="0.4" opacity="0.6"/>
+    <line x1="32" y1="50" x2="68" y2="50" stroke="#c9a960" stroke-width="0.4" opacity="0.6"/>
+    <text x="50" y="50" font-family="serif" font-weight="900" font-size="28" fill="#e9dfcc" text-anchor="middle" dominant-baseline="central">字</text>
+    <rect x="62" y="62" width="10" height="10" rx="0.8" fill="#b83a25"/>
+    <text x="67" y="67" font-family="serif" font-weight="900" font-size="6" fill="#f1e3c8" text-anchor="middle" dominant-baseline="central">印</text>
+  </svg>
+</template>
+</head>
+<body>
+
+<!-- ===================================================================
+     SCREEN COVER — design system at a glance
+=================================================================== -->
+<div class="shell">
+
+  <!-- ── brand strip ── -->
+  <header class="brand">
+    <div class="mark"><span>字</span></div>
+    <div>
+      <div class="tag">字图 · ZìTú · Chinese character blueprints</div>
+      <h1 class="name"><em>字图</em> — a character's <span style="font-style:italic">blueprint</span>.</h1>
+      <div class="tag">Pack 01 · Elements &nbsp;·&nbsp; Foundational pictographs &nbsp;·&nbsp; Series 一 / Vol. 01</div>
+    </div>
+    <div class="seal-pip">印</div>
+  </header>
+
+  <p class="lede">
+    Not just a flashcard. Each character's <em>full story</em> on one page — the picture that made it, the parts that build it, and the words that grow out of it.
+  </p>
+
+  <!-- ── design-system specimen grid ── -->
+  <section class="spec-grid">
+
+    <!-- palette -->
+    <div class="panel span-5">
+      <h3>Palette</h3>
+      <p class="lead">Paper · ink · cinnabar. One dark panel for the etymological strip.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:var(--paper); color:var(--ink)"><span class="nm">Paper</span><span class="hx">#F3ECE0</span></div>
+        <div class="swatch" style="background:var(--paper-soft); color:var(--ink)"><span class="nm">Paper / soft</span><span class="hx">#EBE2D2</span></div>
+        <div class="swatch" style="background:var(--ink); color:var(--paper)"><span class="nm">Ink</span><span class="hx">#1A1614</span></div>
+        <div class="swatch" style="background:var(--ink-soft); color:var(--paper)"><span class="nm">Ink / soft</span><span class="hx">#5A4F44</span></div>
+        <div class="swatch" style="background:var(--rule); color:var(--ink)"><span class="nm">Rule</span><span class="hx">#D8CDB8</span></div>
+        <div class="swatch" style="background:var(--seal); color:var(--paper-on-dk)"><span class="nm">Seal</span><span class="hx">#B83A25</span></div>
+        <div class="swatch" style="background:var(--midnight); color:var(--paper-on-dk)"><span class="nm">Midnight</span><span class="hx">#1C1A24</span></div>
+        <div class="swatch" style="background:var(--gold-on-dk); color:var(--midnight)"><span class="nm">Gold / dk</span><span class="hx">#C9A960</span></div>
+      </div>
+    </div>
+
+    <!-- tone coding -->
+    <div class="panel span-3">
+      <h3>Tone coding</h3>
+      <p class="lead">A colour you can <em>feel</em> before you can read.</p>
+      <div class="keys">
+        <div class="key"><span class="dot" style="background:var(--tone-1)"></span><span class="l1">Tone 1 · level</span><span class="l2">ˉ</span><span class="han">妈</span></div>
+        <div class="key"><span class="dot" style="background:var(--tone-2)"></span><span class="l1">Tone 2 · rising</span><span class="l2">ˊ</span><span class="han">麻</span></div>
+        <div class="key"><span class="dot" style="background:var(--tone-3)"></span><span class="l1">Tone 3 · dipping</span><span class="l2">ˇ</span><span class="han">马</span></div>
+        <div class="key"><span class="dot" style="background:var(--tone-4)"></span><span class="l1">Tone 4 · falling</span><span class="l2">ˋ</span><span class="han">骂</span></div>
+        <div class="key"><span class="dot" style="background:var(--tone-n)"></span><span class="l1">Neutral · 轻声</span><span class="l2">·</span><span class="han">吗</span></div>
+      </div>
+    </div>
+
+    <!-- type coding -->
+    <div class="panel span-4">
+      <h3>Character-type badges</h3>
+      <p class="lead">Every card opens with how the character was built. Pack 01 = pictographs &amp; indicatives.</p>
+      <div class="keys">
+        <div class="key"><span class="dot" style="background:var(--type-pict)"></span><span class="l1">象形 · pictograph</span><span class="l2">image</span><span class="han">山</span></div>
+        <div class="key"><span class="dot" style="background:var(--type-ideo)"></span><span class="l1">指事 · indicative</span><span class="l2">concept</span><span class="han">大</span></div>
+        <div class="key"><span class="dot" style="background:var(--type-comp)"></span><span class="l1">会意 · compound</span><span class="l2">meaning</span><span class="han">明</span></div>
+        <div class="key"><span class="dot" style="background:var(--type-phon)"></span><span class="l1">形声 · phono-sem.</span><span class="l2">sound</span><span class="han">妈</span></div>
+      </div>
+    </div>
+
+    <!-- typography -->
+    <div class="panel span-6">
+      <h3>Typography</h3>
+      <p class="lead">Handwritten Kaiti (楷体) for hanzi — clean enough to study, warm enough to want to copy.</p>
+      <div class="type-grid">
+        <div class="type-row"><div class="lbl">Hanzi · 楷</div><div class="han-sample">永 山 月 大</div></div>
+        <div class="type-row"><div class="lbl">Hanzi · 篆</div><div class="seal-sample">永 山 月 大</div></div>
+        <div class="type-row"><div class="lbl">Hanzi · 隶</div><div class="clerc-sample">永 山 月 大</div></div>
+        <div class="type-row"><div class="lbl">Display</div><div class="disp-sample">A character's blueprint</div></div>
+        <div class="type-row"><div class="lbl">Body</div><div class="body-sample">Foundational characters for the modern classroom.</div></div>
+        <div class="type-row"><div class="lbl">Mono</div><div class="mono-sample">Pack 01 · 01/10 · Pictograph</div></div>
+      </div>
+    </div>
+
+    <!-- roster -->
+    <div class="panel span-6">
+      <h3>Pack 01 · Elements</h3>
+      <p class="lead">Ten pictographs &amp; indicatives that every later character is built from.</p>
+      <div class="roster">
+        <div class="pip"><span class="tn" style="background:var(--tone-2)"></span><div class="han">人</div><div class="py">rén</div><div class="num">01</div></div>
+        <div class="pip"><span class="tn" style="background:var(--tone-3)"></span><div class="han">水</div><div class="py">shuǐ</div><div class="num">02</div></div>
+        <div class="pip"><span class="tn" style="background:var(--tone-3)"></span><div class="han">火</div><div class="py">huǒ</div><div class="num">03</div></div>
+        <div class="pip"><span class="tn" style="background:var(--tone-1)"></span><div class="han">山</div><div class="py">shān</div><div class="num">04</div></div>
+        <div class="pip"><span class="tn" style="background:var(--tone-4)"></span><div class="han">木</div><div class="py">mù</div><div class="num">05</div></div>
+        <div class="pip"><span class="tn" style="background:var(--tone-4)"></span><div class="han">日</div><div class="py">rì</div><div class="num">06</div></div>
+        <div class="pip"><span class="tn" style="background:var(--tone-4)"></span><div class="han">月</div><div class="py">yuè</div><div class="num">07</div></div>
+        <div class="pip"><span class="tn" style="background:var(--tone-4)"></span><div class="han">大</div><div class="py">dà</div><div class="num">08</div></div>
+        <div class="pip"><span class="tn" style="background:var(--tone-3)"></span><div class="han">小</div><div class="py">xiǎo</div><div class="num">09</div></div>
+        <div class="pip"><span class="tn" style="background:var(--tone-1)"></span><div class="han">心</div><div class="py">xīn</div><div class="num">10</div></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── instructions ── -->
+  <section class="instructions">
+    <div class="stp">
+      <div class="n">壹</div>
+      <h4>Print</h4>
+      <p>A4 stock at <strong>100% scale</strong>, 120 gsm or heavier. 米字格 grids print at hairline weight so they don't compete with the character.</p>
+    </div>
+    <div class="stp">
+      <div class="n">贰</div>
+      <h4>Duplex</h4>
+      <p>Two-sided · <strong>flip on long edge</strong>. Print landscape A4 — 2 portrait cards side-by-side per sheet. Back cards print in the same column order as fronts (no mirroring needed).</p>
+    </div>
+    <div class="stp">
+      <div class="n">叁</div>
+      <h4>Cut &amp; sort</h4>
+      <p>Cut along the vertical dashed centre line and trim the outer margins. Cards finish at approx. <strong>135×190mm</strong> (portrait A5). Stack by tone, by formation type, or by HSK level.</p>
+    </div>
+    <div class="stp">
+      <div class="n">肆</div>
+      <h4>Use</h4>
+      <p>Quiz with the front. Study with the back. Drill on the practice sheet. Display the poster. <strong>One pack a week.</strong></p>
+    </div>
+  </section>
+
+  <div class="preview-strip"><span class="dot">●</span>&nbsp;&nbsp;Preview · the pages below are what will print</div>
+</div>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SVG defs — reusable mizige grid + per-character mnemonic + oracle glyphs
+═════════════════════════════════════════════════════════════════════
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- 米字格 — gold grid -->
+    <symbol id="mz" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <rect class="frame" x="0.4" y="0.4" width="99.2" height="99.2" fill="none" stroke="#c8b89c" stroke-width="0.55"/>
+      <line x1="0" y1="50" x2="100" y2="50" stroke="#c8b89c" stroke-width="0.22" stroke-dasharray="1 1.2"/>
+      <line x1="50" y1="0" x2="50" y2="100" stroke="#c8b89c" stroke-width="0.22" stroke-dasharray="1 1.2"/>
+      <line x1="0" y1="0" x2="100" y2="100" stroke="#c8b89c" stroke-width="0.22" stroke-dasharray="1 1.2"/>
+      <line x1="100" y1="0" x2="0" y2="100" stroke="#c8b89c" stroke-width="0.22" stroke-dasharray="1 1.2"/>
+    </symbol>
+
+    <!-- mnemonic scenes (gold line art) -->
+    <symbol id="m-ren" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="30" cy="12" r="5"/>
+        <line x1="30" y1="17" x2="30" y2="32"/>
+        <path d="M30 32 L18 60"/>
+        <path d="M30 32 L42 60"/>
+        <line x1="22" y1="65" x2="14" y2="65" stroke="#b83a25"/>
+        <line x1="38" y1="65" x2="46" y2="65" stroke="#b83a25"/>
+      </g>
+    </symbol>
+    <symbol id="m-shui" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 6 C 26 18, 34 32, 30 46 S 26 60, 30 66"/>
+        <path d="M18 22 C 16 28, 18 34, 22 38"/>
+        <path d="M42 22 C 44 28, 42 34, 38 38"/>
+        <path d="M14 46 C 14 52, 18 56, 22 56"/>
+        <path d="M46 46 C 46 52, 42 56, 38 56"/>
+        <circle cx="14" cy="20" r="1.2" fill="#b83a25" stroke="none"/>
+        <circle cx="46" cy="20" r="1.2" fill="#b83a25" stroke="none"/>
+      </g>
+    </symbol>
+    <symbol id="m-huo" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 14 C 22 26, 22 38, 26 50 C 28 56, 32 56, 34 50 C 38 38, 38 26, 30 14 Z"/>
+        <path d="M26 50 C 22 56, 22 62, 20 64"/>
+        <path d="M34 50 C 38 56, 38 62, 40 64"/>
+        <circle cx="22" cy="10" r="1.4" fill="#b83a25" stroke="none"/>
+        <circle cx="38" cy="8" r="1.4" fill="#b83a25" stroke="none"/>
+        <circle cx="30" cy="4" r="1" fill="#b83a25" stroke="none"/>
+      </g>
+    </symbol>
+    <symbol id="m-shan" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 60 L 18 30 L 26 46 L 30 14 L 34 46 L 42 30 L 56 60 Z"/>
+        <line x1="0" y1="62" x2="60" y2="62" stroke="#b83a25" stroke-width="1.2"/>
+      </g>
+    </symbol>
+    <symbol id="m-mu" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="30" y1="6" x2="30" y2="62"/>
+        <path d="M14 22 C 22 24, 38 24, 46 22"/>
+        <path d="M18 14 C 24 18, 36 18, 42 14"/>
+        <path d="M14 56 L 6 66" stroke="#b83a25"/>
+        <path d="M46 56 L 54 66" stroke="#b83a25"/>
+        <path d="M30 62 L 30 68" stroke="#b83a25"/>
+      </g>
+    </symbol>
+    <symbol id="m-ri" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="30" cy="32" r="18"/>
+        <line x1="14" y1="32" x2="46" y2="32" stroke="#b83a25"/>
+        <line x1="30" y1="4" x2="30" y2="10"/>
+        <line x1="30" y1="54" x2="30" y2="60"/>
+        <line x1="4" y1="32" x2="10" y2="32"/>
+        <line x1="50" y1="32" x2="56" y2="32"/>
+      </g>
+    </symbol>
+    <symbol id="m-yue" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M44 10 C 26 14, 18 28, 18 38 C 18 52, 30 62, 44 60 C 32 56, 26 46, 26 36 C 26 24, 32 14, 44 10 Z"/>
+        <circle cx="48" cy="22" r="1.4" fill="#b83a25" stroke="none"/>
+        <circle cx="52" cy="34" r="1" fill="#b83a25" stroke="none"/>
+      </g>
+    </symbol>
+    <symbol id="m-da" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="30" cy="10" r="4"/>
+        <line x1="30" y1="14" x2="30" y2="42"/>
+        <line x1="6" y1="26" x2="54" y2="26"/>
+        <line x1="30" y1="42" x2="16" y2="64"/>
+        <line x1="30" y1="42" x2="44" y2="64"/>
+        <path d="M6 22 L 2 26 L 6 30" stroke="#b83a25"/>
+        <path d="M54 22 L 58 26 L 54 30" stroke="#b83a25"/>
+      </g>
+    </symbol>
+    <symbol id="m-xiao" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="22" cy="36" r="2.6" fill="#a78a3d"/>
+        <circle cx="34" cy="30" r="1.8" fill="#a78a3d"/>
+        <circle cx="40" cy="44" r="1.4" fill="#a78a3d"/>
+        <circle cx="16" cy="46" r="1" fill="#b83a25"/>
+        <circle cx="44" cy="22" r="0.8" fill="#b83a25"/>
+        <circle cx="30" cy="52" r="0.6" fill="#b83a25"/>
+        <path d="M8 60 L 52 60" stroke="#c8b89c" stroke-dasharray="2 2"/>
+      </g>
+    </symbol>
+    <symbol id="m-xin" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 60 C 14 48, 6 36, 12 24 C 18 14, 28 18, 30 28 C 32 18, 42 14, 48 24 C 54 36, 46 48, 30 60 Z"/>
+        <path d="M22 32 C 26 30, 28 32, 30 36" stroke="#b83a25"/>
+        <path d="M38 32 C 34 30, 32 32, 30 36" stroke="#b83a25"/>
+      </g>
+    </symbol>
+
+    <!-- oracle-bone & bronze glyphs (smaller, line-only) -->
+    <symbol id="o-ren" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="15" y1="4" x2="9" y2="32"/><line x1="15" y1="14" x2="22" y2="32"/></g></symbol>
+    <symbol id="o-shui" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 4 C 13 12, 17 20, 15 28 S 13 32, 15 34"/><path d="M8 10 C 6 16, 8 22, 10 26"/><path d="M22 10 C 24 16, 22 22, 20 26"/></g></symbol>
+    <symbol id="o-huo" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 6 C 10 14, 10 22, 14 30"/><path d="M15 6 C 20 14, 20 22, 16 30"/><line x1="8" y1="14" x2="4" y2="10"/><line x1="22" y1="14" x2="26" y2="10"/></g></symbol>
+    <symbol id="o-shan" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 30 L 10 14 L 15 24 L 15 8 L 15 24 L 20 14 L 27 30"/><line x1="3" y1="32" x2="27" y2="32"/></g></symbol>
+    <symbol id="o-mu" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><line x1="15" y1="3" x2="15" y2="32"/><path d="M6 12 C 10 14, 20 14, 24 12"/><path d="M15 22 L 7 32"/><path d="M15 22 L 23 32"/></g></symbol>
+    <symbol id="o-ri" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="15" cy="18" r="9"/><circle cx="15" cy="18" r="1.6" fill="currentColor"/></g></symbol>
+    <symbol id="o-yue" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M21 5 C 12 10, 8 18, 10 24 C 12 30, 18 32, 22 30 C 14 28, 12 20, 14 14 C 16 9, 18 6, 21 5 Z"/><line x1="17" y1="16" x2="13" y2="22"/></g></symbol>
+    <symbol id="o-da" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="15" cy="6" r="2"/><line x1="15" y1="8" x2="15" y2="22"/><line x1="4" y1="14" x2="26" y2="14"/><line x1="15" y1="22" x2="8" y2="32"/><line x1="15" y1="22" x2="22" y2="32"/></g></symbol>
+    <symbol id="o-xiao" viewBox="0 0 30 36"><g fill="currentColor"><circle cx="10" cy="18" r="2"/><circle cx="15" cy="14" r="1.6"/><circle cx="20" cy="20" r="1.4"/></g></symbol>
+    <symbol id="o-xin" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 30 C 5 22, 4 14, 9 10 C 13 8, 15 12, 15 16 C 15 12, 17 8, 21 10 C 26 14, 25 22, 15 30 Z"/></g></symbol>
+  </defs>
+</svg>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 01 — FRONTS · cards 01–02
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="01 Fronts 1–2">
+  <div class="sheet-mark">
+    <span>字图 · PACK 01 · ELEMENTS · FRONT 1/6</span>
+    <span><span class="pip">●</span> 01–02</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- 01 人 rén · tone 2 · pictograph -->
+  <article class="card front" data-tone="2" data-type="pictograph">
+    <div class="card-head">
+      <span class="type-badge pictograph"><span class="han">象形</span>Pictograph</span>
+      <span class="card-ref">Pack 01 · <strong>01/10</strong></span>
+    </div>
+    <div class="hero">
+      <div class="grid-box"><svg class="mizige"><use href="#mz"/></svg><span class="han">人</span></div>
+      <div class="mnemonic">
+        <div class="scene"><svg viewBox="0 0 60 70"><use href="#m-ren"/></svg></div>
+        <div class="scene-label">Picture a…</div>
+        <p class="caption">a person in profile — two legs, mid-stride.</p>
+      </div>
+    </div>
+    <div class="pinyin-bar">
+      <span class="tone-dot t2">2</span>
+      <span class="pinyin">r<span class="tm-2">é</span>n</span>
+      <span class="seal-stamp">一</span>
+    </div>
+    <div class="meaning">person, people <em>· human</em></div>
+  </article>
+
+  <!-- 02 水 shuǐ · tone 3 · pictograph -->
+  <article class="card front" data-tone="3" data-type="pictograph">
+    <div class="card-head">
+      <span class="type-badge pictograph"><span class="han">象形</span>Pictograph</span>
+      <span class="card-ref">Pack 01 · <strong>02/10</strong></span>
+    </div>
+    <div class="hero">
+      <div class="grid-box"><svg class="mizige"><use href="#mz"/></svg><span class="han">水</span></div>
+      <div class="mnemonic">
+        <div class="scene"><svg viewBox="0 0 60 70"><use href="#m-shui"/></svg></div>
+        <div class="scene-label">Picture a…</div>
+        <p class="caption">a river in cross-section — the central current with droplets breaking off each side.</p>
+      </div>
+    </div>
+    <div class="pinyin-bar">
+      <span class="tone-dot t3">3</span>
+      <span class="pinyin">shu<span class="tm-3">ǐ</span></span>
+      <span class="seal-stamp">二</span>
+    </div>
+    <div class="meaning">water <em>· liquid · river</em></div>
+  </article>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 02 — BACKS · cards 01–02
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="02 Backs 1–2">
+  <div class="sheet-mark">
+    <span><span class="pip">●</span> 01–02</span>
+    <span>字图 · PACK 01 · ELEMENTS · BACK 1/6</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- BACK 01 人 -->
+  <article class="card back" data-tone="2" data-type="pictograph">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Pack 01 · <strong>01/10</strong></span>
+      <span class="han-mini">人</span>
+    </div>
+    <div class="bk-top">
+      <aside class="etym">
+        <div class="lbl">字形 · Evolution</div>
+        <div class="stages">
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-ren"/></svg></div><div class="er">甲骨<em>oracle</em></div></div>
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-ren"/></svg></div><div class="er">金文<em>bronze</em></div></div>
+          <div class="stg"><div class="gl seal">人</div><div class="er">篆书<em>seal</em></div></div>
+          <div class="stg"><div class="gl clerc">人</div><div class="er">隶书<em>clerical</em></div></div>
+          <div class="stg"><div class="gl modern">人</div><div class="er">楷书<em>regular</em></div></div>
+        </div>
+      </aside>
+      <section class="bp">
+        <div class="lbl">Blueprint <em>self-contained pictograph</em></div>
+        <div class="body">
+          <div class="glyph">人</div>
+          <div class="ann">Two strokes — a person walking, seen in profile. The sweeping left stroke is the torso and leading leg; the right is the trailing leg. Compressed to <strong>亻</strong> on the left of person-related characters.</div>
+        </div>
+        <div class="formula">left leg <span class="han">丿</span> + right leg <span class="han">㇏</span> = <span class="han">人</span></div>
+      </section>
+    </div>
+    <div class="stroke-row">
+      <div class="lbl">Stroke order<em>2 strokes</em></div>
+      <div class="strokes">
+        <div class="step"><span class="n">1</span><span class="han">丿</span><span class="name">撇 <span class="py">piě</span></span></div>
+        <div class="step"><span class="n">2</span><span class="han">㇏</span><span class="name">捺 <span class="py">nà</span></span></div>
+        <div class="step faded"><span class="han">·</span></div>
+        <div class="step faded"><span class="han">·</span></div>
+      </div>
+    </div>
+    <div class="web">
+      <div class="lbl">Word web<em>4 common compounds</em></div>
+      <div class="items">
+        <div class="w"><div class="ch"><span class="focus">人</span>口</div><div class="gloss">rénkǒu<span class="en">population</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">人</span>民</div><div class="gloss">rénmín<span class="en">the people</span></div></div>
+        <div class="w"><div class="ch">工<span class="focus">人</span></div><div class="gloss">gōngrén<span class="en">worker</span></div></div>
+        <div class="w"><div class="ch">大<span class="focus">人</span></div><div class="gloss">dàrén<span class="en">adult</span></div></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">Cultural note</span>
+      In oracle-bone script, 人 depicted a person walking <strong>in profile</strong> — the defining mark of humanity in ancient pictographs. The front-facing form, arms spread wide, became 大.
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Strokes</div><div class="v">2</div></div>
+      <div class="cell"><div class="k">Radical</div><div class="v"><span class="han">人</span> rén</div></div>
+      <div class="cell"><div class="k">HSK</div><div class="v">Level 1</div></div>
+      <div class="cell"><div class="k">Type</div><div class="v">象形</div></div>
+    </div>
+  </article>
+
+  <!-- BACK 02 水 -->
+  <article class="card back" data-tone="3" data-type="pictograph">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Pack 01 · <strong>02/10</strong></span>
+      <span class="han-mini">水</span>
+    </div>
+    <div class="bk-top">
+      <aside class="etym">
+        <div class="lbl">字形 · Evolution</div>
+        <div class="stages">
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-shui"/></svg></div><div class="er">甲骨<em>oracle</em></div></div>
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-shui"/></svg></div><div class="er">金文<em>bronze</em></div></div>
+          <div class="stg"><div class="gl seal">水</div><div class="er">篆书<em>seal</em></div></div>
+          <div class="stg"><div class="gl clerc">水</div><div class="er">隶书<em>clerical</em></div></div>
+          <div class="stg"><div class="gl modern">水</div><div class="er">楷书<em>regular</em></div></div>
+        </div>
+      </aside>
+      <section class="bp">
+        <div class="lbl">Blueprint <em>self-contained pictograph</em></div>
+        <div class="body">
+          <div class="glyph">水</div>
+          <div class="ann">A central downward current flanked by two droplets — water seen in cross-section. Its contracted radical <strong>氵</strong> (three drops) marks over 1,000 water-related characters.</div>
+        </div>
+        <div class="formula">central current <span class="han">亅</span> + droplets <span class="han">丶丶</span> = <span class="han">水</span></div>
+      </section>
+    </div>
+    <div class="stroke-row">
+      <div class="lbl">Stroke order<em>4 strokes</em></div>
+      <div class="strokes">
+        <div class="step"><span class="n">1</span><span class="han">亅</span><span class="name">竖钩 <span class="py">shùgōu</span></span></div>
+        <div class="step"><span class="n">2</span><span class="han">㇇</span><span class="name">横撇 <span class="py">héngpiě</span></span></div>
+        <div class="step"><span class="n">3</span><span class="han">丿</span><span class="name">撇 <span class="py">piě</span></span></div>
+        <div class="step"><span class="n">4</span><span class="han">㇏</span><span class="name">捺 <span class="py">nà</span></span></div>
+      </div>
+    </div>
+    <div class="web">
+      <div class="lbl">Word web<em>4 common compounds</em></div>
+      <div class="items">
+        <div class="w"><div class="ch"><span class="focus">水</span>果</div><div class="gloss">shuǐguǒ<span class="en">fruit</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">水</span>平</div><div class="gloss">shuǐpíng<span class="en">level</span></div></div>
+        <div class="w"><div class="ch">喝<span class="focus">水</span></div><div class="gloss">hē shuǐ<span class="en">drink water</span></div></div>
+        <div class="w"><div class="ch">山<span class="focus">水</span></div><div class="gloss">shānshuǐ<span class="en">landscape</span></div></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">Cultural note</span>
+      水 contracts to <strong>氵</strong> on the left of compounds — "the three drops" — giving its meaning to 河 (river), 海 (sea), 泳 (swim), 洗 (wash), and hundreds more.
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Strokes</div><div class="v">4</div></div>
+      <div class="cell"><div class="k">Radical</div><div class="v"><span class="han">水</span> shuǐ</div></div>
+      <div class="cell"><div class="k">HSK</div><div class="v">Level 1</div></div>
+      <div class="cell"><div class="k">Type</div><div class="v">象形</div></div>
+    </div>
+  </article>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 03 — FRONTS · cards 03–04
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="03 Fronts 3–4">
+  <div class="sheet-mark">
+    <span>字图 · PACK 01 · ELEMENTS · FRONT 2/6</span>
+    <span><span class="pip">●</span> 03–04</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- 03 火 huǒ · tone 3 · pictograph -->
+  <article class="card front" data-tone="3" data-type="pictograph">
+    <div class="card-head">
+      <span class="type-badge pictograph"><span class="han">象形</span>Pictograph</span>
+      <span class="card-ref">Pack 01 · <strong>03/10</strong></span>
+    </div>
+    <div class="hero">
+      <div class="grid-box"><svg class="mizige"><use href="#mz"/></svg><span class="han">火</span></div>
+      <div class="mnemonic">
+        <div class="scene"><svg viewBox="0 0 60 70"><use href="#m-huo"/></svg></div>
+        <div class="scene-label">Picture a…</div>
+        <p class="caption">a fire leaping — sparks at the top, the flame's legs spreading below.</p>
+      </div>
+    </div>
+    <div class="pinyin-bar">
+      <span class="tone-dot t3">3</span>
+      <span class="pinyin">hu<span class="tm-3">ǒ</span></span>
+      <span class="seal-stamp">三</span>
+    </div>
+    <div class="meaning">fire <em>· flame · heat</em></div>
+  </article>
+
+  <!-- 04 山 shān · tone 1 · pictograph -->
+  <article class="card front" data-tone="1" data-type="pictograph">
+    <div class="card-head">
+      <span class="type-badge pictograph"><span class="han">象形</span>Pictograph</span>
+      <span class="card-ref">Pack 01 · <strong>04/10</strong></span>
+    </div>
+    <div class="hero">
+      <div class="grid-box"><svg class="mizige"><use href="#mz"/></svg><span class="han">山</span></div>
+      <div class="mnemonic">
+        <div class="scene"><svg viewBox="0 0 60 70"><use href="#m-shan"/></svg></div>
+        <div class="scene-label">Picture a…</div>
+        <p class="caption">a mountain range — three peaks sharing one base.</p>
+      </div>
+    </div>
+    <div class="pinyin-bar">
+      <span class="tone-dot t1">1</span>
+      <span class="pinyin">sh<span class="tm-1">ā</span>n</span>
+      <span class="seal-stamp">四</span>
+    </div>
+    <div class="meaning">mountain <em>· hill · peak</em></div>
+  </article>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 04 — BACKS · cards 03–04
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="04 Backs 3–4">
+  <div class="sheet-mark">
+    <span><span class="pip">●</span> 03–04</span>
+    <span>字图 · PACK 01 · ELEMENTS · BACK 2/6</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- BACK 03 火 -->
+  <article class="card back" data-tone="3" data-type="pictograph">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Pack 01 · <strong>03/10</strong></span>
+      <span class="han-mini">火</span>
+    </div>
+    <div class="bk-top">
+      <aside class="etym">
+        <div class="lbl">字形 · Evolution</div>
+        <div class="stages">
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-huo"/></svg></div><div class="er">甲骨<em>oracle</em></div></div>
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-huo"/></svg></div><div class="er">金文<em>bronze</em></div></div>
+          <div class="stg"><div class="gl seal">火</div><div class="er">篆书<em>seal</em></div></div>
+          <div class="stg"><div class="gl clerc">火</div><div class="er">隶书<em>clerical</em></div></div>
+          <div class="stg"><div class="gl modern">火</div><div class="er">楷书<em>regular</em></div></div>
+        </div>
+      </aside>
+      <section class="bp">
+        <div class="lbl">Blueprint <em>self-contained pictograph</em></div>
+        <div class="body">
+          <div class="glyph">火</div>
+          <div class="ann">Two sparks above a flame body shaped like 人 — fire caught mid-leap. Contracted to <strong>灬</strong> (four dots) beneath characters it heats: 热 rè hot, 蒸 zhēng steam.</div>
+        </div>
+        <div class="formula">sparks <span class="han">丶丶</span> + flame <span class="han">人</span> = <span class="han">火</span></div>
+      </section>
+    </div>
+    <div class="stroke-row">
+      <div class="lbl">Stroke order<em>4 strokes</em></div>
+      <div class="strokes">
+        <div class="step"><span class="n">1</span><span class="han">丶</span><span class="name">点 <span class="py">diǎn</span></span></div>
+        <div class="step"><span class="n">2</span><span class="han">丿</span><span class="name">撇 <span class="py">piě</span></span></div>
+        <div class="step"><span class="n">3</span><span class="han">丿</span><span class="name">撇 <span class="py">piě</span></span></div>
+        <div class="step"><span class="n">4</span><span class="han">㇏</span><span class="name">捺 <span class="py">nà</span></span></div>
+      </div>
+    </div>
+    <div class="web">
+      <div class="lbl">Word web<em>4 common compounds</em></div>
+      <div class="items">
+        <div class="w"><div class="ch"><span class="focus">火</span>车</div><div class="gloss">huǒchē<span class="en">train</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">火</span>山</div><div class="gloss">huǒshān<span class="en">volcano</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">火</span>锅</div><div class="gloss">huǒguō<span class="en">hot pot</span></div></div>
+        <div class="w"><div class="ch">大<span class="focus">火</span></div><div class="gloss">dàhuǒ<span class="en">a big fire</span></div></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">Cultural note</span>
+      火车 "fire vehicle" = <strong>train</strong>. When steam locomotives arrived in 19th-century China, the language reached for its oldest word for unstoppable, visible power.
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Strokes</div><div class="v">4</div></div>
+      <div class="cell"><div class="k">Radical</div><div class="v"><span class="han">火</span> huǒ</div></div>
+      <div class="cell"><div class="k">HSK</div><div class="v">Level 1</div></div>
+      <div class="cell"><div class="k">Type</div><div class="v">象形</div></div>
+    </div>
+  </article>
+
+  <!-- BACK 04 山 -->
+  <article class="card back" data-tone="1" data-type="pictograph">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Pack 01 · <strong>04/10</strong></span>
+      <span class="han-mini">山</span>
+    </div>
+    <div class="bk-top">
+      <aside class="etym">
+        <div class="lbl">字形 · Evolution</div>
+        <div class="stages">
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-shan"/></svg></div><div class="er">甲骨<em>oracle</em></div></div>
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-shan"/></svg></div><div class="er">金文<em>bronze</em></div></div>
+          <div class="stg"><div class="gl seal">山</div><div class="er">篆书<em>seal</em></div></div>
+          <div class="stg"><div class="gl clerc">山</div><div class="er">隶书<em>clerical</em></div></div>
+          <div class="stg"><div class="gl modern">山</div><div class="er">楷书<em>regular</em></div></div>
+        </div>
+      </aside>
+      <section class="bp">
+        <div class="lbl">Blueprint <em>self-contained pictograph</em></div>
+        <div class="body">
+          <div class="glyph">山</div>
+          <div class="ann">Three peaks rising from a single baseline — one of the least-changed characters from oracle bone to today. 山 is its own radical, appearing in characters for peaks, ridges, and rugged terrain.</div>
+        </div>
+        <div class="formula">left peak + tallest peak + right peak = <span class="han">山</span></div>
+      </section>
+    </div>
+    <div class="stroke-row">
+      <div class="lbl">Stroke order<em>3 strokes</em></div>
+      <div class="strokes">
+        <div class="step"><span class="n">1</span><span class="han">丨</span><span class="name">竖 <span class="py">shù</span></span></div>
+        <div class="step"><span class="n">2</span><span class="han">凵</span><span class="name">竖折 <span class="py">shùzhé</span></span></div>
+        <div class="step"><span class="n">3</span><span class="han">丨</span><span class="name">竖 <span class="py">shù</span></span></div>
+        <div class="step faded"><span class="han">·</span></div>
+      </div>
+    </div>
+    <div class="web">
+      <div class="lbl">Word web<em>4 common compounds</em></div>
+      <div class="items">
+        <div class="w"><div class="ch"><span class="focus">山</span>水</div><div class="gloss">shānshuǐ<span class="en">landscape</span></div></div>
+        <div class="w"><div class="ch">火<span class="focus">山</span></div><div class="gloss">huǒshān<span class="en">volcano</span></div></div>
+        <div class="w"><div class="ch">高<span class="focus">山</span></div><div class="gloss">gāoshān<span class="en">high mountain</span></div></div>
+        <div class="w"><div class="ch">上<span class="focus">山</span></div><div class="gloss">shàng shān<span class="en">climb a mountain</span></div></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">Cultural note</span>
+      山水 — "mountains and waters" — names the genre of <strong>landscape painting</strong> that dominated Chinese classical art for a millennium. Two characters carry an entire artistic tradition.
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Strokes</div><div class="v">3</div></div>
+      <div class="cell"><div class="k">Radical</div><div class="v"><span class="han">山</span> shān</div></div>
+      <div class="cell"><div class="k">HSK</div><div class="v">Level 1</div></div>
+      <div class="cell"><div class="k">Type</div><div class="v">象形</div></div>
+    </div>
+  </article>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 05 — FRONTS · cards 05–06
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="05 Fronts 5–6">
+  <div class="sheet-mark">
+    <span>字图 · PACK 01 · ELEMENTS · FRONT 3/6</span>
+    <span><span class="pip">●</span> 05–06</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- 05 木 mù · tone 4 · pictograph -->
+  <article class="card front" data-tone="4" data-type="pictograph">
+    <div class="card-head">
+      <span class="type-badge pictograph"><span class="han">象形</span>Pictograph</span>
+      <span class="card-ref">Pack 01 · <strong>05/10</strong></span>
+    </div>
+    <div class="hero">
+      <div class="grid-box"><svg class="mizige"><use href="#mz"/></svg><span class="han">木</span></div>
+      <div class="mnemonic">
+        <div class="scene"><svg viewBox="0 0 60 70"><use href="#m-mu"/></svg></div>
+        <div class="scene-label">Picture a…</div>
+        <p class="caption">a standing tree — trunk, spreading branch, and roots fanning below.</p>
+      </div>
+    </div>
+    <div class="pinyin-bar">
+      <span class="tone-dot t4">4</span>
+      <span class="pinyin">m<span class="tm-4">ù</span></span>
+      <span class="seal-stamp">五</span>
+    </div>
+    <div class="meaning">tree, wood <em>· timber</em></div>
+  </article>
+
+  <!-- 06 日 rì · tone 4 · pictograph -->
+  <article class="card front" data-tone="4" data-type="pictograph">
+    <div class="card-head">
+      <span class="type-badge pictograph"><span class="han">象形</span>Pictograph</span>
+      <span class="card-ref">Pack 01 · <strong>06/10</strong></span>
+    </div>
+    <div class="hero">
+      <div class="grid-box"><svg class="mizige"><use href="#mz"/></svg><span class="han">日</span></div>
+      <div class="mnemonic">
+        <div class="scene"><svg viewBox="0 0 60 70"><use href="#m-ri"/></svg></div>
+        <div class="scene-label">Picture a…</div>
+        <p class="caption">the sun — a bright disc with a gleam of light at its very centre.</p>
+      </div>
+    </div>
+    <div class="pinyin-bar">
+      <span class="tone-dot t4">4</span>
+      <span class="pinyin">r<span class="tm-4">ì</span></span>
+      <span class="seal-stamp">六</span>
+    </div>
+    <div class="meaning">sun, day <em>· daytime</em></div>
+  </article>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 06 — BACKS · cards 05–06
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="06 Backs 5–6">
+  <div class="sheet-mark">
+    <span><span class="pip">●</span> 05–06</span>
+    <span>字图 · PACK 01 · ELEMENTS · BACK 3/6</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- BACK 05 木 -->
+  <article class="card back" data-tone="4" data-type="pictograph">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Pack 01 · <strong>05/10</strong></span>
+      <span class="han-mini">木</span>
+    </div>
+    <div class="bk-top">
+      <aside class="etym">
+        <div class="lbl">字形 · Evolution</div>
+        <div class="stages">
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-mu"/></svg></div><div class="er">甲骨<em>oracle</em></div></div>
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-mu"/></svg></div><div class="er">金文<em>bronze</em></div></div>
+          <div class="stg"><div class="gl seal">木</div><div class="er">篆书<em>seal</em></div></div>
+          <div class="stg"><div class="gl clerc">木</div><div class="er">隶书<em>clerical</em></div></div>
+          <div class="stg"><div class="gl modern">木</div><div class="er">楷书<em>regular</em></div></div>
+        </div>
+      </aside>
+      <section class="bp">
+        <div class="lbl">Blueprint <em>self-contained pictograph</em></div>
+        <div class="body">
+          <div class="glyph">木</div>
+          <div class="ann">A vertical trunk crossed by spreading branches, with two root strokes fanning below the midpoint. The full tree in four strokes — branches above the crossbar, roots below.</div>
+        </div>
+        <div class="formula">trunk <span class="han">丨</span> + branch <span class="han">一</span> + roots <span class="han">八</span> = <span class="han">木</span></div>
+      </section>
+    </div>
+    <div class="stroke-row">
+      <div class="lbl">Stroke order<em>4 strokes</em></div>
+      <div class="strokes">
+        <div class="step"><span class="n">1</span><span class="han">一</span><span class="name">横 <span class="py">héng</span></span></div>
+        <div class="step"><span class="n">2</span><span class="han">丨</span><span class="name">竖 <span class="py">shù</span></span></div>
+        <div class="step"><span class="n">3</span><span class="han">丿</span><span class="name">撇 <span class="py">piě</span></span></div>
+        <div class="step"><span class="n">4</span><span class="han">㇏</span><span class="name">捺 <span class="py">nà</span></span></div>
+      </div>
+    </div>
+    <div class="web">
+      <div class="lbl">Word web<em>4 common compounds</em></div>
+      <div class="items">
+        <div class="w"><div class="ch"><span class="focus">木</span>头</div><div class="gloss">mùtou<span class="en">wood, log</span></div></div>
+        <div class="w"><div class="ch">树<span class="focus">木</span></div><div class="gloss">shùmù<span class="en">trees</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">木</span>马</div><div class="gloss">mùmǎ<span class="en">wooden horse</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">木</span>工</div><div class="gloss">mùgōng<span class="en">carpenter</span></div></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">Cultural note</span>
+      Two 木 side by side = <strong>林</strong> lín — grove. Three 木 = <strong>森</strong> sēn — deep forest. The same simple character, stacked or doubled, builds the densest natural image.
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Strokes</div><div class="v">4</div></div>
+      <div class="cell"><div class="k">Radical</div><div class="v"><span class="han">木</span> mù</div></div>
+      <div class="cell"><div class="k">HSK</div><div class="v">Level 1</div></div>
+      <div class="cell"><div class="k">Type</div><div class="v">象形</div></div>
+    </div>
+  </article>
+
+  <!-- BACK 06 日 -->
+  <article class="card back" data-tone="4" data-type="pictograph">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Pack 01 · <strong>06/10</strong></span>
+      <span class="han-mini">日</span>
+    </div>
+    <div class="bk-top">
+      <aside class="etym">
+        <div class="lbl">字形 · Evolution</div>
+        <div class="stages">
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-ri"/></svg></div><div class="er">甲骨<em>oracle</em></div></div>
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-ri"/></svg></div><div class="er">金文<em>bronze</em></div></div>
+          <div class="stg"><div class="gl seal">日</div><div class="er">篆书<em>seal</em></div></div>
+          <div class="stg"><div class="gl clerc">日</div><div class="er">隶书<em>clerical</em></div></div>
+          <div class="stg"><div class="gl modern">日</div><div class="er">楷书<em>regular</em></div></div>
+        </div>
+      </aside>
+      <section class="bp">
+        <div class="lbl">Blueprint <em>self-contained pictograph</em></div>
+        <div class="body">
+          <div class="glyph">日</div>
+          <div class="ann">Originally a circle with a dot at its centre — sun and brightness in one sign. The brush squared the circle over centuries; the inner horizontal stroke remains the "ray inside the disc".</div>
+        </div>
+        <div class="formula">enclosing disc <span class="han">口</span> + inner ray <span class="han">一</span> = <span class="han">日</span></div>
+      </section>
+    </div>
+    <div class="stroke-row">
+      <div class="lbl">Stroke order<em>4 strokes</em></div>
+      <div class="strokes">
+        <div class="step"><span class="n">1</span><span class="han">丨</span><span class="name">竖 <span class="py">shù</span></span></div>
+        <div class="step"><span class="n">2</span><span class="han">𠃌</span><span class="name">横折 <span class="py">héngzhé</span></span></div>
+        <div class="step"><span class="n">3</span><span class="han">一</span><span class="name">横 <span class="py">héng</span></span></div>
+        <div class="step"><span class="n">4</span><span class="han">一</span><span class="name">横 <span class="py">héng</span></span></div>
+      </div>
+    </div>
+    <div class="web">
+      <div class="lbl">Word web<em>4 common compounds</em></div>
+      <div class="items">
+        <div class="w"><div class="ch"><span class="focus">日</span>本</div><div class="gloss">Rìběn<span class="en">Japan</span></div></div>
+        <div class="w"><div class="ch">生<span class="focus">日</span></div><div class="gloss">shēngrì<span class="en">birthday</span></div></div>
+        <div class="w"><div class="ch">今<span class="focus">日</span></div><div class="gloss">jīnrì<span class="en">today</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">日</span>子</div><div class="gloss">rìzi<span class="en">a day, time</span></div></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">Cultural note</span>
+      日 + 月 = <strong>明</strong> míng — "bright". Sun and moon together. From 日 come Japan's name (日本 "origin of the sun") and half the common words for time: 今日 today, 生日 birthday.
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Strokes</div><div class="v">4</div></div>
+      <div class="cell"><div class="k">Radical</div><div class="v"><span class="han">日</span> rì</div></div>
+      <div class="cell"><div class="k">HSK</div><div class="v">Level 1</div></div>
+      <div class="cell"><div class="k">Type</div><div class="v">象形</div></div>
+    </div>
+  </article>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 07 — FRONTS · cards 07–08
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="07 Fronts 7–8">
+  <div class="sheet-mark">
+    <span>字图 · PACK 01 · ELEMENTS · FRONT 4/6</span>
+    <span><span class="pip">●</span> 07–08</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- 07 月 yuè · tone 4 · pictograph -->
+  <article class="card front" data-tone="4" data-type="pictograph">
+    <div class="card-head">
+      <span class="type-badge pictograph"><span class="han">象形</span>Pictograph</span>
+      <span class="card-ref">Pack 01 · <strong>07/10</strong></span>
+    </div>
+    <div class="hero">
+      <div class="grid-box"><svg class="mizige"><use href="#mz"/></svg><span class="han">月</span></div>
+      <div class="mnemonic">
+        <div class="scene"><svg viewBox="0 0 60 70"><use href="#m-yue"/></svg></div>
+        <div class="scene-label">Picture a…</div>
+        <p class="caption">a crescent moon laid on its back — the arc and two faint lines of its phases.</p>
+      </div>
+    </div>
+    <div class="pinyin-bar">
+      <span class="tone-dot t4">4</span>
+      <span class="pinyin">yu<span class="tm-4">è</span></span>
+      <span class="seal-stamp">七</span>
+    </div>
+    <div class="meaning">moon, month <em>· lunar cycle</em></div>
+  </article>
+
+  <!-- 08 大 dà · tone 4 · indicative -->
+  <article class="card front" data-tone="4" data-type="indicative">
+    <div class="card-head">
+      <span class="type-badge indicative"><span class="han">指事</span>Indicative</span>
+      <span class="card-ref">Pack 01 · <strong>08/10</strong></span>
+    </div>
+    <div class="hero">
+      <div class="grid-box"><svg class="mizige"><use href="#mz"/></svg><span class="han">大</span></div>
+      <div class="mnemonic">
+        <div class="scene"><svg viewBox="0 0 60 70"><use href="#m-da"/></svg></div>
+        <div class="scene-label">Picture a…</div>
+        <p class="caption">a person with both arms flung wide — "look how big!"</p>
+      </div>
+    </div>
+    <div class="pinyin-bar">
+      <span class="tone-dot t4">4</span>
+      <span class="pinyin">d<span class="tm-4">à</span></span>
+      <span class="seal-stamp">八</span>
+    </div>
+    <div class="meaning">big, great <em>· large · vast</em></div>
+  </article>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 08 — BACKS · cards 07–08
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="08 Backs 7–8">
+  <div class="sheet-mark">
+    <span><span class="pip">●</span> 07–08</span>
+    <span>字图 · PACK 01 · ELEMENTS · BACK 4/6</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- BACK 07 月 -->
+  <article class="card back" data-tone="4" data-type="pictograph">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Pack 01 · <strong>07/10</strong></span>
+      <span class="han-mini">月</span>
+    </div>
+    <div class="bk-top">
+      <aside class="etym">
+        <div class="lbl">字形 · Evolution</div>
+        <div class="stages">
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-yue"/></svg></div><div class="er">甲骨<em>oracle</em></div></div>
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-yue"/></svg></div><div class="er">金文<em>bronze</em></div></div>
+          <div class="stg"><div class="gl seal">月</div><div class="er">篆书<em>seal</em></div></div>
+          <div class="stg"><div class="gl clerc">月</div><div class="er">隶书<em>clerical</em></div></div>
+          <div class="stg"><div class="gl modern">月</div><div class="er">楷书<em>regular</em></div></div>
+        </div>
+      </aside>
+      <section class="bp">
+        <div class="lbl">Blueprint <em>self-contained pictograph</em></div>
+        <div class="body">
+          <div class="glyph">月</div>
+          <div class="ann">A crescent moon laid on its back. The two inner horizontal strokes trace its phases — and double as the reason 月 also means "month". As a left radical it often signals flesh (肉 in disguise).</div>
+        </div>
+        <div class="formula">crescent arc <span class="han">⺆</span> + phase lines <span class="han">二</span> = <span class="han">月</span></div>
+      </section>
+    </div>
+    <div class="stroke-row">
+      <div class="lbl">Stroke order<em>4 strokes</em></div>
+      <div class="strokes">
+        <div class="step"><span class="n">1</span><span class="han">丿</span><span class="name">撇 <span class="py">piě</span></span></div>
+        <div class="step"><span class="n">2</span><span class="han">𠃌</span><span class="name">横折钩 <span class="py">héngzhégōu</span></span></div>
+        <div class="step"><span class="n">3</span><span class="han">一</span><span class="name">横 <span class="py">héng</span></span></div>
+        <div class="step"><span class="n">4</span><span class="han">一</span><span class="name">横 <span class="py">héng</span></span></div>
+      </div>
+    </div>
+    <div class="web">
+      <div class="lbl">Word web<em>4 common compounds</em></div>
+      <div class="items">
+        <div class="w"><div class="ch"><span class="focus">月</span>亮</div><div class="gloss">yuèliàng<span class="en">the moon</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">月</span>饼</div><div class="gloss">yuèbǐng<span class="en">mooncake</span></div></div>
+        <div class="w"><div class="ch">三<span class="focus">月</span></div><div class="gloss">sān yuè<span class="en">March</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">月</span>份</div><div class="gloss">yuèfèn<span class="en">month</span></div></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">Cultural note</span>
+      月 is both moon and month — because China's traditional calendar is <strong>lunar</strong>. The full moon of 中秋 Mid-Autumn is the year's most celebrated; the character for it is simply 月.
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Strokes</div><div class="v">4</div></div>
+      <div class="cell"><div class="k">Radical</div><div class="v"><span class="han">月</span> yuè</div></div>
+      <div class="cell"><div class="k">HSK</div><div class="v">Level 1</div></div>
+      <div class="cell"><div class="k">Type</div><div class="v">象形</div></div>
+    </div>
+  </article>
+
+  <!-- BACK 08 大 -->
+  <article class="card back" data-tone="4" data-type="indicative">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Pack 01 · <strong>08/10</strong></span>
+      <span class="han-mini">大</span>
+    </div>
+    <div class="bk-top">
+      <aside class="etym">
+        <div class="lbl">字形 · Evolution</div>
+        <div class="stages">
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-da"/></svg></div><div class="er">甲骨<em>oracle</em></div></div>
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-da"/></svg></div><div class="er">金文<em>bronze</em></div></div>
+          <div class="stg"><div class="gl seal">大</div><div class="er">篆书<em>seal</em></div></div>
+          <div class="stg"><div class="gl clerc">大</div><div class="er">隶书<em>clerical</em></div></div>
+          <div class="stg"><div class="gl modern">大</div><div class="er">楷书<em>regular</em></div></div>
+        </div>
+      </aside>
+      <section class="bp">
+        <div class="lbl">Blueprint <em>indicative · concept by gesture</em></div>
+        <div class="body">
+          <div class="glyph">大</div>
+          <div class="ann">A person (人) with a horizontal stroke through the arms — the gesture of "this big". Not a picture of anything large, but the act of showing it. An indicative: meaning through gesture.</div>
+        </div>
+        <div class="formula">person <span class="han">人</span> + arms spread <span class="han">一</span> = <span class="han">大</span></div>
+      </section>
+    </div>
+    <div class="stroke-row">
+      <div class="lbl">Stroke order<em>3 strokes</em></div>
+      <div class="strokes">
+        <div class="step"><span class="n">1</span><span class="han">一</span><span class="name">横 <span class="py">héng</span></span></div>
+        <div class="step"><span class="n">2</span><span class="han">丿</span><span class="name">撇 <span class="py">piě</span></span></div>
+        <div class="step"><span class="n">3</span><span class="han">㇏</span><span class="name">捺 <span class="py">nà</span></span></div>
+        <div class="step faded"><span class="han">·</span></div>
+      </div>
+    </div>
+    <div class="web">
+      <div class="lbl">Word web<em>4 common compounds</em></div>
+      <div class="items">
+        <div class="w"><div class="ch"><span class="focus">大</span>家</div><div class="gloss">dàjiā<span class="en">everyone</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">大</span>学</div><div class="gloss">dàxué<span class="en">university</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">大</span>人</div><div class="gloss">dàrén<span class="en">adult</span></div></div>
+        <div class="w"><div class="ch">长<span class="focus">大</span></div><div class="gloss">zhǎngdà<span class="en">to grow up</span></div></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">Cultural note</span>
+      Add one stroke above 大 and you get <strong>天</strong> tiān — sky. The figure reaches still higher and "big" becomes "the heavens". Three strokes. Infinite scale.
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Strokes</div><div class="v">3</div></div>
+      <div class="cell"><div class="k">Radical</div><div class="v"><span class="han">大</span> dà</div></div>
+      <div class="cell"><div class="k">HSK</div><div class="v">Level 1</div></div>
+      <div class="cell"><div class="k">Type</div><div class="v">指事</div></div>
+    </div>
+  </article>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 09 — FRONTS · cards 09–10
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="09 Fronts 9–10">
+  <div class="sheet-mark">
+    <span>字图 · PACK 01 · ELEMENTS · FRONT 5/6</span>
+    <span><span class="pip">●</span> 09–10</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- 09 小 xiǎo · tone 3 · indicative -->
+  <article class="card front" data-tone="3" data-type="indicative">
+    <div class="card-head">
+      <span class="type-badge indicative"><span class="han">指事</span>Indicative</span>
+      <span class="card-ref">Pack 01 · <strong>09/10</strong></span>
+    </div>
+    <div class="hero">
+      <div class="grid-box"><svg class="mizige"><use href="#mz"/></svg><span class="han">小</span></div>
+      <div class="mnemonic">
+        <div class="scene"><svg viewBox="0 0 60 70"><use href="#m-xiao"/></svg></div>
+        <div class="scene-label">Picture a…</div>
+        <p class="caption">three specks — grains, sparks, dust — scattered and barely there.</p>
+      </div>
+    </div>
+    <div class="pinyin-bar">
+      <span class="tone-dot t3">3</span>
+      <span class="pinyin">xi<span class="tm-3">ǎ</span>o</span>
+      <span class="seal-stamp">九</span>
+    </div>
+    <div class="meaning">small, little <em>· minor · young</em></div>
+  </article>
+
+  <!-- 10 心 xīn · tone 1 · pictograph -->
+  <article class="card front" data-tone="1" data-type="pictograph">
+    <div class="card-head">
+      <span class="type-badge pictograph"><span class="han">象形</span>Pictograph</span>
+      <span class="card-ref">Pack 01 · <strong>10/10</strong></span>
+    </div>
+    <div class="hero">
+      <div class="grid-box"><svg class="mizige"><use href="#mz"/></svg><span class="han">心</span></div>
+      <div class="mnemonic">
+        <div class="scene"><svg viewBox="0 0 60 70"><use href="#m-xin"/></svg></div>
+        <div class="scene-label">Picture a…</div>
+        <p class="caption">a heart — a curved base with three pulse-points beating above it.</p>
+      </div>
+    </div>
+    <div class="pinyin-bar">
+      <span class="tone-dot t1">1</span>
+      <span class="pinyin">x<span class="tm-1">ī</span>n</span>
+      <span class="seal-stamp">十</span>
+    </div>
+    <div class="meaning">heart, mind <em>· feeling · core</em></div>
+  </article>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 10 — BACKS · cards 09–10
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="10 Backs 9–10">
+  <div class="sheet-mark">
+    <span><span class="pip">●</span> 09–10</span>
+    <span>字图 · PACK 01 · ELEMENTS · BACK 5/6</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- BACK 09 小 -->
+  <article class="card back" data-tone="3" data-type="indicative">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Pack 01 · <strong>09/10</strong></span>
+      <span class="han-mini">小</span>
+    </div>
+    <div class="bk-top">
+      <aside class="etym">
+        <div class="lbl">字形 · Evolution</div>
+        <div class="stages">
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-xiao"/></svg></div><div class="er">甲骨<em>oracle</em></div></div>
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-xiao"/></svg></div><div class="er">金文<em>bronze</em></div></div>
+          <div class="stg"><div class="gl seal">小</div><div class="er">篆书<em>seal</em></div></div>
+          <div class="stg"><div class="gl clerc">小</div><div class="er">隶书<em>clerical</em></div></div>
+          <div class="stg"><div class="gl modern">小</div><div class="er">楷书<em>regular</em></div></div>
+        </div>
+      </aside>
+      <section class="bp">
+        <div class="lbl">Blueprint <em>indicative · concept by scatter</em></div>
+        <div class="body">
+          <div class="glyph">小</div>
+          <div class="ann">Three marks — a central vertical with two flanking dots. Not a picture of a small thing, but a direct visual of smallness: minimal, scattered, barely there. The opposite of 大.</div>
+        </div>
+        <div class="formula">three marks <span class="han">丶丨丶</span> = <span class="han">小</span></div>
+      </section>
+    </div>
+    <div class="stroke-row">
+      <div class="lbl">Stroke order<em>3 strokes</em></div>
+      <div class="strokes">
+        <div class="step"><span class="n">1</span><span class="han">亅</span><span class="name">竖钩 <span class="py">shùgōu</span></span></div>
+        <div class="step"><span class="n">2</span><span class="han">丿</span><span class="name">撇 <span class="py">piě</span></span></div>
+        <div class="step"><span class="n">3</span><span class="han">丶</span><span class="name">点 <span class="py">diǎn</span></span></div>
+        <div class="step faded"><span class="han">·</span></div>
+      </div>
+    </div>
+    <div class="web">
+      <div class="lbl">Word web<em>4 common compounds</em></div>
+      <div class="items">
+        <div class="w"><div class="ch"><span class="focus">小</span>时</div><div class="gloss">xiǎoshí<span class="en">hour</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">小</span>心</div><div class="gloss">xiǎoxīn<span class="en">be careful</span></div></div>
+        <div class="w"><div class="ch">大<span class="focus">小</span></div><div class="gloss">dàxiǎo<span class="en">size</span></div></div>
+        <div class="w"><div class="ch"><span class="focus">小</span>学</div><div class="gloss">xiǎoxué<span class="en">primary school</span></div></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">Cultural note</span>
+      小心 "small heart" = <strong>be careful</strong>. Guard it closely, keep it modest. Two of Pack 01's most basic characters combine into one of the most common everyday warnings in Chinese.
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Strokes</div><div class="v">3</div></div>
+      <div class="cell"><div class="k">Radical</div><div class="v"><span class="han">小</span> xiǎo</div></div>
+      <div class="cell"><div class="k">HSK</div><div class="v">Level 1</div></div>
+      <div class="cell"><div class="k">Type</div><div class="v">指事</div></div>
+    </div>
+  </article>
+
+  <!-- BACK 10 心 -->
+  <article class="card back" data-tone="1" data-type="pictograph">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Pack 01 · <strong>10/10</strong></span>
+      <span class="han-mini">心</span>
+    </div>
+    <div class="bk-top">
+      <aside class="etym">
+        <div class="lbl">字形 · Evolution</div>
+        <div class="stages">
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-xin"/></svg></div><div class="er">甲骨<em>oracle</em></div></div>
+          <div class="stg"><div class="gl"><svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-xin"/></svg></div><div class="er">金文<em>bronze</em></div></div>
+          <div class="stg"><div class="gl seal">心</div><div class="er">篆书<em>seal</em></div></div>
+          <div class="stg"><div class="gl clerc">心</div><div class="er">隶书<em>clerical</em></div></div>
+          <div class="stg"><div class="gl modern">心</div><div class="er">楷书<em>regular</em></div></div>
+        </div>
+      </aside>
+      <section class="bp">
+        <div class="lbl">Blueprint <em>self-contained pictograph</em></div>
+        <div class="body">
+          <div class="glyph">心</div>
+          <div class="ann">A stylised heart: a curved hook (卧钩) with three pulse-points. Contracted to <strong>忄</strong> on the left of emotion characters, or to <strong>⺗</strong> at the bottom — wherever feeling and thought live.</div>
+        </div>
+        <div class="formula">heart curve <span class="han">乚</span> + three beats <span class="han">丶丶丶</span> = <span class="han">心</span></div>
+      </section>
+    </div>
+    <div class="stroke-row">
+      <div class="lbl">Stroke order<em>4 strokes</em></div>
+      <div class="strokes">
+        <div class="step"><span class="n">1</span><span class="han">丶</span><span class="name">点 <span class="py">diǎn</span></span></div>
+        <div class="step"><span class="n">2</span><span class="han">乚</span><span class="name">卧钩 <span class="py">wògōu</span></span></div>
+        <div class="step"><span class="n">3</span><span class="han">丶</span><span class="name">点 <span class="py">diǎn</span></span></div>
+        <div class="step"><span class="n">4</span><span class="han">丶</span><span class="name">点 <span class="py">diǎn</span></span></div>
+      </div>
+    </div>
+    <div class="web">
+      <div class="lbl">Word web<em>4 common compounds</em></div>
+      <div class="items">
+        <div class="w"><div class="ch"><span class="focus">心</span>情</div><div class="gloss">xīnqíng<span class="en">mood</span></div></div>
+        <div class="w"><div class="ch">小<span class="focus">心</span></div><div class="gloss">xiǎoxīn<span class="en">be careful</span></div></div>
+        <div class="w"><div class="ch">关<span class="focus">心</span></div><div class="gloss">guānxīn<span class="en">to care about</span></div></div>
+        <div class="w"><div class="ch">开<span class="focus">心</span></div><div class="gloss">kāixīn<span class="en">happy</span></div></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">Cultural note</span>
+      In Chinese, 心 holds <strong>both thought and feeling</strong> — no clean line between heart and mind. To study with full attention is to 用心 yòngxīn: "use the heart".
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Strokes</div><div class="v">4</div></div>
+      <div class="cell"><div class="k">Radical</div><div class="v"><span class="han">心</span> xīn</div></div>
+      <div class="cell"><div class="k">HSK</div><div class="v">Level 1</div></div>
+      <div class="cell"><div class="k">Type</div><div class="v">象形</div></div>
+    </div>
+  </article>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 11 — FRONTS · colophon tiles
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="11 Fronts Colophon">
+  <div class="sheet-mark">
+    <span>字图 · PACK 01 · ELEMENTS · FRONT 6/6</span>
+    <span><span class="pip">●</span> colophon</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- Colophon — closing tile -->
+  <article class="card front" style="border-style: dashed; border-color: var(--rule);">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">字图 · 一 · End</span>
+      <span class="card-ref">Pack 01 of 05</span>
+    </div>
+    <div class="hero" style="grid-template-columns: 1fr;">
+      <div style="text-align:center; padding: 0 4mm;">
+        <div style="font-family:var(--f-han); font-size: 28mm; line-height: 1; color: var(--ink);">学</div>
+        <div style="font-family:var(--f-pinyin); font-size: 14pt; color: var(--ink); margin-top: 4mm;">xué</div>
+        <div style="font-family:var(--f-display); font-style: italic; font-size: 12pt; color: var(--ink-soft); margin-top: 2mm;">to study, to learn</div>
+        <div style="font-family:var(--f-mono); font-size: 7pt; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-mute); margin-top: 6mm; line-height: 1.8;">a pack a week<br/>a character a day<br/>a lifetime of strokes</div>
+      </div>
+    </div>
+    <div class="pinyin-bar" style="border-top-color: var(--rule);">
+      <span class="tone-dot t2">2</span>
+      <span class="pinyin" style="font-family:var(--f-display); font-style: italic; font-size: 13pt;">end · 一</span>
+      <span class="seal-stamp" style="background: transparent; color: var(--seal); box-shadow: inset 0 0 0 0.3mm var(--seal);">学</span>
+    </div>
+    <div class="meaning" style="font-size: 11pt;">Pack 01 closes here. <em>Pack 02 begins with numbers.</em></div>
+  </article>
+
+  <!-- Colophon — next-pack tile -->
+  <article class="card front" style="border-style: dashed; border-color: var(--rule); background: var(--paper-soft);">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Next · Pack 02</span>
+      <span class="card-ref"><strong>→ Numbers</strong></span>
+    </div>
+    <div class="hero" style="grid-template-columns: 1fr;">
+      <div style="text-align:left; padding: 1mm 3mm; align-self: start;">
+        <div style="font-family:var(--f-mono); font-size: 7pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 4mm;">字图 · Series 一 · Foundations</div>
+        <div style="font-family:var(--f-display); font-style: italic; font-size: 16pt; line-height: 1.25; color: var(--ink);">Five packs.<br/>Fifty characters.<br/>One year of beginnings.</div>
+        <div style="font-family:var(--f-mono); font-size: 7pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); margin-top: 6mm; line-height: 2;">
+          ① Elements &nbsp; <span style="color:var(--seal)">✓ done</span><br/>
+          ② Numbers<br/>
+          ③ Time<br/>
+          ④ Family<br/>
+          ⑤ Nature
+        </div>
+      </div>
+    </div>
+    <div class="pinyin-bar" style="border-top-color: var(--rule);">
+      <span class="tone-dot tn">·</span>
+      <span class="pinyin" style="font-family:var(--f-display); font-style: italic; font-size: 12pt;">a character's blueprint</span>
+      <span class="seal-stamp">印</span>
+    </div>
+    <div class="meaning" style="font-size: 10.5pt;">字图 ZìTú<em>· foundational Chinese for the modern classroom</em></div>
+  </article>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 12 — BACKS · colophon tiles
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4" data-screen-label="12 Backs Colophon">
+  <div class="sheet-mark">
+    <span><span class="pip">●</span> colophon</span>
+    <span>字图 · PACK 01 · ELEMENTS · BACK 6/6</span>
+  </div>
+  <div class="cut-line"></div>
+
+  <!-- BACK of end-tile: colophon -->
+  <article class="card back" style="border-style: dashed; border-color: var(--rule);">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">字图 · ZìTú · v1.0</span>
+      <span class="han-mini">印</span>
+    </div>
+    <div class="bk-top" style="grid-template-columns: 1fr;">
+      <section class="bp" style="border-style: dashed;">
+        <div class="lbl">Colophon <em>about this system</em></div>
+        <div class="body" style="grid-template-columns: 1fr; gap: 2mm;">
+          <div class="ann" style="font-size:8pt; line-height:1.5;">
+            <strong>字图 ZìTú</strong> is a Chinese character learning system built on one idea — every character is a blueprint. Pack 01 covers ten foundational pictographs and indicatives. Subsequent packs build the rest of the Chinese writing system on top of them.
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="web">
+      <div class="lbl">Pack 01 roster<em>elements</em></div>
+      <div class="items" style="grid-template-columns: repeat(5, 1fr); gap: 1mm;">
+        <div class="w" style="padding: 1mm; text-align:center;"><div class="ch" style="font-size:14pt">人</div><div class="gloss" style="display:block; text-align:center"><span style="font-family:var(--f-pinyin); font-size:6pt">rén</span></div></div>
+        <div class="w" style="padding: 1mm; text-align:center;"><div class="ch" style="font-size:14pt">水</div><div class="gloss" style="display:block; text-align:center"><span style="font-family:var(--f-pinyin); font-size:6pt">shuǐ</span></div></div>
+        <div class="w" style="padding: 1mm; text-align:center;"><div class="ch" style="font-size:14pt">火</div><div class="gloss" style="display:block; text-align:center"><span style="font-family:var(--f-pinyin); font-size:6pt">huǒ</span></div></div>
+        <div class="w" style="padding: 1mm; text-align:center;"><div class="ch" style="font-size:14pt">山</div><div class="gloss" style="display:block; text-align:center"><span style="font-family:var(--f-pinyin); font-size:6pt">shān</span></div></div>
+        <div class="w" style="padding: 1mm; text-align:center;"><div class="ch" style="font-size:14pt">木</div><div class="gloss" style="display:block; text-align:center"><span style="font-family:var(--f-pinyin); font-size:6pt">mù</span></div></div>
+        <div class="w" style="padding: 1mm; text-align:center;"><div class="ch" style="font-size:14pt">日</div><div class="gloss" style="display:block; text-align:center"><span style="font-family:var(--f-pinyin); font-size:6pt">rì</span></div></div>
+        <div class="w" style="padding: 1mm; text-align:center;"><div class="ch" style="font-size:14pt">月</div><div class="gloss" style="display:block; text-align:center"><span style="font-family:var(--f-pinyin); font-size:6pt">yuè</span></div></div>
+        <div class="w" style="padding: 1mm; text-align:center;"><div class="ch" style="font-size:14pt">大</div><div class="gloss" style="display:block; text-align:center"><span style="font-family:var(--f-pinyin); font-size:6pt">dà</span></div></div>
+        <div class="w" style="padding: 1mm; text-align:center;"><div class="ch" style="font-size:14pt">小</div><div class="gloss" style="display:block; text-align:center"><span style="font-family:var(--f-pinyin); font-size:6pt">xiǎo</span></div></div>
+        <div class="w" style="padding: 1mm; text-align:center;"><div class="ch" style="font-size:14pt">心</div><div class="gloss" style="display:block; text-align:center"><span style="font-family:var(--f-pinyin); font-size:6pt">xīn</span></div></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">Series 一 · Foundations</span>
+      One pack a week. By summer's end, fifty characters — and a working sense of how the writing system <em>thinks</em>.
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Set</div><div class="v">01 / 05</div></div>
+      <div class="cell"><div class="k">Cards</div><div class="v">10</div></div>
+      <div class="cell"><div class="k">Format</div><div class="v">A4 duplex</div></div>
+      <div class="cell"><div class="k">Print</div><div class="v">100%</div></div>
+    </div>
+  </article>
+
+  <!-- BACK of next-pack colophon: how-to-study card -->
+  <article class="card back" style="border-style: dashed; border-color: var(--rule); background: var(--paper-soft);">
+    <div class="card-head">
+      <span class="card-ref" style="text-align:left">Pack 01 · Method</span>
+      <span class="han-mini">习</span>
+    </div>
+    <div class="bk-top" style="grid-template-columns: 1fr;">
+      <section class="bp" style="border-style: dashed;">
+        <div class="lbl">How to study <em>three passes</em></div>
+        <div class="body" style="grid-template-columns: 1fr; gap: 2mm;">
+          <div class="ann" style="font-size:8pt; line-height:1.5;">
+            <strong>Pass 1 · See &amp; say.</strong> Flip front-only. Read aloud — character, pinyin, meaning.<br/>
+            <strong>Pass 2 · Recall.</strong> Cover the pinyin with your thumb. Say the tone before flipping.<br/>
+            <strong>Pass 3 · Write.</strong> Trace into the practice sheet's blank 米字格 from memory, then compare.
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="stroke-row">
+      <div class="lbl">Sort &amp; shuffle<em>three ways to stack</em></div>
+      <div class="strokes">
+        <div class="step"><span class="n">①</span><span class="han" style="font-size:8pt; color:var(--tone-1)">●</span><span class="name">by tone</span></div>
+        <div class="step"><span class="n">②</span><span class="han" style="font-size:8pt; color:var(--type-pict)">●</span><span class="name">by type</span></div>
+        <div class="step"><span class="n">③</span><span class="han" style="font-size:8pt;">HSK</span><span class="name">by level</span></div>
+        <div class="step"><span class="n">④</span><span class="han" style="font-size:8pt;">?</span><span class="name">random</span></div>
+      </div>
+    </div>
+    <div class="culture">
+      <span class="lead">习 · xí · to practice</span>
+      Originally an oracle-bone glyph of a fledgling's repeated wing-beats. <strong>Repetition is the only way through</strong> — but repetition with attention, not just count.
+    </div>
+    <div class="stats">
+      <div class="cell"><div class="k">Cards</div><div class="v">10</div></div>
+      <div class="cell"><div class="k">Pack</div><div class="v">01 / 05</div></div>
+      <div class="cell"><div class="k">Series</div><div class="v">一</div></div>
+      <div class="cell"><div class="k">Version</div><div class="v">v1.0</div></div>
+    </div>
+  </article>
+</section>
+
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 7 — SAMPLE PRACTICE SHEET · 人 (A4 portrait)
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a4-portrait-solo practice" data-screen-label="13 Practice 人">
+  <div class="sheet-mark">
+    <span>字图 · PACK 01 · ELEMENTS · PRACTICE 01/10</span>
+    <span><span class="pip">●</span> 人 rén · version B</span>
+  </div>
+
+  <header class="ph-head">
+    <div class="ch-block"><svg class="mizige"><use href="#mz"/></svg><span class="han">人</span></div>
+    <div class="meta">
+      <div class="lbl">Practice · 01 / 10</div>
+      <div class="py">rén &nbsp;<span style="color:var(--tone-2); font-style:italic; font-size:18pt;">·  tone 2 — rising</span></div>
+      <div class="mn"><em>person, people</em> · human</div>
+    </div>
+    <div class="sealcol">
+      <div class="stamp">一</div>
+      Pack 01 · 象形
+    </div>
+  </header>
+
+  <section class="zones">
+    <!-- Zone A: Colour the guide -->
+    <div class="zone">
+      <div class="zhd">
+        <div class="zlb"><span class="han">涂一涂</span><em>colour the character</em></div>
+        <div class="zix">A · TRACE WITH COLOUR</div>
+      </div>
+      <div class="outline-char">人</div>
+    </div>
+
+    <!-- Zone B: Draw from memory -->
+    <div class="zone">
+      <div class="zhd">
+        <div class="zlb"><span class="han">画一画</span><em>draw it from memory</em></div>
+        <div class="zix">B · RECALL</div>
+      </div>
+      <div class="blank-mizige">
+        <div class="mz"><svg><use href="#mz"/></svg></div>
+      </div>
+    </div>
+
+    <!-- Zone C: Find it -->
+    <div class="zone">
+      <div class="zhd">
+        <div class="zlb"><span class="han">找一找</span><em>circle every 人 you find</em></div>
+        <div class="zix">C · RECOGNISE</div>
+      </div>
+      <div class="find-grid">
+        <div class="c">入</div><div class="c">人</div><div class="c">大</div><div class="c">个</div><div class="c">人</div><div class="c">八</div>
+        <div class="c">从</div><div class="c">人</div><div class="c">入</div><div class="c">人</div><div class="c">介</div><div class="c">大</div>
+        <div class="c">个</div><div class="c">天</div><div class="c">人</div><div class="c">入</div><div class="c">人</div><div class="c">从</div>
+        <div class="c">人</div><div class="c">大</div><div class="c">个</div><div class="c">介</div><div class="c">人</div><div class="c">入</div>
+      </div>
+    </div>
+
+    <!-- Zone D: English meaning -->
+    <div class="zone">
+      <div class="zhd">
+        <div class="zlb"><span class="han">英文意思</span><em>write the English meaning</em></div>
+        <div class="zix">D · MEANING</div>
+      </div>
+      <div class="ans-line">
+        <div style="font-family:var(--f-display); font-style: italic; font-size: 14pt; color: var(--ink-mute);">人 means…</div>
+        <div class="ln"></div>
+        <div class="ln"></div>
+      </div>
+    </div>
+
+    <!-- Zone E: Trace row (half width — paired with F) -->
+    <div class="zone">
+      <div class="zhd">
+        <div class="zlb"><span class="han">描一描</span><em>trace the dotted characters</em></div>
+        <div class="zix">E · TRACE · 4 reps</div>
+      </div>
+      <div class="trace-row">
+        <div class="cell"><span class="han">人</span></div>
+        <div class="cell"><span class="han">人</span></div>
+        <div class="cell"><span class="han">人</span></div>
+        <div class="cell"><span class="han">人</span></div>
+      </div>
+    </div>
+
+    <!-- Zone F: Write row (half width — paired with E) -->
+    <div class="zone">
+      <div class="zhd">
+        <div class="zlb"><span class="han">写一写</span><em>now write from memory</em></div>
+        <div class="zix">F · WRITE · 4 reps</div>
+      </div>
+      <div class="trace-row">
+        <div class="cell empty"></div><div class="cell empty"></div>
+        <div class="cell empty"></div><div class="cell empty"></div>
+      </div>
+    </div>
+
+    <!-- Zone G: Sentence writing (full width, version B only) -->
+    <div class="zone full">
+      <div class="zhd">
+        <div class="zlb"><span class="han">造句</span><em>make a sentence using one compound</em></div>
+        <div class="zix">G · APPLY · version B</div>
+      </div>
+      <div style="font-family:var(--f-display); font-style: italic; font-size: 12pt; color: var(--ink-soft); margin-bottom: 2mm;">
+        Pick one word from the word web: <strong style="font-style:italic; color:var(--ink);">人口 · 人民 · 工人 · 大人</strong> &nbsp;— and write a sentence below.
+      </div>
+      <div class="sentence-line"></div>
+      <div class="sentence-line"></div>
+    </div>
+  </section>
+
+  <footer class="ph-foot">
+    <span>字图 · ZìTú · Pack 01 · Elements · Practice 01/10</span>
+    <span>NAME ________________________ &nbsp;&nbsp;&nbsp; DATE ____________</span>
+  </footer>
+</section>
+
+<!--
+═════════════════════════════════════════════════════════════════════
+  SHEET 8 — SAMPLE POSTER · 人 (A3 landscape)
+═════════════════════════════════════════════════════════════════════
+-->
+<section class="sheet a3-landscape poster" data-screen-label="14 Poster 人">
+  <div class="sheet-mark">
+    <span>字图 · PACK 01 · ELEMENTS · POSTER · A3 LANDSCAPE</span>
+    <span><span class="pip">●</span> 人 rén</span>
+  </div>
+
+  <header class="ph">
+    <div>
+      <h2 class="ttl">A character's <em>blueprint</em> — <em style="color:var(--ink)">人</em> <span style="color:var(--ink-soft); font-size: 20pt;">rén · person</span></h2>
+      <div class="sub">字图 · ZìTú · Pack 01 · Elements · 01/10 · 象形 Pictograph · Tone 2 — rising</div>
+    </div>
+    <div></div>
+    <div class="stamp">一</div>
+  </header>
+
+  <div class="pbody">
+
+    <!-- Left: hero character -->
+    <div class="pchar">
+      <div class="gb"><svg class="mizige"><use href="#mz"/></svg><span class="han">人</span></div>
+      <div class="ptag">
+        <span class="py-big">r<span style="color:var(--tone-2)">é</span>n</span>
+        <span><em style="color:var(--ink-soft); font-style:italic;">person · people · human</em></span>
+      </div>
+    </div>
+
+    <!-- Middle: blueprint + word web + culture -->
+    <div class="pmid">
+
+      <!-- Blueprint -->
+      <div class="sec">
+        <div class="lbl">Blueprint <em>self-contained pictograph · two strokes</em></div>
+        <div class="bp-poster">
+          <span class="han">丿</span><span><span class="arrow">+</span> &nbsp;left leg <span class="gloss"><em>piě</em></span></span>
+        </div>
+        <div class="bp-poster">
+          <span class="han">㇏</span><span><span class="arrow">+</span> &nbsp;right leg <span class="gloss"><em>nà</em></span></span>
+        </div>
+        <div class="bp-poster">
+          <span class="han">人</span><span><span class="arrow">=</span> &nbsp;a person walking — seen in profile, mid-stride</span>
+        </div>
+      </div>
+
+      <!-- Word web -->
+      <div class="sec">
+        <div class="lbl">Word web <em>four common compounds</em></div>
+        <div class="web-poster">
+          <div class="ww"><div class="ch"><span class="focus">人</span>口</div><div class="ln">rénkǒu</div><div class="en">population</div></div>
+          <div class="ww"><div class="ch"><span class="focus">人</span>民</div><div class="ln">rénmín</div><div class="en">the people</div></div>
+          <div class="ww"><div class="ch">工<span class="focus">人</span></div><div class="ln">gōngrén</div><div class="en">worker</div></div>
+          <div class="ww"><div class="ch">大<span class="focus">人</span></div><div class="ln">dàrén</div><div class="en">adult</div></div>
+        </div>
+      </div>
+
+      <!-- Culture -->
+      <div class="culture-poster">
+        In oracle-bone script, 人 depicted a person walking <strong>in profile</strong> — the defining mark of humanity in ancient pictographs. Compressed to <strong>亻</strong> on the left of person-related characters; the front-facing form, arms spread wide, became 大.
+      </div>
+
+    </div>
+
+    <!-- Right: etymology strip (dark panel) -->
+    <aside class="pright">
+      <div class="lbl">字形 · Evolution</div>
+      <div class="pstages">
+        <div class="pst"><div class="gl"><svg viewBox="0 0 30 36"><use href="#o-ren"/></svg></div><div class="info">甲骨<em>oracle bone</em></div></div>
+        <div class="pst"><div class="gl"><svg viewBox="0 0 30 36"><use href="#o-ren"/></svg></div><div class="info">金文<em>bronze</em></div></div>
+        <div class="pst"><div class="gl seal">人</div><div class="info">篆书<em>seal script</em></div></div>
+        <div class="pst"><div class="gl clerc">人</div><div class="info">隶书<em>clerical</em></div></div>
+        <div class="pst"><div class="gl modern">人</div><div class="info">楷书<em>regular</em></div></div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="pfoot">
+    <div class="stroke-poster">
+      <div class="st"><span class="n">1</span><span class="han">丿</span></div>
+      <div class="st"><span class="n">2</span><span class="han">㇏</span></div>
+      <div class="st faded"><span class="han">·</span></div>
+      <div class="st faded"><span class="han">·</span></div>
+    </div>
+    <div class="pstats">
+      <div class="cell"><div class="k">Strokes</div><div class="v">2</div></div>
+      <div class="cell"><div class="k">Radical</div><div class="v">人 rén</div></div>
+      <div class="cell"><div class="k">HSK</div><div class="v">Level 1</div></div>
+      <div class="cell"><div class="k">Formation</div><div class="v">象形 pictograph</div></div>
+      <div class="cell"><div class="k">Pack</div><div class="v">01 · 01/10</div></div>
+    </div>
+  </footer>
+</section>
+
+</body>
+</html>
