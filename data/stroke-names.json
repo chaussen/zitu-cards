@@ -1,0 +1,21 @@
+{
+  "横":      { "zh": "横",      "py": "héng",        "en": "horizontal" },
+  "竖":      { "zh": "竖",      "py": "shù",         "en": "vertical" },
+  "撇":      { "zh": "撇",      "py": "piě",         "en": "left-falling" },
+  "捺":      { "zh": "捺",      "py": "nà",          "en": "right-falling" },
+  "点":      { "zh": "点",      "py": "diǎn",        "en": "dot" },
+  "提":      { "zh": "提",      "py": "tí",          "en": "rising" },
+  "竖钩":    { "zh": "竖钩",    "py": "shùgōu",      "en": "vertical-hook" },
+  "横折":    { "zh": "横折",    "py": "héngzhé",     "en": "horizontal-turn" },
+  "横撇":    { "zh": "横撇",    "py": "héngpiě",     "en": "horizontal-falling" },
+  "横钩":    { "zh": "横钩",    "py": "hénggōu",     "en": "horizontal-hook" },
+  "横折钩":  { "zh": "横折钩",  "py": "héngzhégōu",  "en": "horizontal-turn-hook" },
+  "竖折":    { "zh": "竖折",    "py": "shùzhé",      "en": "vertical-turn" },
+  "竖弯钩":  { "zh": "竖弯钩",  "py": "shùwāngōu",   "en": "vertical-curve-hook" },
+  "弯钩":    { "zh": "弯钩",    "py": "wāngōu",      "en": "curved-hook" },
+  "卧钩":    { "zh": "卧钩",    "py": "wògōu",       "en": "lying-hook" },
+  "斜钩":    { "zh": "斜钩",    "py": "xiégōu",      "en": "diagonal-hook" },
+  "短撇":    { "zh": "短撇",    "py": "duǎnpiě",     "en": "short-falling" },
+  "撇折":    { "zh": "撇折",    "py": "piězhé",      "en": "falling-turn" },
+  "横折弯钩":{ "zh": "横折弯钩","py": "héngzhéwāngōu","en": "horizontal-turn-curve-hook" }
+}

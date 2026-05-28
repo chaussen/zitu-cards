@@ -1,0 +1,1394 @@
+/* ============================================================
+   字图 ZìTú — Design System v1.1
+   ------------------------------------------------------------
+   Canonical stylesheet. Link from a pack's <head>:
+     <link rel="stylesheet" href="system/style.css">
+   ------------------------------------------------------------
+   Contents map (search for the heading to jump):
+
+     :root tokens     — paper, ink, seal, tones, types, geometry, fonts
+     SCREEN COVER     — design-system cover (screen only, hidden on print)
+     SHEETS           — paper, .sheet.a4 / .a4-portrait-solo / .a3-landscape
+     CARD             — common chrome, tone hairlines, header strip
+     FRONT CARD       — hero (米字格 + mnemonic), pinyin bar, meaning
+     BACK CARD        — etymology strip, blueprint, stroke order, web, culture, stats
+     IMAGE PLACEHOLDERS — glyph-img / mnemonic-img placeholder rules
+     PRACTICE SHEET   — A4 portrait, 7 activity zones
+     POSTER           — A3 landscape, combined front+back layout
+     PRINT            — @page A4, screen→print clean-up
+   ============================================================ */
+
+  :root {
+    /* ── canvas + ink ─────────────────────────── */
+    --paper:        #f3ece0;
+    --paper-soft:   #ebe2d2;
+    --paper-deep:   #e2d6bd;
+    --ink:          #1a1614;
+    --ink-soft:     #5a4f44;
+    --ink-mute:     #9a8d7c;
+    --rule:         #d8cdb8;
+    --rule-soft:    #e6dcc6;
+
+    /* ── accent + dark panel ──────────────────── */
+    --seal:         #b83a25;
+    --seal-deep:    #8c2916;
+    --midnight:     #1c1a24;
+    --midnight-2:   #2a2632;
+    --paper-on-dk:  #e9dfcc;
+    --gold-on-dk:   #c9a960;
+
+    /* ── evolution strip (light warm grey) ───── */
+    --etym-bg:      #EDE8DC;
+    --etym-ink:     #1A2744;
+
+    /* ── tone-coding (linguistic) ─────────────── */
+    --tone-1:       #486b85;
+    --tone-2:       #5b7a4a;
+    --tone-3:       #7a5275;
+    --tone-4:       var(--seal);
+    --tone-n:       var(--ink-mute);
+
+    /* ── character-type (formation) ───────────── */
+    --type-pict:    #a78a3d;
+    --type-ideo:    #3d5469;
+    --type-comp:    #5b6b4a;
+    --type-phon:    #7a5275;
+
+    /* ── geometry ────────────────────────────── */
+    --card-w:    92mm;
+    --card-h:   135mm;
+    --card-gap-h: 6mm;
+    --card-gap-v: 7mm;
+
+    /* ── type stacks ─────────────────────────── */
+    --f-han:        "KaiTi", "STKaiti", "Kaiti SC", "楷体", "Ma Shan Zheng", serif;
+    --f-han-seal:   "ZCOOL XiaoWei", "STZhongsong", "Songti SC", serif;
+    --f-han-clerc:  "Long Cang", "STLiSu", "LiSu", "隶书", serif;
+    --f-han-print:  "Noto Serif SC", "Source Han Serif SC", serif;
+    --f-display:    "Cormorant Garamond", "Newsreader", Georgia, serif;
+    --f-body:       "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --f-pinyin:     "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --f-mono:       "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: #1a1714;
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ===================================================================
+     SCREEN COVER (hidden on print)
+  =================================================================== */
+  .shell { max-width: 1240px; margin: 0 auto; padding: 56px 32px 72px; color: #e9dfcc; }
+  @media print { .shell { display: none !important; } }
+
+  .brand {
+    display: grid; grid-template-columns: auto 1fr auto; align-items: end;
+    gap: 28px; padding-bottom: 26px; border-bottom: 1px solid #4a3f33; margin-bottom: 38px;
+  }
+  .brand .mark {
+    width: 86px; height: 86px;
+    background: var(--midnight); color: var(--paper-on-dk);
+    display: grid; place-items: center; border-radius: 4px; position: relative;
+    box-shadow: inset 0 0 0 1px #38323e;
+  }
+  .brand .mark::before, .brand .mark::after {
+    content: ""; position: absolute; background: var(--gold-on-dk); opacity: 0.55;
+  }
+  .brand .mark::before { left: 0; right: 0; top: 50%; height: 0.5px; }
+  .brand .mark::after  { top: 0; bottom: 0; left: 50%; width: 0.5px; }
+  .brand .mark span {
+    font-family: var(--f-han); font-size: 58px; line-height: 1; color: var(--paper-on-dk);
+    position: relative; z-index: 1; 
+  }
+  .brand .name {
+    font-family: var(--f-display); font-style: italic; font-weight: 400;
+    font-size: 52px; line-height: 1; letter-spacing: -0.01em; margin: 0 0 10px;
+  }
+  .brand .name em { font-style: normal; font-family: var(--f-han); color: #d3b58c;  }
+  .brand .tag {
+    font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: #b8a98f;
+  }
+  .brand .seal-pip {
+    width: 48px; height: 48px; background: var(--seal); color: var(--paper-on-dk);
+    font-family: var(--f-han); font-size: 26px; display: grid; place-items: center;
+    border-radius: 3px; box-shadow: inset 0 0 0 2px var(--paper-on-dk), inset 0 0 0 3px var(--seal);
+    
+  }
+
+  .lede {
+    font-family: var(--f-display); font-size: 22px; line-height: 1.45;
+    font-style: italic; color: #c2b59c; max-width: 720px; margin: 0 0 44px;
+  }
+  .lede em { color: #e9dfcc; font-style: italic; }
+
+  .spec-grid {
+    display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; margin-bottom: 48px;
+  }
+  .panel {
+    background: #25201a; border: 1px solid #3a312a; border-radius: 3px;
+    padding: 22px; color: #ede2cc;
+  }
+  .panel h3 {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: #d3b58c; margin: 0 0 14px; font-weight: 500;
+  }
+  .panel .lead { font-family: var(--f-display); font-style: italic; font-size: 14px; color: #b8a98f; margin: 0 0 12px; }
+
+  .span-4 { grid-column: span 4; } .span-5 { grid-column: span 5; }
+  .span-6 { grid-column: span 6; } .span-7 { grid-column: span 7; }
+  .span-8 { grid-column: span 8; } .span-12 { grid-column: span 12; }
+  .span-3 { grid-column: span 3; }
+
+  .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .swatch {
+    aspect-ratio: 1/1.1; border-radius: 3px; padding: 8px;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase;
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+  .swatch .nm { font-weight: 500; }
+  .swatch .hx { opacity: 0.7; margin-top: 2px; font-size: 8.5px; }
+
+  .keys { display: grid; gap: 10px; }
+  .key {
+    display: grid; grid-template-columns: 18px 1fr auto auto; gap: 10px;
+    align-items: center; padding: 8px 0; border-bottom: 1px dashed #3a312a;
+  }
+  .key:last-child { border-bottom: none; }
+  .key .dot { width: 16px; height: 16px; border-radius: 50%; }
+  .key .l1 { font-family: var(--f-display); font-style: italic; font-size: 14px; color: #ede2cc; }
+  .key .l2 { font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: #9c8e74; }
+  .key .han { font-family: var(--f-han); font-size: 18px; color: #d3b58c; font-weight: 400; }
+
+  .type-grid { display: grid; gap: 12px; }
+  .type-row {
+    display: grid; grid-template-columns: 78px 1fr; gap: 14px; align-items: baseline;
+    padding-bottom: 10px; border-bottom: 1px dashed #3a312a;
+  }
+  .type-row:last-child { border-bottom: none; }
+  .type-row .lbl {
+    font-family: var(--f-mono); font-size: 9px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: #9c8e74;
+  }
+  .type-row .han-sample { font-family: var(--f-han); font-size: 36px; line-height: 1; color: #ede2cc;  }
+  .type-row .seal-sample { font-family: var(--f-han-seal); font-size: 26px; color: #ede2cc; }
+  .type-row .clerc-sample { font-family: var(--f-han-clerc); font-size: 26px; color: #ede2cc; }
+  .type-row .disp-sample { font-family: var(--f-display); font-style: italic; font-size: 22px; }
+  .type-row .body-sample { font-family: var(--f-body); font-size: 14px; }
+  .type-row .mono-sample { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; }
+
+  .roster {
+    display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px;
+  }
+  .roster .pip {
+    background: var(--paper); color: var(--ink); border-radius: 2px;
+    padding: 9px 6px 7px; text-align: center; border: 1px solid #3a312a;
+    position: relative;
+  }
+  .roster .pip .han { font-family: var(--f-han); font-size: 26px; line-height: 1;  }
+  .roster .pip .py { font-family: var(--f-pinyin); font-size: 10px; color: var(--ink-soft); margin-top: 3px; }
+  .roster .pip .num { font-family: var(--f-mono); font-size: 7.5px; letter-spacing: 0.14em; color: var(--ink-mute); margin-top: 3px; }
+  .roster .pip .tn { position: absolute; top: 4px; right: 4px; width: 5px; height: 5px; border-radius: 50%; }
+
+  .instructions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-bottom: 44px; }
+  .instructions .stp {
+    border-top: 1px solid #4a3f33; padding-top: 16px; color: #c2b59c;
+    font-family: var(--f-body); font-size: 13.5px; line-height: 1.55;
+  }
+  .instructions .stp .n {
+    font-family: var(--f-display); font-style: italic; font-size: 36px; line-height: 1;
+    color: var(--seal); margin-bottom: 8px;
+  }
+  .instructions .stp h4 {
+    font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: #d3b58c; margin: 0 0 8px; font-weight: 500;
+  }
+  .instructions .stp strong { color: #ede2cc; font-weight: 500; }
+
+  .preview-strip {
+    margin-top: 6px; margin-bottom: 22px;
+    font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: #b8a98f;
+  }
+  .preview-strip .dot { color: var(--seal); }
+
+  /* ===================================================================
+     SHEETS — paper & shell
+  =================================================================== */
+  .sheet {
+    background: var(--paper);
+    margin: 0 auto 28px;
+    position: relative;
+    box-shadow: 0 28px 60px -20px rgba(0,0,0,0.55), 0 8px 18px -8px rgba(0,0,0,0.4);
+    color: var(--ink);
+    font-family: var(--f-body);
+    overflow: hidden;
+  }
+  .sheet.a4 {
+    width: 190mm; height: 277mm;
+    padding: 0;
+    display: grid;
+    grid-template-columns: var(--card-w) var(--card-w);
+    grid-template-rows: var(--card-h) var(--card-h);
+    gap: var(--card-gap-v) var(--card-gap-h);
+    justify-content: center; align-content: center;
+  }
+  .sheet.a4-portrait-solo {
+    width: 190mm; height: 277mm;
+    padding: 6mm 8mm;
+    display: block;
+  }
+  .sheet.a3-landscape {
+    width: 400mm; height: 277mm;
+    padding: 8mm 12mm;
+    display: block;
+  }
+
+  .sheet-mark {
+    position: absolute; top: 5mm; left: 8mm; right: 8mm;
+    display: flex; justify-content: space-between;
+    font-family: var(--f-mono); font-size: 7.5px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--ink-mute);
+    pointer-events: none;
+  }
+  .sheet-mark .pip { color: var(--seal); }
+
+  /* ===================================================================
+     CARD — common chrome
+  =================================================================== */
+  .card {
+    position: relative;
+    background: var(--paper);
+    border: 0.35mm solid var(--ink);
+    border-radius: 1.4mm;
+    overflow: hidden;
+    padding: 5mm 5.5mm;
+    display: flex; flex-direction: column;
+  }
+  .card::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+    background:
+      radial-gradient(circle at 22% 28%, rgba(120,90,50,0.05), transparent 38%),
+      radial-gradient(circle at 78% 72%, rgba(80,60,30,0.04), transparent 42%);
+  }
+  .card > * { position: relative; z-index: 1; }
+
+  .card[data-tone="1"] { box-shadow: inset 3px 0 0 var(--tone-1); }
+  .card[data-tone="2"] { box-shadow: inset 3px 0 0 var(--tone-2); }
+  .card[data-tone="3"] { box-shadow: inset 3px 0 0 var(--tone-3); }
+  .card[data-tone="4"] { box-shadow: inset 3px 0 0 var(--tone-4); }
+
+  /* ---------- header strip ---------- */
+  .card-head {
+    display: grid; grid-template-columns: 1fr auto; gap: 4mm;
+    align-items: center; margin-bottom: 3mm;
+  }
+  .type-badge {
+    display: inline-flex; align-items: center; gap: 2mm;
+    padding: 1mm 2mm; border-radius: 1mm;
+    font-family: var(--f-mono); font-size: 6.6pt; letter-spacing: 0.16em;
+    text-transform: uppercase; line-height: 1;
+    color: var(--paper-on-dk);
+  }
+  .type-badge .han {
+    font-family: var(--f-han); font-size: 8pt; letter-spacing: 0; color: var(--paper-on-dk);
+    font-weight: 400;
+  }
+  .type-badge.pictograph  { background: var(--type-pict); }
+  .type-badge.indicative  { background: var(--type-ideo); }
+  .type-badge.compound    { background: var(--type-comp); }
+  .type-badge.phonosem    { background: var(--type-phon); }
+
+  .card-ref {
+    font-family: var(--f-mono); font-size: 6.6pt; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--ink-mute); text-align: right;
+  }
+  .card-ref strong { color: var(--seal); font-weight: 500; }
+
+  /* ===================================================================
+     FRONT CARD
+  =================================================================== */
+  .card.front .hero {
+    flex: 1; display: grid;
+    grid-template-columns: 1.55fr 1fr;
+    gap: 3mm; align-items: center;
+    margin-top: 1mm;
+  }
+  .grid-box {
+    position: relative; width: 100%; aspect-ratio: 1/1;
+  }
+  .grid-box svg.mizige {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+  }
+  .grid-box .han {
+    position: absolute; inset: 0;
+    display: grid; place-items: center;
+    font-family: var(--f-han); 
+    font-size: 42mm; line-height: 1; color: var(--ink);
+  }
+  .card[data-tone="1"] .grid-box svg.mizige rect.frame { stroke: var(--tone-1); }
+  .card[data-tone="2"] .grid-box svg.mizige rect.frame { stroke: var(--tone-2); }
+  .card[data-tone="3"] .grid-box svg.mizige rect.frame { stroke: var(--tone-3); }
+  .card[data-tone="4"] .grid-box svg.mizige rect.frame { stroke: var(--tone-4); }
+
+  .mnemonic {
+    display: flex; flex-direction: column; gap: 2mm;
+    align-items: stretch; justify-content: center;
+    padding: 0 1mm;
+  }
+  .mnemonic .scene {
+    width: 100%; aspect-ratio: 1/1.05;
+    border: 0.18mm dashed var(--rule);
+    border-radius: 1mm;
+    padding: 2mm;
+    background: rgba(216, 205, 184, 0.18);
+    display: grid; place-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .mnemonic .scene svg { width: 100%; height: 100%; overflow: visible; }
+  .mnemonic .scene-label {
+    font-family: var(--f-mono); font-size: 5.6pt; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--ink-mute);
+    text-align: center;
+  }
+  .mnemonic .caption {
+    font-family: var(--f-display); font-style: italic; font-size: 8.8pt;
+    line-height: 1.25; color: var(--ink-soft); text-align: center;
+    margin: 0; padding: 0 1mm;
+  }
+
+  /* ---------- pinyin bar ---------- */
+  .pinyin-bar {
+    display: grid; grid-template-columns: auto 1fr auto;
+    align-items: center; gap: 3mm;
+    margin-top: 3.5mm; padding-top: 2.5mm;
+    border-top: 0.15mm solid var(--rule);
+  }
+  .tone-dot {
+    width: 7mm; height: 7mm; border-radius: 50%;
+    display: grid; place-items: center;
+    color: var(--paper-on-dk);
+    font-family: var(--f-display); font-style: italic; font-weight: 500;
+    font-size: 9pt; line-height: 1;
+    box-shadow: inset 0 0 0 0.3mm rgba(255,255,255,0.25);
+  }
+  .tone-dot.t1 { background: var(--tone-1); }
+  .tone-dot.t2 { background: var(--tone-2); }
+  .tone-dot.t3 { background: var(--tone-3); }
+  .tone-dot.t4 { background: var(--tone-4); }
+  .tone-dot.tn { background: var(--tone-n); }
+
+  .pinyin {
+    font-family: var(--f-pinyin); font-weight: 400; font-size: 18pt;
+    line-height: 1; color: var(--ink); letter-spacing: 0.01em;
+  }
+  .pinyin .tm-1 { color: var(--tone-1); }
+  .pinyin .tm-2 { color: var(--tone-2); }
+  .pinyin .tm-3 { color: var(--tone-3); }
+  .pinyin .tm-4 { color: var(--tone-4); }
+
+  .seal-stamp {
+    width: 9mm; height: 9mm;
+    background: var(--seal); color: var(--paper-on-dk);
+    font-family: var(--f-han); font-size: 5.4mm; line-height: 1;
+    display: grid; place-items: center; border-radius: 0.6mm;
+    box-shadow: inset 0 0 0 0.3mm var(--paper-on-dk), inset 0 0 0 0.5mm var(--seal);
+    
+  }
+
+  /* ---------- meaning ---------- */
+  .meaning {
+    margin-top: 3mm;
+    font-family: var(--f-display); font-weight: 400; font-size: 14.5pt;
+    line-height: 1.2; color: var(--ink); letter-spacing: 0.005em;
+  }
+  .meaning em {
+    font-style: italic; color: var(--ink-soft); font-size: 11pt;
+    letter-spacing: 0.02em;
+  }
+
+  /* ===================================================================
+     BACK CARD
+  =================================================================== */
+  .card.back { padding: 4mm 5mm 4mm; }
+  .card.back .card-head { margin-bottom: 2mm; }
+  .card.back .card-head .han-mini {
+    font-family: var(--f-han); font-size: 12pt; color: var(--ink); line-height: 1;
+    
+  }
+
+  /* ---------- row: etymology + blueprint ---------- */
+  .bk-top {
+    display: grid; grid-template-columns: 23mm 1fr;
+    gap: 2mm; margin-bottom: 1.8mm;
+  }
+
+  /* Evolution strip — light warm grey (was dark midnight) */
+  .etym {
+    background: var(--etym-bg);
+    color: var(--etym-ink);
+    border-radius: 1mm;
+    padding: 1.6mm 1.6mm 1.8mm;
+    position: relative;
+    overflow: hidden;
+    border: 0.15mm solid #ccc8bc;
+  }
+  .etym::before {
+    content: ""; position: absolute; inset: 0; opacity: 0.06;
+    background-image:
+      linear-gradient(to right, var(--etym-ink) 0.2mm, transparent 0.2mm),
+      linear-gradient(to bottom, var(--etym-ink) 0.2mm, transparent 0.2mm);
+    background-size: 5mm 5mm;
+    pointer-events: none;
+  }
+  .etym .lbl {
+    font-family: var(--f-mono); font-size: 5.2pt; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--etym-ink);
+    border-bottom: 0.15mm solid var(--etym-ink);
+    padding-bottom: 0.7mm; margin-bottom: 1mm;
+    position: relative; z-index: 1; opacity: 0.75;
+  }
+  .etym .stages {
+    display: grid; grid-template-rows: repeat(5, 1fr); gap: 0;
+    position: relative; z-index: 1;
+  }
+  .etym .stages::before {
+    content: ""; position: absolute;
+    left: 4.5mm; top: 1.5mm; bottom: 1.5mm; width: 0.2mm;
+    background: var(--etym-ink); opacity: 0.3;
+  }
+  .etym .stg {
+    display: grid; grid-template-columns: 7.5mm 1fr;
+    align-items: center; gap: 0.8mm;
+    padding: 0.15mm 0;
+  }
+  .etym .stg .gl {
+    width: 7.5mm; height: 6mm;
+    display: grid; place-items: center;
+    color: var(--etym-ink);
+    position: relative;
+    overflow: hidden;
+  }
+  .etym .stg .gl svg { width: 78%; height: 78%; overflow: visible; }
+  .etym .stg .gl.modern { font-family: var(--f-han); font-size: 9pt; line-height: 1; font-weight: 400; }
+  .etym .stg .gl.seal   { font-family: var(--f-han-seal);  font-size: 9pt; line-height: 1; }
+  .etym .stg .gl.clerc  { font-family: var(--f-han-clerc); font-size: 9pt; line-height: 1; }
+  .etym .stg .er {
+    font-family: var(--f-mono); font-size: 4.6pt; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--etym-ink);
+    line-height: 1.1;
+  }
+  .etym .stg .er em {
+    display: block; font-family: var(--f-display); font-style: italic;
+    font-size: 5.2pt; letter-spacing: 0.01em; text-transform: none;
+    color: var(--etym-ink); opacity: 0.6; margin-top: 0.15mm;
+  }
+
+  /* ---------- blueprint decomposition ---------- */
+  .bp {
+    border: 0.18mm dashed var(--rule);
+    border-radius: 1mm;
+    padding: 1.6mm 2mm 1.8mm;
+    background: rgba(216, 205, 184, 0.14);
+    display: flex; flex-direction: column; justify-content: space-between;
+    min-height: 0;
+  }
+  .bp .lbl {
+    font-family: var(--f-mono); font-size: 5.2pt; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--ink-soft);
+    border-bottom: 0.15mm solid var(--rule);
+    padding-bottom: 0.7mm; margin-bottom: 1mm;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .bp .lbl em {
+    font-family: var(--f-display); font-style: italic; font-size: 6.4pt;
+    text-transform: none; letter-spacing: 0.01em; color: var(--ink-mute);
+  }
+  .bp .body {
+    flex: 1; display: grid; grid-template-columns: auto 1fr;
+    gap: 1mm 2.4mm; align-items: center;
+  }
+  .bp .body .glyph {
+    font-family: var(--f-han); font-size: 13pt; line-height: 1;
+    color: var(--ink); 
+  }
+  .bp .body .ann {
+    font-family: var(--f-body); font-size: 6.8pt; line-height: 1.28;
+    color: var(--ink-soft);
+  }
+  .bp .body .ann strong {
+    color: var(--ink); font-weight: 500;
+  }
+  .bp .formula {
+    margin-top: 1mm; padding-top: 1mm; border-top: 0.12mm solid var(--rule);
+    font-family: var(--f-display); font-style: italic; font-size: 7.6pt;
+    line-height: 1.25; color: var(--ink-soft); text-align: center;
+  }
+  .bp .formula .han { font-family: var(--f-han); font-style: normal; color: var(--ink); font-weight: 400; }
+
+  /* ---------- stroke order ---------- */
+  .stroke-row {
+    margin-bottom: 1.8mm;
+    border: 0.15mm solid var(--rule);
+    border-radius: 1mm;
+    padding: 1.2mm 2mm 1.4mm;
+    background: var(--paper);
+  }
+  .stroke-row .lbl {
+    font-family: var(--f-mono); font-size: 5.2pt; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--ink-soft);
+    display: flex; justify-content: space-between; margin-bottom: 1mm;
+  }
+  .stroke-row .lbl em {
+    font-family: var(--f-display); font-style: italic; font-size: 6.4pt;
+    letter-spacing: 0.01em; text-transform: none; color: var(--ink-mute);
+  }
+  .stroke-row .strokes {
+    display: flex; gap: 1.2mm; align-items: stretch;
+  }
+  .stroke-row .step {
+    flex: 1; aspect-ratio: 1/0.9;
+    border: 0.15mm solid var(--rule);
+    border-radius: 0.6mm;
+    position: relative;
+    background:
+      linear-gradient(to right, transparent calc(50% - 0.05mm), var(--rule-soft) calc(50% - 0.05mm), var(--rule-soft) calc(50% + 0.05mm), transparent calc(50% + 0.05mm)),
+      linear-gradient(to bottom, transparent calc(50% - 0.05mm), var(--rule-soft) calc(50% - 0.05mm), var(--rule-soft) calc(50% + 0.05mm), transparent calc(50% + 0.05mm));
+    display: grid; place-items: center;
+  }
+  .stroke-row .step .n {
+    position: absolute; top: 0.2mm; left: 0.5mm;
+    font-family: var(--f-mono); font-size: 4.6pt; letter-spacing: 0.05em;
+    color: var(--seal);
+  }
+  .stroke-row .step .han {
+    font-family: var(--f-han); font-size: 9pt; line-height: 1; color: var(--ink);
+    font-weight: 400;
+  }
+  .stroke-row .step.faded .han { color: var(--ink-mute); opacity: 0.45; }
+  .stroke-row .step .name {
+    position: absolute; bottom: 0.1mm; left: 0; right: 0;
+    font-family: var(--f-mono); font-size: 4.2pt; letter-spacing: 0.06em;
+    color: var(--ink-mute); text-align: center;
+  }
+  .stroke-row .step .name .py { color: var(--seal); font-style: normal; }
+
+  /* ---------- word web ---------- */
+  .web {
+    margin-bottom: 1.8mm;
+  }
+  .web .lbl {
+    font-family: var(--f-mono); font-size: 5.2pt; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--ink-soft); margin-bottom: 1mm;
+    display: flex; justify-content: space-between;
+  }
+  .web .lbl em {
+    font-family: var(--f-display); font-style: italic; font-size: 6.4pt;
+    letter-spacing: 0.01em; text-transform: none; color: var(--ink-mute);
+  }
+  .web .items {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 1mm;
+  }
+  .web .w {
+    border: 0.15mm solid var(--rule);
+    border-radius: 0.8mm;
+    padding: 0.9mm 1.4mm;
+    display: grid; grid-template-rows: auto auto;
+    background: rgba(216, 205, 184, 0.12);
+  }
+  .web .w .ch {
+    font-family: var(--f-han); font-size: 10pt; line-height: 1.05; color: var(--ink);
+    font-weight: 400;
+  }
+  .web .w .ch .focus { color: var(--seal); }
+  .web .w .gloss {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-top: 0.4mm;
+    font-family: var(--f-pinyin); font-size: 6pt; color: var(--ink-soft);
+  }
+  .web .w .gloss .en {
+    font-family: var(--f-display); font-style: italic; font-size: 6.8pt;
+    color: var(--ink); margin-left: 1.5mm;
+  }
+
+  /* ---------- cultural ---------- */
+  .culture {
+    padding: 1.2mm 0 1.2mm 2.4mm;
+    border-left: 0.3mm solid var(--seal);
+    font-family: var(--f-display); font-style: italic; font-size: 7.8pt;
+    line-height: 1.32; color: var(--ink-soft);
+    margin-bottom: 1.6mm;
+  }
+  .culture .lead {
+    font-family: var(--f-mono); font-style: normal; font-size: 5.2pt;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--seal);
+    display: block; margin-bottom: 0.5mm;
+  }
+  .culture strong { color: var(--ink); font-style: italic; font-weight: 500; }
+
+  /* ---------- stats bar ---------- */
+  .stats {
+    display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 0.15mm solid var(--rule);
+    padding-top: 1.2mm;
+    margin-top: auto;
+  }
+  .stats .cell {
+    border-right: 0.12mm solid var(--rule); padding: 0 1.6mm;
+  }
+  .stats .cell:last-child { border-right: none; }
+  .stats .cell:first-child { padding-left: 0; }
+  .stats .k {
+    font-family: var(--f-mono); font-size: 5pt; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--ink-mute); margin-bottom: 0.3mm;
+  }
+  .stats .v {
+    font-family: var(--f-display); font-size: 8pt; color: var(--ink);
+    display: flex; gap: 1.2mm; align-items: baseline;
+  }
+  .stats .v .han { font-family: var(--f-han); font-size: 9pt; line-height: 1; font-weight: 400; }
+
+  /* ===================================================================
+     IMAGE PLACEHOLDERS
+     glyph-img: inside .etym .stg .gl  (evolution strip stages)
+     mnemonic-img: inside .mnemonic .scene  (front card mnemonic zone)
+  =================================================================== */
+
+  /* Container must be relative for absolute-positioned img overlay */
+  .etym .stg .gl {
+    position: relative;
+  }
+
+  /* Dashed placeholder border visible when image is absent */
+  .etym .stg .gl.has-img {
+    border: 1px dashed #aaa;
+  }
+
+  /* Image overlays the fallback SVG/text; hidden on load failure */
+  .etym .stg .gl .glyph-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    background: var(--etym-bg);
+    z-index: 2;
+  }
+
+  /* Mnemonic scene container is already relative + has its own border */
+  .mnemonic .scene .mnemonic-img {
+    position: absolute;
+    inset: 2mm;          /* respect padding */
+    width: calc(100% - 4mm);
+    height: calc(100% - 4mm);
+    object-fit: contain;
+    display: block;
+    background: rgba(216, 205, 184, 0.18);
+    z-index: 2;
+  }
+
+  /* ===================================================================
+     PRACTICE SHEET (A4 portrait)
+  =================================================================== */
+  .practice { color: var(--ink); font-family: var(--f-body); }
+  .practice .ph-head {
+    display: grid; grid-template-columns: 30mm 1fr auto;
+    gap: 5mm; align-items: end;
+    border-bottom: 0.3mm solid var(--ink);
+    padding-bottom: 3mm; margin-bottom: 4mm;
+  }
+  .practice .ph-head .ch-block {
+    position: relative; width: 30mm; height: 30mm;
+  }
+  .practice .ph-head .ch-block svg.mizige {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+  }
+  .practice .ph-head .ch-block .han {
+    position: absolute; inset: 0; display: grid; place-items: center;
+    font-family: var(--f-han); font-size: 24mm; line-height: 1; color: var(--ink);
+    
+  }
+  .practice .ph-head .meta .py {
+    font-family: var(--f-pinyin); font-size: 18pt; color: var(--ink); line-height: 1.1;
+  }
+  .practice .ph-head .meta .mn {
+    font-family: var(--f-display); font-size: 13pt; font-style: italic; color: var(--ink-soft);
+    margin-top: 1.5mm;
+  }
+  .practice .ph-head .meta .mn em { color: var(--ink); font-style: italic; }
+  .practice .ph-head .meta .lbl {
+    font-family: var(--f-mono); font-size: 7pt; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--seal); margin-bottom: 1.5mm;
+  }
+  .practice .ph-head .sealcol {
+    text-align: right;
+    font-family: var(--f-mono); font-size: 7pt; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--ink-mute);
+  }
+  .practice .ph-head .sealcol .stamp {
+    width: 13mm; height: 13mm; background: var(--seal); color: var(--paper-on-dk);
+    font-family: var(--f-han); font-size: 9mm; line-height: 1;
+    display: grid; place-items: center; border-radius: 1mm;
+    box-shadow: inset 0 0 0 0.4mm var(--paper-on-dk), inset 0 0 0 0.6mm var(--seal);
+    margin-left: auto; margin-bottom: 2mm; 
+  }
+
+  .practice .zones {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4mm;
+  }
+  .practice .zone {
+    border: 0.2mm solid var(--ink); border-radius: 1mm;
+    padding: 3mm 3.5mm 3.5mm; background: var(--paper);
+    display: flex; flex-direction: column;
+  }
+  .practice .zone.full { grid-column: 1 / -1; }
+  .practice .zone .zhd {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin-bottom: 2mm;
+  }
+  .practice .zone .zlb {
+    font-family: var(--f-mono); font-size: 6.4pt; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--ink);
+  }
+  .practice .zone .zlb .han { font-family: var(--f-han); font-size: 10pt; color: var(--seal); letter-spacing: 0; font-weight: 400; }
+  .practice .zone .zlb em { font-family: var(--f-display); font-style: italic; font-size: 9pt; text-transform: none; letter-spacing: 0.01em; margin-left: 2mm; color: var(--ink-soft); }
+  .practice .zone .zix {
+    font-family: var(--f-mono); font-size: 6.4pt; letter-spacing: 0.16em;
+    color: var(--ink-mute);
+  }
+
+  .outline-char {
+    flex: 1; display: grid; place-items: center;
+    font-family: var(--f-han); font-size: 50mm; line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 0.25mm var(--ink);
+    
+  }
+  .blank-mizige {
+    flex: 1; display: grid; place-items: center;
+  }
+  .blank-mizige .mz {
+    width: 38mm; height: 38mm; position: relative;
+  }
+  .blank-mizige .mz svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+  .find-grid {
+    flex: 1;
+    display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.8mm;
+    align-content: start;
+  }
+  .find-grid .c {
+    aspect-ratio: 1/1;
+    border: 0.12mm solid var(--rule);
+    display: grid; place-items: center;
+    font-family: var(--f-han); font-size: 9pt; color: var(--ink-soft);
+    font-weight: 400;
+  }
+
+  .ans-line {
+    flex: 1; display: flex; flex-direction: column; gap: 4mm;
+    justify-content: flex-end; padding-bottom: 2mm;
+  }
+  .ans-line .ln { height: 0.2mm; background: var(--ink); margin-top: 5mm; }
+
+  .trace-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18mm, 1fr));
+    gap: 1.2mm;
+  }
+  .trace-row .cell {
+    aspect-ratio: 1/1; position: relative; border: 0.15mm solid var(--rule);
+    background:
+      linear-gradient(to right, transparent calc(50% - 0.05mm), var(--rule-soft) calc(50% - 0.05mm), var(--rule-soft) calc(50% + 0.05mm), transparent calc(50% + 0.05mm)),
+      linear-gradient(to bottom, transparent calc(50% - 0.05mm), var(--rule-soft) calc(50% - 0.05mm), var(--rule-soft) calc(50% + 0.05mm), transparent calc(50% + 0.05mm));
+    display: grid; place-items: center;
+  }
+  .trace-row .cell .han {
+    font-family: var(--f-han); font-size: 13mm; line-height: 1;
+    color: var(--ink-mute); opacity: 0.4; font-weight: 400;
+  }
+  .trace-row .cell.empty .han { opacity: 0; }
+
+  .sentence-line {
+    height: 0.2mm; background: var(--ink); margin-top: 8mm;
+  }
+  .sentence-line + .sentence-line { margin-top: 9mm; }
+
+  .practice .ph-foot {
+    margin-top: 4mm; display: flex; justify-content: space-between;
+    font-family: var(--f-mono); font-size: 6.4pt; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--ink-mute);
+    padding-top: 2mm; border-top: 0.15mm solid var(--rule);
+  }
+
+  /* ===================================================================
+     POSTER (A3 landscape)
+  =================================================================== */
+  .poster { font-family: var(--f-body); color: var(--ink); position: relative; }
+  .poster .ph {
+    display: grid; grid-template-columns: auto 1fr auto;
+    align-items: center; gap: 10mm; margin-bottom: 8mm;
+    border-bottom: 0.4mm solid var(--ink); padding-bottom: 6mm;
+  }
+  .poster .ph .ttl {
+    font-family: var(--f-display); font-style: italic; font-weight: 400;
+    font-size: 28pt; line-height: 1; color: var(--ink);
+    margin: 0;
+  }
+  .poster .ph .ttl em { font-family: var(--f-han); font-style: normal; color: var(--seal);  }
+  .poster .ph .sub {
+    font-family: var(--f-mono); font-size: 9pt; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--ink-soft);
+    margin-top: 4mm;
+  }
+  .poster .ph .stamp {
+    width: 22mm; height: 22mm; background: var(--seal); color: var(--paper-on-dk);
+    font-family: var(--f-han); font-size: 14mm; line-height: 1;
+    display: grid; place-items: center; border-radius: 1mm;
+    box-shadow: inset 0 0 0 0.6mm var(--paper-on-dk), inset 0 0 0 0.9mm var(--seal);
+    
+  }
+  .poster .pbody {
+    display: grid; grid-template-columns: 130mm 1fr 50mm; gap: 8mm;
+  }
+  .poster .pchar {
+    border: 0.3mm solid var(--ink); border-radius: 1.5mm;
+    padding: 6mm; background: var(--paper);
+  }
+  .poster .pchar .gb {
+    position: relative; width: 100%; aspect-ratio: 1/1;
+  }
+  .poster .pchar .gb svg.mizige { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .poster .pchar .gb .han {
+    position: absolute; inset: 0; display: grid; place-items: center;
+    font-family: var(--f-han); font-size: 80mm; line-height: 1; color: var(--ink);
+    
+  }
+  .poster .pchar .ptag {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-top: 5mm; padding-top: 4mm; border-top: 0.2mm solid var(--rule);
+    font-family: var(--f-display); font-style: italic; font-size: 16pt;
+    color: var(--ink);
+  }
+  .poster .pchar .ptag .py-big {
+    font-family: var(--f-pinyin); font-style: normal; font-size: 22pt; color: var(--ink);
+  }
+  .poster .pmid {
+    display: flex; flex-direction: column; gap: 6mm;
+  }
+  .poster .pmid .sec {
+    border: 0.2mm solid var(--ink); border-radius: 1mm; padding: 5mm;
+    background: var(--paper);
+  }
+  .poster .pmid .sec .lbl {
+    font-family: var(--f-mono); font-size: 7pt; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--seal); margin-bottom: 3mm;
+    display: flex; justify-content: space-between;
+  }
+  .poster .pmid .sec .lbl em { color: var(--ink-mute); font-style: italic; font-family: var(--f-display); font-size: 10pt; text-transform: none; letter-spacing: 0.01em; }
+  .poster .pmid .bp-poster {
+    display: grid; grid-template-columns: auto 1fr; gap: 4mm; align-items: center;
+    font-family: var(--f-display); font-style: italic; font-size: 14pt;
+    color: var(--ink-soft);
+  }
+  .poster .pmid .bp-poster .han { font-family: var(--f-han); font-style: normal; font-size: 32pt; color: var(--ink);  }
+  .poster .pmid .bp-poster .arrow { font-size: 18pt; color: var(--ink-mute); }
+  .poster .pmid .bp-poster .gloss { font-size: 12pt; color: var(--ink); }
+
+  .poster .pmid .culture-poster {
+    font-family: var(--f-display); font-style: italic; font-size: 15pt;
+    line-height: 1.4; color: var(--ink-soft);
+    padding-left: 4mm; border-left: 0.4mm solid var(--seal);
+  }
+  .poster .pmid .culture-poster strong { color: var(--ink); font-weight: 500; font-style: italic; }
+
+  .poster .pmid .web-poster {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm;
+  }
+  .poster .pmid .web-poster .ww {
+    border: 0.2mm solid var(--rule); border-radius: 1mm; padding: 3mm;
+    background: rgba(216, 205, 184, 0.16);
+  }
+  .poster .pmid .web-poster .ww .ch {
+    font-family: var(--f-han); font-size: 22pt; line-height: 1; color: var(--ink);
+    font-weight: 400;
+  }
+  .poster .pmid .web-poster .ww .ch .focus { color: var(--seal); }
+  .poster .pmid .web-poster .ww .ln {
+    font-family: var(--f-pinyin); font-size: 9pt; color: var(--ink-soft); margin-top: 2mm;
+  }
+  .poster .pmid .web-poster .ww .en {
+    font-family: var(--f-display); font-style: italic; font-size: 10pt; color: var(--ink);
+    margin-top: 0.5mm;
+  }
+
+  /* Poster evolution panel stays dark (design intent) */
+  .poster .pright {
+    background: var(--midnight); color: var(--paper-on-dk);
+    border-radius: 1.5mm; padding: 5mm 4mm;
+    position: relative; overflow: hidden;
+  }
+  .poster .pright::before {
+    content: ""; position: absolute; inset: 0; opacity: 0.16;
+    background-image:
+      linear-gradient(to right, var(--gold-on-dk) 0.2mm, transparent 0.2mm),
+      linear-gradient(to bottom, var(--gold-on-dk) 0.2mm, transparent 0.2mm);
+    background-size: 8mm 8mm;
+  }
+  .poster .pright .lbl {
+    font-family: var(--f-mono); font-size: 7pt; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--gold-on-dk);
+    border-bottom: 0.2mm solid var(--gold-on-dk);
+    padding-bottom: 2mm; margin-bottom: 3mm; position: relative; z-index: 1;
+  }
+  .poster .pright .pstages {
+    position: relative; z-index: 1;
+    display: grid; grid-template-rows: repeat(5, 1fr); gap: 3mm;
+  }
+  .poster .pright .pst {
+    display: grid; grid-template-columns: 16mm 1fr; gap: 3mm; align-items: center;
+  }
+  .poster .pright .pst .gl {
+    width: 16mm; height: 16mm; display: grid; place-items: center;
+    color: var(--paper-on-dk);
+    position: relative; overflow: hidden;
+  }
+  .poster .pright .pst .gl svg { width: 100%; height: 100%; }
+  .poster .pright .pst .gl.modern { font-family: var(--f-han); font-size: 24pt; line-height: 1;  }
+  .poster .pright .pst .gl.seal   { font-family: var(--f-han-seal); font-size: 22pt; }
+  .poster .pright .pst .gl.clerc  { font-family: var(--f-han-clerc); font-size: 22pt; }
+  .poster .pright .pst .info {
+    font-family: var(--f-mono); font-size: 7pt; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--paper-on-dk);
+  }
+  .poster .pright .pst .info em {
+    display: block; margin-top: 1mm;
+    font-family: var(--f-display); font-style: italic; font-size: 9pt;
+    letter-spacing: 0.01em; text-transform: none; opacity: 0.7;
+  }
+
+  .poster .pfoot {
+    margin-top: 8mm; display: flex; justify-content: space-between; align-items: flex-end;
+    padding-top: 4mm; border-top: 0.3mm solid var(--ink);
+  }
+  .poster .pfoot .stroke-poster {
+    display: flex; gap: 3mm;
+  }
+  .poster .pfoot .stroke-poster .st {
+    width: 22mm; aspect-ratio: 1/1.05;
+    border: 0.2mm solid var(--rule); border-radius: 1mm;
+    position: relative;
+    background:
+      linear-gradient(to right, transparent calc(50% - 0.05mm), var(--rule-soft) calc(50% - 0.05mm), var(--rule-soft) calc(50% + 0.05mm), transparent calc(50% + 0.05mm)),
+      linear-gradient(to bottom, transparent calc(50% - 0.05mm), var(--rule-soft) calc(50% - 0.05mm), var(--rule-soft) calc(50% + 0.05mm), transparent calc(50% + 0.05mm));
+    display: grid; place-items: center;
+  }
+  .poster .pfoot .stroke-poster .st .han {
+    font-family: var(--f-han); font-size: 16pt; color: var(--ink); line-height: 1;
+    font-weight: 400;
+  }
+  .poster .pfoot .stroke-poster .st.faded .han { color: var(--ink-mute); opacity: 0.4; }
+  .poster .pfoot .stroke-poster .st .n {
+    position: absolute; top: 1mm; left: 1.5mm;
+    font-family: var(--f-mono); font-size: 7pt; color: var(--seal);
+  }
+  .poster .pfoot .pstats {
+    display: flex; gap: 6mm; font-family: var(--f-display); font-size: 12pt;
+  }
+  .poster .pfoot .pstats .cell .k {
+    font-family: var(--f-mono); font-size: 7pt; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--ink-mute);
+  }
+  .poster .pfoot .pstats .cell .v { color: var(--ink); margin-top: 1mm; }
+
+  /* ===================================================================
+     ZONE 1 — Formation panel (front card right panel, replaces .mnemonic)
+  =================================================================== */
+  .formation {
+    display: flex; flex-direction: column;
+    align-items: stretch; justify-content: center;
+    gap: 1.5mm; padding: 0 1mm;
+  }
+  .formation .type-lbl {
+    display: inline-flex; align-items: center; gap: 2mm;
+    padding: 1mm 2mm; border-radius: 1mm;
+    font-family: var(--f-mono); font-size: 6.6pt; letter-spacing: 0.16em;
+    text-transform: uppercase; line-height: 1;
+    color: var(--paper-on-dk);
+  }
+  .formation .type-lbl .han {
+    font-family: var(--f-han); font-size: 8pt; letter-spacing: 0;
+    color: var(--paper-on-dk); font-weight: 400;
+  }
+  .formation .type-lbl.pictograph { background: var(--type-pict); }
+  .formation .type-lbl.ideograph  { background: var(--type-ideo); }
+  .formation .type-lbl.compound   { background: var(--type-comp); }
+  .formation .type-lbl.phonosem   { background: var(--type-phon); }
+
+  .formation .svg-wrap {
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    min-height: 0;
+  }
+  .formation .svg-wrap svg {
+    width: 100%; height: auto; max-height: 36mm; overflow: visible;
+  }
+  .formation .svg-caption {
+    font-family: var(--f-display); font-style: italic; font-size: 7pt;
+    line-height: 1.25; color: var(--ink-soft); text-align: center;
+    padding: 0 1mm; margin: 0;
+  }
+  .formation .missing {
+    font-family: var(--f-mono); font-size: 5.5pt; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--seal);
+    border: 0.15mm dashed var(--seal); border-radius: 1mm;
+    padding: 1.5mm 2mm; text-align: center;
+  }
+
+  /* Zone 1 Mode B — compound decomposition */
+  .formation .decomp {
+    flex: 1; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 2mm;
+  }
+  .formation .decomp .formula-row {
+    display: flex; align-items: flex-start; gap: 2mm;
+    justify-content: center; flex-wrap: wrap;
+  }
+  .formation .decomp .comp {
+    display: flex; flex-direction: column; align-items: center; gap: 0.5mm;
+  }
+  .formation .decomp .comp .glyph {
+    font-family: var(--f-han); font-size: 12pt; line-height: 1;
+    color: var(--ink); font-weight: 400;
+  }
+  .formation .decomp .comp .py {
+    font-family: var(--f-pinyin); font-size: 5.5pt; color: var(--ink-soft);
+  }
+  .formation .decomp .comp .mn {
+    font-family: var(--f-display); font-style: italic; font-size: 5.5pt; color: var(--ink-mute);
+  }
+  .formation .decomp .comp .role {
+    font-family: var(--f-han); font-size: 5pt; color: var(--ink-mute); margin-top: 0.3mm;
+  }
+  .formation .decomp .op, .formation .decomp .arrow {
+    font-size: 9pt; color: var(--ink-mute); align-self: center;
+  }
+  .formation .decomp .result {
+    font-family: var(--f-han); font-size: 20pt; color: var(--ink);
+    line-height: 1; font-weight: 400; align-self: center;
+  }
+
+  /* ===================================================================
+     ZONE 2 — Script styles strip (back card top, full width)
+     Replaces .bk-top / .etym
+  =================================================================== */
+  .script-strip {
+    background: var(--paper-soft);
+    border: 0.15mm solid var(--rule);
+    border-radius: 1mm;
+    padding: 1.4mm 2mm 1.6mm;
+    margin-bottom: 1.8mm;
+  }
+  .script-strip .strip-head {
+    font-family: var(--f-mono); font-size: 5.2pt; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--ink-soft);
+    border-bottom: 0.15mm solid var(--rule);
+    padding-bottom: 0.7mm; margin-bottom: 1.2mm;
+  }
+  .script-strip .slots {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 1mm;
+  }
+  .script-strip .slot {
+    display: flex; flex-direction: column; align-items: center; gap: 0.3mm;
+    padding: 0.5mm 0;
+    border-right: 0.1mm solid var(--rule-soft);
+  }
+  .script-strip .slot:last-child { border-right: none; }
+  .script-strip .slot .glyph {
+    font-size: 14pt; line-height: 1; color: var(--ink); font-weight: 400;
+  }
+  .script-strip .slot .glyph.song { font-family: "Noto Serif SC", serif; font-weight: 700; }
+  .script-strip .slot .glyph.hei  { font-family: "Noto Sans SC", sans-serif; font-weight: 700; }
+  .script-strip .slot .glyph.kai  { font-family: "Ma Shan Zheng", serif; font-weight: 400; }
+  .script-strip .slot .glyph.mei  { font-family: "ZCOOL QingKe HuangYou", serif; font-weight: 400; }
+  .script-strip .slot .glyph.xing { font-family: "Long Cang", serif; font-weight: 400; }
+  .script-strip .slot .style-zh {
+    font-family: var(--f-han); font-size: 5.5pt; color: var(--ink-soft); line-height: 1;
+  }
+  .script-strip .slot .style-ro {
+    font-family: var(--f-pinyin); font-size: 5pt; color: var(--ink-mute); line-height: 1;
+  }
+  .script-strip .slot .context {
+    font-family: var(--f-mono); font-size: 4.2pt; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--ink-mute); line-height: 1; text-align: center;
+  }
+
+  /* .bp bottom margin when used directly on back card (no .bk-top wrapper) */
+  .card.back > .bp { margin-bottom: 1.8mm; }
+
+  /* ===================================================================
+     ZONE 1 — Stroke construction sequence (front card, replaces .formation)
+  =================================================================== */
+  .stroke-build {
+    display: flex; flex-direction: column;
+    align-items: stretch; justify-content: center;
+    gap: 1mm; padding: 0 0.5mm;
+    min-height: 0;
+  }
+  .sb-frames {
+    display: flex; gap: 1mm; align-items: flex-end; justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .sb-fw {
+    display: flex; flex-direction: column; align-items: center; gap: 0.4mm;
+    flex: 1; min-width: 0;
+  }
+  .sb-f {
+    width: 100%; aspect-ratio: 1/1;
+    border: 0.15mm solid var(--rule);
+    border-radius: 0.6mm;
+    background: rgba(216,205,184,0.10);
+    display: block;
+    overflow: visible;
+  }
+  .sb-num {
+    font-family: var(--f-mono); font-size: 4.5pt; letter-spacing: 0.08em;
+    color: var(--ink-mute); line-height: 1; text-align: center;
+  }
+  .sb-missing {
+    font-family: var(--f-mono); font-size: 5.5pt; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--seal);
+    border: 0.15mm dashed var(--seal); border-radius: 1mm;
+    padding: 2mm; text-align: center;
+  }
+
+  /* ===================================================================
+     ZONE 2 — Stroke order reference (back card, replaces .stroke-row)
+  =================================================================== */
+  .stroke-ref {
+    margin-bottom: 1.8mm;
+    border: 0.15mm solid var(--rule);
+    border-radius: 1mm;
+    padding: 1.2mm 2mm 1.4mm;
+    background: var(--paper);
+  }
+
+  /* Part A: mini construction sequence */
+  .sref-a {
+    display: flex; gap: 0.8mm; align-items: flex-end;
+    margin-bottom: 1.2mm; padding-bottom: 1mm;
+    border-bottom: 0.12mm solid var(--rule-soft);
+  }
+  .sref-a .sb-fw { flex: none; width: 9mm; }
+  .sref-a .sb-f  { width: 9mm; height: 9mm; }
+  .sref-a .sb-num { font-size: 4pt; }
+
+  /* Part B: stroke name list */
+  .sref-b {
+    display: flex; flex-direction: column; gap: 0.5mm;
+  }
+  .srow {
+    display: grid;
+    grid-template-columns: 4mm 7mm 1fr 1.8fr 2fr;
+    gap: 0.8mm; align-items: center;
+    padding: 0.3mm 0;
+    border-bottom: 0.1mm solid var(--rule-soft);
+  }
+  .srow:last-child { border-bottom: none; }
+  .srow-n {
+    font-family: var(--f-mono); font-size: 4.6pt; letter-spacing: 0.05em;
+    color: var(--seal); text-align: center;
+  }
+  .srow-f {
+    width: 7mm; height: 7mm;
+    border: 0.12mm solid var(--rule-soft);
+    border-radius: 0.4mm;
+    background: rgba(216,205,184,0.10);
+    display: block; overflow: visible;
+  }
+  .srow-zh {
+    font-family: var(--f-han); font-size: 7pt; color: var(--ink);
+    line-height: 1; font-weight: 400;
+  }
+  .srow-py {
+    font-family: var(--f-pinyin); font-size: 5.2pt; color: var(--ink-soft);
+    line-height: 1;
+  }
+  .srow-en {
+    font-family: var(--f-mono); font-size: 4.5pt; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--ink-mute); line-height: 1;
+  }
+  .srow-unmatched { color: var(--seal) !important; }
+  .sref-missing {
+    font-family: var(--f-mono); font-size: 5.5pt; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--seal);
+    border: 0.15mm dashed var(--seal); border-radius: 1mm;
+    padding: 2mm; text-align: center;
+  }
+
+  /* Placeholder for undecided back-card zone */
+  .zone-ph {
+    margin-bottom: 1.8mm;
+    border: 0.15mm dashed var(--rule);
+    border-radius: 1mm;
+    height: 6mm;
+    background: transparent;
+  }
+
+  /* ===================================================================
+     PRINT — page setup + blank-page fix + forced white backgrounds
+     ─────────────────────────────────────────────────────────────────
+     Key technique: @page margin: 0 so each .sheet IS the full paper
+     size with zero rounding gap.  Former @page margins are absorbed
+     as padding on each sheet variant.  This eliminates the sub-pixel
+     overflow that caused a blank page after every content page.
+  =================================================================== */
+
+  /* Zero-margin pages: sheet dimensions == paper dimensions */
+  @page          { size: A4 portrait;   margin: 0; }
+  @page poster   { size: A3 landscape;  margin: 0; }
+  .sheet.a3-landscape { page: poster; }
+
+  @media print {
+    html, body { margin: 0; padding: 0; background: white; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+    .shell { display: none !important; }
+
+    /* Base sheet reset */
+    .sheet {
+      margin: 0;
+      box-shadow: none;
+      overflow: hidden;
+      break-after: page;
+      page-break-after: always;
+    }
+    .sheet:last-child {
+      break-after: auto;
+      page-break-after: auto;
+    }
+
+    /* A4 landscape — card sheets (2 × 2 grid)
+       Full A4 = 210 × 297 mm.  10 mm padding each side absorbs the
+       former @page margin, leaving 190 × 277 mm content area —
+       identical to what the screen CSS uses for card layout.        */
+    .sheet.a4 {
+      width: 210mm;
+      height: 297mm;
+      padding: 10mm;
+      box-sizing: border-box;
+    }
+
+    /* A4 portrait — practice sheet
+       Original padding 6 mm / 8 mm + 10 mm page margin absorbed.   */
+    .sheet.a4-portrait-solo {
+      width: 210mm;
+      height: 297mm;
+      padding: 16mm 18mm;
+      box-sizing: border-box;
+    }
+
+    /* A3 landscape — poster
+       Full A3 = 420 × 297 mm.  Original padding 8 mm / 12 mm + 10 mm.  */
+    .sheet.a3-landscape {
+      width: 420mm;
+      height: 297mm;
+      padding: 18mm 22mm;
+      box-sizing: border-box;
+    }
+
+    /* Cards must not split across pages */
+    .card {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      background: white;
+    }
+    .card:last-child {
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+
+    .card::before { display: none; }
+
+    /* ── Force white backgrounds on all dark elements ── */
+    .etym {
+      background: white !important;
+      border-color: var(--rule) !important;
+    }
+    .etym::before { display: none; }
+    .etym .lbl {
+      color: var(--etym-ink) !important;
+      border-bottom-color: var(--rule) !important;
+    }
+    .etym .stages::before { background: var(--rule) !important; }
+    .etym .stg .gl { color: var(--etym-ink) !important; }
+    .etym .stg .er { color: var(--etym-ink) !important; }
+    .etym .stg .er em { color: var(--etym-ink) !important; }
+
+    /* Poster dark panel */
+    .poster .pright {
+      background: white !important;
+      color: var(--ink) !important;
+    }
+    .poster .pright::before { display: none; }
+    .poster .pright .lbl {
+      color: var(--ink) !important;
+      border-bottom-color: var(--rule) !important;
+    }
+    .poster .pright .pst .gl { color: var(--ink) !important; }
+    .poster .pright .pst .info { color: var(--ink) !important; }
+    .poster .pright .pst .info em { color: var(--ink-soft) !important; opacity: 1 !important; }
+
+    /* Coloured badges → outlined on white */
+    .type-badge {
+      background: white !important;
+      color: var(--ink) !important;
+      outline: 0.3mm solid var(--ink);
+    }
+    .type-badge .han { color: var(--ink) !important; }
+
+    /* Seal stamps → outlined on white */
+    .seal-stamp {
+      background: white !important;
+      color: var(--ink) !important;
+      box-shadow: inset 0 0 0 0.4mm var(--ink) !important;
+    }
+
+    /* Tone dots → outlined circles */
+    .tone-dot {
+      background: white !important;
+      color: var(--ink) !important;
+      box-shadow: inset 0 0 0 0.5mm var(--ink) !important;
+    }
+
+    /* Brand mark + seal pip (screen cover, already hidden, but safety) */
+    .brand .mark, .brand .seal-pip { background: white !important; }
+
+    /* Zone 1 formation type labels → outlined on white */
+    .formation .type-lbl {
+      background: white !important;
+      color: var(--ink) !important;
+      outline: 0.3mm solid var(--ink);
+    }
+    .formation .type-lbl .han { color: var(--ink) !important; }
+
+    /* Zone 2 script strip → white background, keep light border */
+    .script-strip {
+      background: white !important;
+      border-color: var(--rule) !important;
+    }
+    .script-strip .strip-head { color: var(--ink) !important; }
+    .script-strip .slot .glyph { color: var(--ink) !important; }
+    .script-strip .slot .style-zh { color: var(--ink-soft) !important; }
+    .script-strip .slot .style-ro, .script-strip .slot .context { color: var(--ink-mute) !important; }
+  }

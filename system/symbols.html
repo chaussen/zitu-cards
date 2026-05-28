@@ -1,0 +1,172 @@
+<!--
+  ============================================================
+  字图 ZìTú — SVG Symbol Library v1.0
+  ============================================================
+
+  This block defines every reusable SVG used across the pack:
+    • #mz         — the 米字格 (rice-character) grid
+    • #m-<id>     — per-character mnemonic scenes (gold-line art with cinnabar accents)
+    • #o-<id>     — per-character oracle-bone / bronze stylised glyphs
+                    (used in the etymology strip + poster)
+
+  HOW TO USE
+  ------------------------------------------------------------
+  Paste the <svg width="0" ...><defs>…</defs></svg> block below
+  near the top of <body> in every new pack HTML file (after the
+  screen cover, before the print sheets). Then reference symbols
+  with <use href="#id"/>:
+
+    <svg class="mizige"><use href="#mz"/></svg>
+    <svg viewBox="0 0 60 70"><use href="#m-ren"/></svg>
+    <svg viewBox="0 0 30 36" style="color:var(--paper-on-dk)"><use href="#o-ren"/></svg>
+
+  ADDING NEW CHARACTERS
+  ------------------------------------------------------------
+  Add two new <symbol> elements per character:
+
+    1) Mnemonic scene  (id "m-<char-pinyin>", viewBox "0 0 60 70")
+       Style: gold lines stroke-width 2, round caps/joins, plus
+       1-2 cinnabar accents (#b83a25). 3-5 strokes max — the
+       scene should read as the character's *meaning*, ideally
+       echoing the character's own stroke shapes.
+
+    2) Oracle/bronze glyph  (id "o-<char-pinyin>", viewBox "0 0 30 36")
+       Style: stroke="currentColor" so it picks up the panel
+       colour. Line weight 1.6-1.8, no fill. Should look like
+       a primitive pictograph — closer to the meaning than to
+       the modern character shape.
+
+  Naming uses pinyin (without tone marks). Disambiguate with
+  a suffix only when two characters in a pack share a syllable:
+  e.g. #m-xin (心), #m-xin-new (新) if both appeared together.
+
+  TWO STAGES PER CHARACTER ARE ENOUGH
+  ------------------------------------------------------------
+  The etymology strip shows 5 stages but only the first two
+  (oracle bone + bronze) need custom SVG. Stages 3-5 (seal /
+  clerical / regular) reuse the modern character rendered in
+  different fonts (#han-seal, #han-clerc, default Kaiti). You
+  can re-use the same oracle SVG for both stages 1 and 2 to
+  save effort, as Pack 01 does.
+  ============================================================
+-->
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- 米字格 — gold grid -->
+    <symbol id="mz" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <rect class="frame" x="0.4" y="0.4" width="99.2" height="99.2" fill="none" stroke="#c8b89c" stroke-width="0.55"/>
+      <line x1="0" y1="50" x2="100" y2="50" stroke="#c8b89c" stroke-width="0.22" stroke-dasharray="1 1.2"/>
+      <line x1="50" y1="0" x2="50" y2="100" stroke="#c8b89c" stroke-width="0.22" stroke-dasharray="1 1.2"/>
+      <line x1="0" y1="0" x2="100" y2="100" stroke="#c8b89c" stroke-width="0.22" stroke-dasharray="1 1.2"/>
+      <line x1="100" y1="0" x2="0" y2="100" stroke="#c8b89c" stroke-width="0.22" stroke-dasharray="1 1.2"/>
+    </symbol>
+
+    <!-- mnemonic scenes (gold line art) -->
+    <symbol id="m-ren" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="30" cy="12" r="5"/>
+        <line x1="30" y1="17" x2="30" y2="32"/>
+        <path d="M30 32 L18 60"/>
+        <path d="M30 32 L42 60"/>
+        <line x1="22" y1="65" x2="14" y2="65" stroke="#b83a25"/>
+        <line x1="38" y1="65" x2="46" y2="65" stroke="#b83a25"/>
+      </g>
+    </symbol>
+    <symbol id="m-shui" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 6 C 26 18, 34 32, 30 46 S 26 60, 30 66"/>
+        <path d="M18 22 C 16 28, 18 34, 22 38"/>
+        <path d="M42 22 C 44 28, 42 34, 38 38"/>
+        <path d="M14 46 C 14 52, 18 56, 22 56"/>
+        <path d="M46 46 C 46 52, 42 56, 38 56"/>
+        <circle cx="14" cy="20" r="1.2" fill="#b83a25" stroke="none"/>
+        <circle cx="46" cy="20" r="1.2" fill="#b83a25" stroke="none"/>
+      </g>
+    </symbol>
+    <symbol id="m-huo" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 14 C 22 26, 22 38, 26 50 C 28 56, 32 56, 34 50 C 38 38, 38 26, 30 14 Z"/>
+        <path d="M26 50 C 22 56, 22 62, 20 64"/>
+        <path d="M34 50 C 38 56, 38 62, 40 64"/>
+        <circle cx="22" cy="10" r="1.4" fill="#b83a25" stroke="none"/>
+        <circle cx="38" cy="8" r="1.4" fill="#b83a25" stroke="none"/>
+        <circle cx="30" cy="4" r="1" fill="#b83a25" stroke="none"/>
+      </g>
+    </symbol>
+    <symbol id="m-shan" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 60 L 18 30 L 26 46 L 30 14 L 34 46 L 42 30 L 56 60 Z"/>
+        <line x1="0" y1="62" x2="60" y2="62" stroke="#b83a25" stroke-width="1.2"/>
+      </g>
+    </symbol>
+    <symbol id="m-mu" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="30" y1="6" x2="30" y2="62"/>
+        <path d="M14 22 C 22 24, 38 24, 46 22"/>
+        <path d="M18 14 C 24 18, 36 18, 42 14"/>
+        <path d="M14 56 L 6 66" stroke="#b83a25"/>
+        <path d="M46 56 L 54 66" stroke="#b83a25"/>
+        <path d="M30 62 L 30 68" stroke="#b83a25"/>
+      </g>
+    </symbol>
+    <symbol id="m-ri" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="30" cy="32" r="18"/>
+        <line x1="14" y1="32" x2="46" y2="32" stroke="#b83a25"/>
+        <line x1="30" y1="4" x2="30" y2="10"/>
+        <line x1="30" y1="54" x2="30" y2="60"/>
+        <line x1="4" y1="32" x2="10" y2="32"/>
+        <line x1="50" y1="32" x2="56" y2="32"/>
+      </g>
+    </symbol>
+    <symbol id="m-yue" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M44 10 C 26 14, 18 28, 18 38 C 18 52, 30 62, 44 60 C 32 56, 26 46, 26 36 C 26 24, 32 14, 44 10 Z"/>
+        <circle cx="48" cy="22" r="1.4" fill="#b83a25" stroke="none"/>
+        <circle cx="52" cy="34" r="1" fill="#b83a25" stroke="none"/>
+      </g>
+    </symbol>
+    <symbol id="m-da" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="30" cy="10" r="4"/>
+        <line x1="30" y1="14" x2="30" y2="42"/>
+        <line x1="6" y1="26" x2="54" y2="26"/>
+        <line x1="30" y1="42" x2="16" y2="64"/>
+        <line x1="30" y1="42" x2="44" y2="64"/>
+        <path d="M6 22 L 2 26 L 6 30" stroke="#b83a25"/>
+        <path d="M54 22 L 58 26 L 54 30" stroke="#b83a25"/>
+      </g>
+    </symbol>
+    <symbol id="m-xiao" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="22" cy="36" r="2.6" fill="#a78a3d"/>
+        <circle cx="34" cy="30" r="1.8" fill="#a78a3d"/>
+        <circle cx="40" cy="44" r="1.4" fill="#a78a3d"/>
+        <circle cx="16" cy="46" r="1" fill="#b83a25"/>
+        <circle cx="44" cy="22" r="0.8" fill="#b83a25"/>
+        <circle cx="30" cy="52" r="0.6" fill="#b83a25"/>
+        <path d="M8 60 L 52 60" stroke="#c8b89c" stroke-dasharray="2 2"/>
+      </g>
+    </symbol>
+    <symbol id="m-xin" viewBox="0 0 60 70">
+      <g fill="none" stroke="#a78a3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 60 C 14 48, 6 36, 12 24 C 18 14, 28 18, 30 28 C 32 18, 42 14, 48 24 C 54 36, 46 48, 30 60 Z"/>
+        <path d="M22 32 C 26 30, 28 32, 30 36" stroke="#b83a25"/>
+        <path d="M38 32 C 34 30, 32 32, 30 36" stroke="#b83a25"/>
+      </g>
+    </symbol>
+
+    <!-- oracle-bone & bronze glyphs (smaller, line-only) -->
+    <symbol id="o-ren" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="15" y1="4" x2="9" y2="32"/><line x1="15" y1="14" x2="22" y2="32"/></g></symbol>
+    <symbol id="o-shui" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 4 C 13 12, 17 20, 15 28 S 13 32, 15 34"/><path d="M8 10 C 6 16, 8 22, 10 26"/><path d="M22 10 C 24 16, 22 22, 20 26"/></g></symbol>
+    <symbol id="o-huo" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M15 6 C 10 14, 10 22, 14 30"/><path d="M15 6 C 20 14, 20 22, 16 30"/><line x1="8" y1="14" x2="4" y2="10"/><line x1="22" y1="14" x2="26" y2="10"/></g></symbol>
+    <symbol id="o-shan" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 30 L 10 14 L 15 24 L 15 8 L 15 24 L 20 14 L 27 30"/><line x1="3" y1="32" x2="27" y2="32"/></g></symbol>
+    <symbol id="o-mu" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><line x1="15" y1="3" x2="15" y2="32"/><path d="M6 12 C 10 14, 20 14, 24 12"/><path d="M15 22 L 7 32"/><path d="M15 22 L 23 32"/></g></symbol>
+    <symbol id="o-ri" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="15" cy="18" r="9"/><circle cx="15" cy="18" r="1.6" fill="currentColor"/></g></symbol>
+    <symbol id="o-yue" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M21 5 C 12 10, 8 18, 10 24 C 12 30, 18 32, 22 30 C 14 28, 12 20, 14 14 C 16 9, 18 6, 21 5 Z"/><line x1="17" y1="16" x2="13" y2="22"/></g></symbol>
+    <symbol id="o-da" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="15" cy="6" r="2"/><line x1="15" y1="8" x2="15" y2="22"/><line x1="4" y1="14" x2="26" y2="14"/><line x1="15" y1="22" x2="8" y2="32"/><line x1="15" y1="22" x2="22" y2="32"/></g></symbol>
+    <symbol id="o-xiao" viewBox="0 0 30 36"><g fill="currentColor"><circle cx="10" cy="18" r="2"/><circle cx="15" cy="14" r="1.6"/><circle cx="20" cy="20" r="1.4"/></g></symbol>
+    <symbol id="o-xin" viewBox="0 0 30 36"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 30 C 5 22, 4 14, 9 10 C 13 8, 15 12, 15 16 C 15 12, 17 8, 21 10 C 26 14, 25 22, 15 30 Z"/></g></symbol>
+  </defs>
+</svg>

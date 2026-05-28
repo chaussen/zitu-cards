@@ -1,0 +1,3052 @@
+[
+  {
+    "character": "人",
+    "pinyin": "rén",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "person",
+      "people",
+      "human"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 1,
+    "strokes": 2,
+    "radical": "人",
+    "radical_pinyin": "rén",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "丿",
+        "name": "撇",
+        "pinyin": "piě"
+      },
+      {
+        "n": 2,
+        "han": "㇏",
+        "name": "捺",
+        "pinyin": "nà"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "人口",
+        "pinyin": "rénkǒu",
+        "en": "population"
+      },
+      {
+        "zh": "人民",
+        "pinyin": "rénmín",
+        "en": "the people"
+      },
+      {
+        "zh": "工人",
+        "pinyin": "gōngrén",
+        "en": "worker"
+      },
+      {
+        "zh": "大人",
+        "pinyin": "dàrén",
+        "en": "adult"
+      }
+    ],
+    "blueprint": "Two strokes — a person walking, seen in profile. The sweeping left stroke is the torso and leading leg; the right is the trailing leg. Compressed to <strong>亻</strong> on the left of person-related characters.",
+    "formula": "left leg <span class=\"han\">丿</span> + right leg <span class=\"han\">㇏</span> = <span class=\"han\">人</span>",
+    "cultural_note": "In oracle-bone script, 人 depicted a person walking <strong>in profile</strong> — the defining mark of humanity in ancient pictographs. The front-facing form, arms spread wide, became 大.",
+    "mnemonic": "Two legs walking — a person seen from the side. The strokes ARE the legs.",
+    "character_type": "pictograph",
+    "components": [],
+    "svg_overlay": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='48' cy='20' r='8' fill='none' stroke='#5a4f44' stroke-width='2.5'/><line x1='48' y1='28' x2='50' y2='50' stroke='#5a4f44' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='50' x2='32' y2='82' stroke='#c9a960' stroke-width='3' stroke-linecap='round'/><line x1='50' y1='50' x2='66' y2='82' stroke='#b83a25' stroke-width='3' stroke-linecap='round'/><circle cx='30' cy='72' r='6.5' fill='#c9a960'/><text x='30' y='72' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>1</text><circle cx='66' cy='70' r='6.5' fill='#b83a25'/><text x='66' y='70' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>2</text></svg>",
+    "svg_caption": "Two legs walking",
+    "pack": "01",
+    "pack_position": 1
+  },
+  {
+    "character": "水",
+    "pinyin": "shuǐ",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "water",
+      "liquid",
+      "river"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 2,
+    "strokes": 4,
+    "radical": "水",
+    "radical_pinyin": "shuǐ",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "亅",
+        "name": "竖钩",
+        "pinyin": "shùgōu"
+      },
+      {
+        "n": 2,
+        "han": "㇇",
+        "name": "横撇",
+        "pinyin": "héngpiě"
+      },
+      {
+        "n": 3,
+        "han": "丿",
+        "name": "撇",
+        "pinyin": "piě"
+      },
+      {
+        "n": 4,
+        "han": "㇏",
+        "name": "捺",
+        "pinyin": "nà"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "水果",
+        "pinyin": "shuǐguǒ",
+        "en": "fruit"
+      },
+      {
+        "zh": "水平",
+        "pinyin": "shuǐpíng",
+        "en": "level"
+      },
+      {
+        "zh": "喝水",
+        "pinyin": "hē shuǐ",
+        "en": "drink water"
+      },
+      {
+        "zh": "山水",
+        "pinyin": "shānshuǐ",
+        "en": "landscape"
+      }
+    ],
+    "blueprint": "A central downward current flanked by two droplets — water seen in cross-section. Its contracted radical <strong>氵</strong> (three drops) marks over 1,000 water-related characters.",
+    "formula": "central current <span class=\"han\">亅</span> + droplets <span class=\"han\">丶丶</span> = <span class=\"han\">水</span>",
+    "cultural_note": "水 contracts to <strong>氵</strong> on the left of compounds — \"the three drops\" — giving its meaning to 河 (river), 海 (sea), 泳 (swim), 洗 (wash), and hundreds more.",
+    "mnemonic": "A river in cross-section — the central current with droplets breaking off each side.",
+    "character_type": "pictograph",
+    "components": [],
+    "svg_overlay": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><line x1='50' y1='12' x2='50' y2='88' stroke='#b83a25' stroke-width='3' stroke-linecap='round'/><path d='M50,28 Q65,32 63,46' fill='none' stroke='#c9a960' stroke-width='2.8' stroke-linecap='round'/><path d='M50,42 Q35,38 37,54' fill='none' stroke='#1a2744' stroke-width='2.5' stroke-linecap='round'/><path d='M50,58 Q65,62 63,74' fill='none' stroke='#1a2744' stroke-width='2.5' stroke-linecap='round'/><circle cx='70' cy='36' r='6.5' fill='#c9a960'/><text x='70' y='36' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>1</text><circle cx='58' cy='18' r='6.5' fill='#b83a25'/><text x='58' y='18' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>2</text><circle cx='27' cy='48' r='6.5' fill='#1a2744'/><text x='27' y='48' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>3</text><circle cx='73' cy='68' r='6.5' fill='#1a2744'/><text x='73' y='68' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>4</text></svg>",
+    "svg_caption": "River with splashing waves",
+    "pack": "01",
+    "pack_position": 2
+  },
+  {
+    "character": "火",
+    "pinyin": "huǒ",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "fire",
+      "flame",
+      "heat"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 3,
+    "strokes": 4,
+    "radical": "火",
+    "radical_pinyin": "huǒ",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "丶",
+        "name": "点",
+        "pinyin": "diǎn"
+      },
+      {
+        "n": 2,
+        "han": "丿",
+        "name": "撇",
+        "pinyin": "piě"
+      },
+      {
+        "n": 3,
+        "han": "丿",
+        "name": "撇",
+        "pinyin": "piě"
+      },
+      {
+        "n": 4,
+        "han": "㇏",
+        "name": "捺",
+        "pinyin": "nà"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "火车",
+        "pinyin": "huǒchē",
+        "en": "train"
+      },
+      {
+        "zh": "火山",
+        "pinyin": "huǒshān",
+        "en": "volcano"
+      },
+      {
+        "zh": "火锅",
+        "pinyin": "huǒguō",
+        "en": "hot pot"
+      },
+      {
+        "zh": "大火",
+        "pinyin": "dàhuǒ",
+        "en": "a big fire"
+      }
+    ],
+    "blueprint": "Two sparks above a flame body shaped like 人 — fire caught mid-leap. Contracted to <strong>灬</strong> (four dots) beneath characters it heats: 热 rè hot, 蒸 zhēng steam.",
+    "formula": "sparks <span class=\"han\">丶丶</span> + flame <span class=\"han\">人</span> = <span class=\"han\">火</span>",
+    "cultural_note": "火车 \"fire vehicle\" = <strong>train</strong>. When steam locomotives arrived in 19th-century China, the language reached for its oldest word for unstoppable, visible power.",
+    "mnemonic": "A fire leaping — sparks at the top, the flame's legs spreading below.",
+    "character_type": "pictograph",
+    "components": [],
+    "svg_overlay": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50,82 Q56,65 50,28' fill='none' stroke='#c9a960' stroke-width='3' stroke-linecap='round'/><path d='M46,65 Q28,54 31,74' fill='none' stroke='#b83a25' stroke-width='2.8' stroke-linecap='round'/><path d='M54,65 Q72,54 69,74' fill='none' stroke='#1a2744' stroke-width='2.5' stroke-linecap='round'/><circle cx='50' cy='20' r='4' fill='#1a2744'/><circle cx='62' cy='54' r='6.5' fill='#c9a960'/><text x='62' y='54' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>1</text><circle cx='22' cy='62' r='6.5' fill='#b83a25'/><text x='22' y='62' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>2</text><circle cx='78' cy='62' r='6.5' fill='#1a2744'/><text x='78' y='62' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>3</text><circle cx='62' cy='20' r='6.5' fill='#1a2744'/><text x='62' y='20' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>4</text></svg>",
+    "svg_caption": "Flame with rising spark",
+    "pack": "01",
+    "pack_position": 3
+  },
+  {
+    "character": "山",
+    "pinyin": "shān",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "mountain",
+      "hill",
+      "peak"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 4,
+    "strokes": 3,
+    "radical": "山",
+    "radical_pinyin": "shān",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "丨",
+        "name": "竖",
+        "pinyin": "shù"
+      },
+      {
+        "n": 2,
+        "han": "凵",
+        "name": "竖折",
+        "pinyin": "shùzhé"
+      },
+      {
+        "n": 3,
+        "han": "丨",
+        "name": "竖",
+        "pinyin": "shù"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "山水",
+        "pinyin": "shānshuǐ",
+        "en": "landscape"
+      },
+      {
+        "zh": "火山",
+        "pinyin": "huǒshān",
+        "en": "volcano"
+      },
+      {
+        "zh": "高山",
+        "pinyin": "gāoshān",
+        "en": "high mountain"
+      },
+      {
+        "zh": "上山",
+        "pinyin": "shàng shān",
+        "en": "climb a mountain"
+      }
+    ],
+    "blueprint": "Three peaks rising from a single baseline — one of the least-changed characters from oracle bone to today. 山 is its own radical, appearing in characters for peaks, ridges, and rugged terrain.",
+    "formula": "left peak + tallest peak + right peak = <span class=\"han\">山</span>",
+    "cultural_note": "山水 — \"mountains and waters\" — names the genre of <strong>landscape painting</strong> that dominated Chinese classical art for a millennium. Two characters carry an entire artistic tradition.",
+    "mnemonic": "A mountain range — three peaks sharing one base.",
+    "character_type": "pictograph",
+    "components": [],
+    "svg_overlay": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><line x1='18' y1='80' x2='82' y2='80' stroke='#5a4f44' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='80' x2='50' y2='18' stroke='#c9a960' stroke-width='3' stroke-linecap='round'/><line x1='28' y1='80' x2='28' y2='46' stroke='#b83a25' stroke-width='3' stroke-linecap='round'/><line x1='72' y1='80' x2='72' y2='46' stroke='#1a2744' stroke-width='3' stroke-linecap='round'/><circle cx='60' cy='25' r='7' fill='#c9a960'/><text x='60' y='25' font-family='sans-serif' font-size='9' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>1</text><circle cx='17' cy='56' r='7' fill='#b83a25'/><text x='17' y='56' font-family='sans-serif' font-size='9' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>2</text><circle cx='83' cy='56' r='7' fill='#1a2744'/><text x='83' y='56' font-family='sans-serif' font-size='9' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>3</text></svg>",
+    "svg_caption": "Three mountain peaks",
+    "pack": "01",
+    "pack_position": 4
+  },
+  {
+    "character": "木",
+    "pinyin": "mù",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "tree",
+      "wood",
+      "timber"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 5,
+    "strokes": 4,
+    "radical": "木",
+    "radical_pinyin": "mù",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      },
+      {
+        "n": 2,
+        "han": "丨",
+        "name": "竖",
+        "pinyin": "shù"
+      },
+      {
+        "n": 3,
+        "han": "丿",
+        "name": "撇",
+        "pinyin": "piě"
+      },
+      {
+        "n": 4,
+        "han": "㇏",
+        "name": "捺",
+        "pinyin": "nà"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "木头",
+        "pinyin": "mùtou",
+        "en": "log/wood"
+      },
+      {
+        "zh": "木工",
+        "pinyin": "mùgōng",
+        "en": "carpentry"
+      },
+      {
+        "zh": "树木",
+        "pinyin": "shùmù",
+        "en": "trees"
+      },
+      {
+        "zh": "木耳",
+        "pinyin": "mù'ěr",
+        "en": "wood ear mushroom"
+      }
+    ],
+    "blueprint": "A cross-section of a standing tree: the horizontal stroke is the branches, the vertical is the trunk, and the two lower strokes are the roots. 木 appears in nearly every character related to wood or plants.",
+    "formula": "branches <span class=\"han\">一</span> + trunk <span class=\"han\">丨</span> + roots <span class=\"han\">丿㇏</span> = <span class=\"han\">木</span>",
+    "cultural_note": "木 loses its roots and gains a dot to become 本 (běn) — origin, basis, root. The dot marks <strong>where</strong> the root is. Adding a horizontal stroke at the top gives 末 (mò) — tip, end.",
+    "mnemonic": "A standing tree — trunk, spreading branch, and roots fanning below.",
+    "character_type": "pictograph",
+    "components": [],
+    "svg_overlay": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><line x1='50' y1='12' x2='50' y2='88' stroke='#1a2744' stroke-width='3' stroke-linecap='round'/><line x1='22' y1='32' x2='78' y2='32' stroke='#c9a960' stroke-width='3' stroke-linecap='round'/><line x1='50' y1='75' x2='28' y2='92' stroke='#b83a25' stroke-width='3' stroke-linecap='round'/><line x1='50' y1='75' x2='72' y2='92' stroke='#1a2744' stroke-width='2.5' stroke-linecap='round'/><circle cx='57' cy='18' r='6.5' fill='#c9a960'/><text x='57' y='18' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>1</text><circle cx='84' cy='32' r='6.5' fill='#b83a25'/><text x='84' y='32' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>2</text><circle cx='22' cy='88' r='6.5' fill='#1a2744'/><text x='22' y='88' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>3</text><circle cx='78' cy='88' r='6.5' fill='#1a2744'/><text x='78' y='88' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>4</text></svg>",
+    "svg_caption": "Trunk, branch, and roots",
+    "pack": "01",
+    "pack_position": 5
+  },
+  {
+    "character": "日",
+    "pinyin": "rì",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "sun",
+      "day",
+      "daytime"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 6,
+    "strokes": 4,
+    "radical": "日",
+    "radical_pinyin": "rì",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "⼝",
+        "name": "竖",
+        "pinyin": "shù"
+      },
+      {
+        "n": 2,
+        "han": "一",
+        "name": "横折",
+        "pinyin": "héngzhé"
+      },
+      {
+        "n": 3,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      },
+      {
+        "n": 4,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "日本",
+        "pinyin": "Rìběn",
+        "en": "Japan"
+      },
+      {
+        "zh": "日记",
+        "pinyin": "rìjì",
+        "en": "diary"
+      },
+      {
+        "zh": "今日",
+        "pinyin": "jīnrì",
+        "en": "today"
+      },
+      {
+        "zh": "日出",
+        "pinyin": "rìchū",
+        "en": "sunrise"
+      }
+    ],
+    "blueprint": "A circle with a dot at centre — the sun's disc and its blinding core. Squared off in clerical script. The central line distinguishes 日 (sun) from 口 (mouth), which is just an open box.",
+    "formula": "disc <span class=\"han\">⼝</span> + core <span class=\"han\">一</span> = <span class=\"han\">日</span>",
+    "cultural_note": "日本 (Rìběn) — Japan — means <strong>\"origin of the sun\"</strong>, named from China's eastern perspective. The kanji 日本 is still used in Japanese today.",
+    "mnemonic": "The sun — a bright disc with a gleam of light at its very centre.",
+    "character_type": "pictograph",
+    "components": [],
+    "svg_overlay": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='28' y='18' width='44' height='64' rx='2' fill='none' stroke='#c9a960' stroke-width='3'/><line x1='28' y1='50' x2='72' y2='50' stroke='#1a2744' stroke-width='2.5' stroke-linecap='round'/><circle cx='78' cy='25' r='6.5' fill='#c9a960'/><text x='78' y='25' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>1</text><circle cx='78' cy='57' r='6.5' fill='#1a2744'/><text x='78' y='57' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>4</text></svg>",
+    "svg_caption": "The sun's bright disc",
+    "pack": "01",
+    "pack_position": 6
+  },
+  {
+    "character": "月",
+    "pinyin": "yuè",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "moon",
+      "month",
+      "lunar cycle"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 7,
+    "strokes": 4,
+    "radical": "月",
+    "radical_pinyin": "yuè",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "⺆",
+        "name": "撇",
+        "pinyin": "piě"
+      },
+      {
+        "n": 2,
+        "han": "一",
+        "name": "横折钩",
+        "pinyin": "héngzhégōu"
+      },
+      {
+        "n": 3,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      },
+      {
+        "n": 4,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "月亮",
+        "pinyin": "yuèliang",
+        "en": "the moon"
+      },
+      {
+        "zh": "月份",
+        "pinyin": "yuèfèn",
+        "en": "month"
+      },
+      {
+        "zh": "上月",
+        "pinyin": "shàng yuè",
+        "en": "last month"
+      },
+      {
+        "zh": "月饼",
+        "pinyin": "yuèbǐng",
+        "en": "mooncake"
+      }
+    ],
+    "blueprint": "A crescent laid on its back, with two strokes inside indicating the moon's phases. 月 also doubles as the 'flesh/body' radical 肉 in many anatomical characters — same shape, different meaning.",
+    "formula": "crescent <span class=\"han\">⺆</span> + phases <span class=\"han\">二</span> = <span class=\"han\">月</span>",
+    "cultural_note": "月饼 (yuèbǐng) — mooncakes — are eaten during the <strong>Mid-Autumn Festival</strong> (中秋节) when the moon is at its fullest. The round cake mirrors the full moon.",
+    "mnemonic": "A crescent moon laid on its back — the arc and two faint lines of its phases.",
+    "character_type": "pictograph",
+    "components": [],
+    "svg_overlay": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M48,12 Q20,35 20,50 Q20,65 48,88' fill='none' stroke='#c9a960' stroke-width='3.5' stroke-linecap='round'/><path d='M48,12 Q68,30 66,50 Q64,70 48,88' fill='none' stroke='#b83a25' stroke-width='3' stroke-linecap='round'/><line x1='32' y1='40' x2='60' y2='40' stroke='#1a2744' stroke-width='2' stroke-linecap='round' opacity='0.4'/><line x1='32' y1='60' x2='60' y2='60' stroke='#1a2744' stroke-width='2' stroke-linecap='round' opacity='0.4'/><circle cx='22' cy='25' r='7' fill='#c9a960'/><text x='22' y='25' font-family='sans-serif' font-size='9' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>1</text><circle cx='76' cy='28' r='7' fill='#b83a25'/><text x='76' y='28' font-family='sans-serif' font-size='9' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>2</text><circle cx='72' cy='40' r='7' fill='#1a2744'/><text x='72' y='40' font-family='sans-serif' font-size='9' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>3</text><circle cx='72' cy='60' r='7' fill='#1a2744'/><text x='72' y='60' font-family='sans-serif' font-size='9' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>4</text></svg>",
+    "svg_caption": "A crescent moon",
+    "pack": "01",
+    "pack_position": 7
+  },
+  {
+    "character": "大",
+    "pinyin": "dà",
+    "tone": 4,
+    "type": "indicative",
+    "english": [
+      "big",
+      "large",
+      "great"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 8,
+    "strokes": 3,
+    "radical": "大",
+    "radical_pinyin": "dà",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      },
+      {
+        "n": 2,
+        "han": "丿",
+        "name": "撇",
+        "pinyin": "piě"
+      },
+      {
+        "n": 3,
+        "han": "㇏",
+        "name": "捺",
+        "pinyin": "nà"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "大学",
+        "pinyin": "dàxué",
+        "en": "university"
+      },
+      {
+        "zh": "大家",
+        "pinyin": "dàjiā",
+        "en": "everyone"
+      },
+      {
+        "zh": "大人",
+        "pinyin": "dàrén",
+        "en": "adult"
+      },
+      {
+        "zh": "大山",
+        "pinyin": "dàshān",
+        "en": "great mountain"
+      }
+    ],
+    "blueprint": "A person (人) standing upright with arms flung wide — indicating size by embodying it. The oracle-bone form is explicitly a front-facing figure, arms outstretched.",
+    "formula": "person <span class=\"han\">人</span> + arms spread wide = <span class=\"han\">大</span>",
+    "cultural_note": "大 at the top of 天 (tiān — sky/heaven) literally shows a person beneath the sky. The dot/stroke above the head indicates <strong>what is beyond</strong> the largest thing — heaven itself.",
+    "mnemonic": "A person standing with arms wide — showing how big they are.",
+    "character_type": "pictograph",
+    "components": [],
+    "svg_overlay": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='16' r='8' fill='none' stroke='#5a4f44' stroke-width='2.5'/><line x1='50' y1='24' x2='50' y2='72' stroke='#5a4f44' stroke-width='2.5' stroke-linecap='round'/><line x1='12' y1='46' x2='88' y2='46' stroke='#c9a960' stroke-width='3.5' stroke-linecap='round'/><line x1='50' y1='72' x2='28' y2='92' stroke='#b83a25' stroke-width='3' stroke-linecap='round'/><line x1='50' y1='72' x2='72' y2='92' stroke='#1a2744' stroke-width='3' stroke-linecap='round'/><circle cx='60' cy='30' r='6.5' fill='#c9a960'/><text x='60' y='30' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>1</text><circle cx='88' cy='38' r='6.5' fill='#b83a25'/><text x='88' y='38' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>2</text><circle cx='24' cy='84' r='6.5' fill='#1a2744'/><text x='24' y='84' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>3</text><circle cx='76' cy='84' r='6.5' fill='#1a2744'/><text x='76' y='84' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>4</text></svg>",
+    "svg_caption": "Arms spread as wide as possible",
+    "pack": "01",
+    "pack_position": 8
+  },
+  {
+    "character": "小",
+    "pinyin": "xiǎo",
+    "tone": 3,
+    "type": "indicative",
+    "english": [
+      "small",
+      "little",
+      "tiny"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 9,
+    "strokes": 3,
+    "radical": "小",
+    "radical_pinyin": "xiǎo",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "亅",
+        "name": "竖钩",
+        "pinyin": "shùgōu"
+      },
+      {
+        "n": 2,
+        "han": "丶",
+        "name": "点",
+        "pinyin": "diǎn"
+      },
+      {
+        "n": 3,
+        "han": "丶",
+        "name": "点",
+        "pinyin": "diǎn"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "小心",
+        "pinyin": "xiǎoxīn",
+        "en": "be careful"
+      },
+      {
+        "zh": "小学",
+        "pinyin": "xiǎoxué",
+        "en": "primary school"
+      },
+      {
+        "zh": "小时",
+        "pinyin": "xiǎoshí",
+        "en": "hour"
+      },
+      {
+        "zh": "大小",
+        "pinyin": "dàxiǎo",
+        "en": "size"
+      }
+    ],
+    "blueprint": "Three scattered dots — things dispersed and diminished. The central hook anchors what little remains; the outer dots drift apart. An antonym of 大 built entirely from absence.",
+    "formula": "central mark <span class=\"han\">亅</span> + two dots <span class=\"han\">丶丶</span> = <span class=\"han\">小</span>",
+    "cultural_note": "小心 (xiǎoxīn) — <strong>be careful</strong> — literally means \"small heart.\" Caution requires a mind that notices small things. This compound appears on countless Chinese warning signs.",
+    "mnemonic": "Three small scattered dots — things broken into pieces, made small.",
+    "character_type": "ideograph",
+    "components": [],
+    "svg_overlay": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><line x1='50' y1='38' x2='50' y2='65' stroke='#c9a960' stroke-width='3' stroke-linecap='round'/><path d='M50,65 Q50,72 46,74' fill='none' stroke='#c9a960' stroke-width='3' stroke-linecap='round'/><path d='M32,48 L28,56' stroke='#b83a25' stroke-width='3.5' stroke-linecap='round'/><path d='M68,48 L72,56' stroke='#1a2744' stroke-width='3.5' stroke-linecap='round'/><circle cx='60' cy='44' r='6.5' fill='#c9a960'/><text x='60' y='44' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>1</text><circle cx='20' cy='50' r='6.5' fill='#b83a25'/><text x='20' y='50' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>2</text><circle cx='80' cy='50' r='6.5' fill='#1a2744'/><text x='80' y='50' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>3</text></svg>",
+    "svg_caption": "Three tiny marks",
+    "pack": "01",
+    "pack_position": 9
+  },
+  {
+    "character": "心",
+    "pinyin": "xīn",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "heart",
+      "mind",
+      "feeling"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 10,
+    "strokes": 4,
+    "radical": "心",
+    "radical_pinyin": "xīn",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "丶",
+        "name": "点",
+        "pinyin": "diǎn"
+      },
+      {
+        "n": 2,
+        "han": "⺄",
+        "name": "卧钩",
+        "pinyin": "wògōu"
+      },
+      {
+        "n": 3,
+        "han": "丶",
+        "name": "点",
+        "pinyin": "diǎn"
+      },
+      {
+        "n": 4,
+        "han": "丶",
+        "name": "点",
+        "pinyin": "diǎn"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "小心",
+        "pinyin": "xiǎoxīn",
+        "en": "be careful"
+      },
+      {
+        "zh": "心里",
+        "pinyin": "xīnlǐ",
+        "en": "in the heart/mind"
+      },
+      {
+        "zh": "开心",
+        "pinyin": "kāixīn",
+        "en": "happy"
+      },
+      {
+        "zh": "用心",
+        "pinyin": "yòngxīn",
+        "en": "attentive/diligent"
+      }
+    ],
+    "blueprint": "Oracle bone script drew the actual heart: a curved body with three blood vessels branching off. The hook is the heart itself; the dots are the aortic branches. As a radical (忄) it marks emotional states.",
+    "formula": "heart body <span class=\"han\">⺄</span> + vessels <span class=\"han\">丶丶丶</span> = <span class=\"han\">心</span>",
+    "cultural_note": "In Chinese medicine and philosophy, 心 is the <strong>seat of consciousness</strong> — not just emotion but thought, intention, and moral will. The mind-heart distinction that shapes Western thought does not apply.",
+    "mnemonic": "A heart with three blood vessels — an ancient anatomical drawing.",
+    "character_type": "pictograph",
+    "components": [],
+    "svg_overlay": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M20,70 Q35,45 50,58 Q65,45 80,70' fill='none' stroke='#1a2744' stroke-width='3' stroke-linecap='round'/><circle cx='30' cy='48' r='5' fill='#c9a960'/><circle cx='50' cy='40' r='5' fill='#b83a25'/><circle cx='70' cy='48' r='5' fill='#1a2744'/><circle cx='18' cy='42' r='6.5' fill='#c9a960'/><text x='18' y='42' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>1</text><circle cx='50' cy='28' r='6.5' fill='#b83a25'/><text x='50' y='28' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>2</text><circle cx='82' cy='42' r='6.5' fill='#1a2744'/><text x='82' y='42' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>3</text><circle cx='50' cy='82' r='6.5' fill='#1a2744'/><text x='50' y='82' font-family='sans-serif' font-size='8' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>4</text></svg>",
+    "svg_caption": "A beating heart",
+    "pack": "01",
+    "pack_position": 10
+  },
+  {
+    "character": "一",
+    "pinyin": "yī",
+    "tone": 1,
+    "type": "indicative",
+    "english": [
+      "one"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 11,
+    "strokes": 1,
+    "radical": "一",
+    "radical_pinyin": "yī",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "一起",
+        "pinyin": "yīqǐ",
+        "en": "together"
+      },
+      {
+        "zh": "一下",
+        "pinyin": "yīxià",
+        "en": "once/a moment"
+      },
+      {
+        "zh": "一样",
+        "pinyin": "yīyàng",
+        "en": "same/alike"
+      },
+      {
+        "zh": "统一",
+        "pinyin": "tǒngyī",
+        "en": "to unify"
+      }
+    ],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "02",
+    "pack_position": 1
+  },
+  {
+    "character": "二",
+    "pinyin": "èr",
+    "tone": 4,
+    "type": "indicative",
+    "english": [
+      "two"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 12,
+    "strokes": 2,
+    "radical": "二",
+    "radical_pinyin": "èr",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      },
+      {
+        "n": 2,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "第二",
+        "pinyin": "dìèr",
+        "en": "second"
+      },
+      {
+        "zh": "二月",
+        "pinyin": "èryuè",
+        "en": "February"
+      },
+      {
+        "zh": "十二",
+        "pinyin": "shíèr",
+        "en": "twelve"
+      },
+      {
+        "zh": "二手",
+        "pinyin": "èrshǒu",
+        "en": "second-hand"
+      }
+    ],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "02",
+    "pack_position": 2
+  },
+  {
+    "character": "三",
+    "pinyin": "sān",
+    "tone": 1,
+    "type": "indicative",
+    "english": [
+      "three"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 13,
+    "strokes": 3,
+    "radical": "一",
+    "radical_pinyin": "yī",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      },
+      {
+        "n": 2,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      },
+      {
+        "n": 3,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "三月",
+        "pinyin": "sānyuè",
+        "en": "March"
+      },
+      {
+        "zh": "三角",
+        "pinyin": "sānjiǎo",
+        "en": "triangle"
+      },
+      {
+        "zh": "第三",
+        "pinyin": "dìsān",
+        "en": "third"
+      },
+      {
+        "zh": "三明治",
+        "pinyin": "sānmíngzhì",
+        "en": "sandwich"
+      }
+    ],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "02",
+    "pack_position": 3
+  },
+  {
+    "character": "四",
+    "pinyin": "sì",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "four"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 14,
+    "strokes": 5,
+    "radical": "囗",
+    "radical_pinyin": "wéi",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "一",
+        "name": "竖",
+        "pinyin": "shù"
+      },
+      {
+        "n": 2,
+        "han": "一",
+        "name": "横折",
+        "pinyin": "héngzhé"
+      },
+      {
+        "n": 3,
+        "han": "⺕",
+        "name": "撇折",
+        "pinyin": "piězhé"
+      },
+      {
+        "n": 4,
+        "han": "一",
+        "name": "撇折",
+        "pinyin": "piězhé"
+      },
+      {
+        "n": 5,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "四月",
+        "pinyin": "sìyuè",
+        "en": "April"
+      },
+      {
+        "zh": "四方",
+        "pinyin": "sìfāng",
+        "en": "four directions"
+      },
+      {
+        "zh": "第四",
+        "pinyin": "dìsì",
+        "en": "fourth"
+      },
+      {
+        "zh": "四季",
+        "pinyin": "sìjì",
+        "en": "four seasons"
+      }
+    ],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "02",
+    "pack_position": 4
+  },
+  {
+    "character": "五",
+    "pinyin": "wǔ",
+    "tone": 3,
+    "type": "indicative",
+    "english": [
+      "five"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 15,
+    "strokes": 4,
+    "radical": "二",
+    "radical_pinyin": "èr",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      },
+      {
+        "n": 2,
+        "han": "一",
+        "name": "竖折",
+        "pinyin": "shùzhé"
+      },
+      {
+        "n": 3,
+        "han": "一",
+        "name": "横折",
+        "pinyin": "héngzhé"
+      },
+      {
+        "n": 4,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "五月",
+        "pinyin": "wǔyuè",
+        "en": "May"
+      },
+      {
+        "zh": "五星",
+        "pinyin": "wǔxīng",
+        "en": "five-star"
+      },
+      {
+        "zh": "第五",
+        "pinyin": "dìwǔ",
+        "en": "fifth"
+      },
+      {
+        "zh": "五官",
+        "pinyin": "wǔguān",
+        "en": "five sense organs"
+      }
+    ],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "02",
+    "pack_position": 5
+  },
+  {
+    "character": "六",
+    "pinyin": "liù",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "six"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 16,
+    "strokes": 4,
+    "radical": "八",
+    "radical_pinyin": "bā",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      },
+      {
+        "n": 2,
+        "han": "丶",
+        "name": "点",
+        "pinyin": "diǎn"
+      },
+      {
+        "n": 3,
+        "han": "丿",
+        "name": "撇",
+        "pinyin": "piě"
+      },
+      {
+        "n": 4,
+        "han": "㇏",
+        "name": "捺",
+        "pinyin": "nà"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "六月",
+        "pinyin": "liùyuè",
+        "en": "June"
+      },
+      {
+        "zh": "第六",
+        "pinyin": "dìliù",
+        "en": "sixth"
+      },
+      {
+        "zh": "六十",
+        "pinyin": "liùshí",
+        "en": "sixty"
+      },
+      {
+        "zh": "六合",
+        "pinyin": "liùhé",
+        "en": "the universe"
+      }
+    ],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "02",
+    "pack_position": 6
+  },
+  {
+    "character": "七",
+    "pinyin": "qī",
+    "tone": 1,
+    "type": "indicative",
+    "english": [
+      "seven"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 17,
+    "strokes": 2,
+    "radical": "一",
+    "radical_pinyin": "yī",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      },
+      {
+        "n": 2,
+        "han": "⺄",
+        "name": "竖弯钩",
+        "pinyin": "shùwāngōu"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "七月",
+        "pinyin": "qīyuè",
+        "en": "July"
+      },
+      {
+        "zh": "第七",
+        "pinyin": "dìqī",
+        "en": "seventh"
+      },
+      {
+        "zh": "七十",
+        "pinyin": "qīshí",
+        "en": "seventy"
+      },
+      {
+        "zh": "七夕",
+        "pinyin": "qīxī",
+        "en": "Tanabata/Qixi Festival"
+      }
+    ],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "02",
+    "pack_position": 7
+  },
+  {
+    "character": "八",
+    "pinyin": "bā",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "eight"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 18,
+    "strokes": 2,
+    "radical": "八",
+    "radical_pinyin": "bā",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "丿",
+        "name": "撇",
+        "pinyin": "piě"
+      },
+      {
+        "n": 2,
+        "han": "㇏",
+        "name": "捺",
+        "pinyin": "nà"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "八月",
+        "pinyin": "bāyuè",
+        "en": "August"
+      },
+      {
+        "zh": "第八",
+        "pinyin": "dìbā",
+        "en": "eighth"
+      },
+      {
+        "zh": "八十",
+        "pinyin": "bāshí",
+        "en": "eighty"
+      },
+      {
+        "zh": "八卦",
+        "pinyin": "bāguà",
+        "en": "eight trigrams/gossip"
+      }
+    ],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "02",
+    "pack_position": 8
+  },
+  {
+    "character": "九",
+    "pinyin": "jiǔ",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "nine"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 19,
+    "strokes": 2,
+    "radical": "乙",
+    "radical_pinyin": "yǐ",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "丿",
+        "name": "撇",
+        "pinyin": "piě"
+      },
+      {
+        "n": 2,
+        "han": "⺄",
+        "name": "横折弯钩",
+        "pinyin": "héngzhéwāngōu"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "九月",
+        "pinyin": "jiǔyuè",
+        "en": "September"
+      },
+      {
+        "zh": "第九",
+        "pinyin": "dìjiǔ",
+        "en": "ninth"
+      },
+      {
+        "zh": "九十",
+        "pinyin": "jiǔshí",
+        "en": "ninety"
+      },
+      {
+        "zh": "九九",
+        "pinyin": "jiǔjiǔ",
+        "en": "99 (auspicious number)"
+      }
+    ],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "02",
+    "pack_position": 9
+  },
+  {
+    "character": "十",
+    "pinyin": "shí",
+    "tone": 2,
+    "type": "indicative",
+    "english": [
+      "ten"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 20,
+    "strokes": 2,
+    "radical": "十",
+    "radical_pinyin": "shí",
+    "stroke_order": [
+      {
+        "n": 1,
+        "han": "一",
+        "name": "横",
+        "pinyin": "héng"
+      },
+      {
+        "n": 2,
+        "han": "丨",
+        "name": "竖",
+        "pinyin": "shù"
+      }
+    ],
+    "compounds": [
+      {
+        "zh": "十月",
+        "pinyin": "shíyuè",
+        "en": "October"
+      },
+      {
+        "zh": "十分",
+        "pinyin": "shífēn",
+        "en": "very/fully"
+      },
+      {
+        "zh": "十字",
+        "pinyin": "shízì",
+        "en": "cross/crossroads"
+      },
+      {
+        "zh": "十全十美",
+        "pinyin": "shíquánshíměi",
+        "en": "perfect in every way"
+      }
+    ],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "02",
+    "pack_position": 10
+  },
+  {
+    "character": "我",
+    "pinyin": "wǒ",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "I/me"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "03",
+    "pack_position": 1
+  },
+  {
+    "character": "你",
+    "pinyin": "nǐ",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "you"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "03",
+    "pack_position": 2
+  },
+  {
+    "character": "他",
+    "pinyin": "tā",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "he/him"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "03",
+    "pack_position": 3
+  },
+  {
+    "character": "她",
+    "pinyin": "tā",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "she/her"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "03",
+    "pack_position": 4
+  },
+  {
+    "character": "们",
+    "pinyin": "men",
+    "tone": 0,
+    "type": "pictograph",
+    "english": [
+      "plural marker"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "03",
+    "pack_position": 5
+  },
+  {
+    "character": "的",
+    "pinyin": "de",
+    "tone": 0,
+    "type": "pictograph",
+    "english": [
+      "possessive particle"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "03",
+    "pack_position": 6
+  },
+  {
+    "character": "是",
+    "pinyin": "shì",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "to be"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "03",
+    "pack_position": 7
+  },
+  {
+    "character": "有",
+    "pinyin": "yǒu",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "to have"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "03",
+    "pack_position": 8
+  },
+  {
+    "character": "不",
+    "pinyin": "bù",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "no/not"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "03",
+    "pack_position": 9
+  },
+  {
+    "character": "来",
+    "pinyin": "lái",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "to come"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "03",
+    "pack_position": 10
+  },
+  {
+    "character": "去",
+    "pinyin": "qù",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "to go"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "04",
+    "pack_position": 1
+  },
+  {
+    "character": "说",
+    "pinyin": "shuō",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "to say/speak"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "04",
+    "pack_position": 2
+  },
+  {
+    "character": "看",
+    "pinyin": "kàn",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "to look/watch"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "04",
+    "pack_position": 3
+  },
+  {
+    "character": "听",
+    "pinyin": "tīng",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "to listen"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "04",
+    "pack_position": 4
+  },
+  {
+    "character": "做",
+    "pinyin": "zuò",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "to do/make"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "04",
+    "pack_position": 5
+  },
+  {
+    "character": "吃",
+    "pinyin": "chī",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "to eat"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "04",
+    "pack_position": 6
+  },
+  {
+    "character": "喝",
+    "pinyin": "hē",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "to drink"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "04",
+    "pack_position": 7
+  },
+  {
+    "character": "写",
+    "pinyin": "xiě",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "to write"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "04",
+    "pack_position": 8
+  },
+  {
+    "character": "读",
+    "pinyin": "dú",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "to read"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "04",
+    "pack_position": 9
+  },
+  {
+    "character": "年",
+    "pinyin": "nián",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "year"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "04",
+    "pack_position": 10
+  },
+  {
+    "character": "天",
+    "pinyin": "tiān",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "sky/day/heaven"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "05",
+    "pack_position": 1
+  },
+  {
+    "character": "上",
+    "pinyin": "shàng",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "above/up/on"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "05",
+    "pack_position": 2
+  },
+  {
+    "character": "下",
+    "pinyin": "xià",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "below/down/under"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "05",
+    "pack_position": 3
+  },
+  {
+    "character": "今",
+    "pinyin": "jīn",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "now/today"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "05",
+    "pack_position": 4
+  },
+  {
+    "character": "明",
+    "pinyin": "míng",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "bright/tomorrow"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "05",
+    "pack_position": 5
+  },
+  {
+    "character": "昨",
+    "pinyin": "zuó",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "yesterday"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "05",
+    "pack_position": 6
+  },
+  {
+    "character": "时",
+    "pinyin": "shí",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "time/hour"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "05",
+    "pack_position": 7
+  },
+  {
+    "character": "分",
+    "pinyin": "fēn",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "minute/divide"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "05",
+    "pack_position": 8
+  },
+  {
+    "character": "中",
+    "pinyin": "zhōng",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "middle/center"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "05",
+    "pack_position": 9
+  },
+  {
+    "character": "里",
+    "pinyin": "lǐ",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "inside/li (unit)"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "05",
+    "pack_position": 10
+  },
+  {
+    "character": "外",
+    "pinyin": "wài",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "outside"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "06",
+    "pack_position": 1
+  },
+  {
+    "character": "前",
+    "pinyin": "qián",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "front/before"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "06",
+    "pack_position": 2
+  },
+  {
+    "character": "后",
+    "pinyin": "hòu",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "back/after"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "06",
+    "pack_position": 3
+  },
+  {
+    "character": "左",
+    "pinyin": "zuǒ",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "left"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "06",
+    "pack_position": 4
+  },
+  {
+    "character": "右",
+    "pinyin": "yòu",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "right"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "06",
+    "pack_position": 5
+  },
+  {
+    "character": "家",
+    "pinyin": "jiā",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "home/family"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "06",
+    "pack_position": 6
+  },
+  {
+    "character": "国",
+    "pinyin": "guó",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "country/nation"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "06",
+    "pack_position": 7
+  },
+  {
+    "character": "在",
+    "pinyin": "zài",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "at/in/exist"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "06",
+    "pack_position": 8
+  },
+  {
+    "character": "好",
+    "pinyin": "hǎo",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "good/well"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "06",
+    "pack_position": 9
+  },
+  {
+    "character": "多",
+    "pinyin": "duō",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "many/much"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "06",
+    "pack_position": 10
+  },
+  {
+    "character": "少",
+    "pinyin": "shǎo",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "few/little"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "07",
+    "pack_position": 1
+  },
+  {
+    "character": "高",
+    "pinyin": "gāo",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "tall/high"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "07",
+    "pack_position": 2
+  },
+  {
+    "character": "冷",
+    "pinyin": "lěng",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "cold"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "07",
+    "pack_position": 3
+  },
+  {
+    "character": "热",
+    "pinyin": "rè",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "hot"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "07",
+    "pack_position": 4
+  },
+  {
+    "character": "新",
+    "pinyin": "xīn",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "new"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "07",
+    "pack_position": 5
+  },
+  {
+    "character": "老",
+    "pinyin": "lǎo",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "old/elderly"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "07",
+    "pack_position": 6
+  },
+  {
+    "character": "开",
+    "pinyin": "kāi",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "to open/start"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "07",
+    "pack_position": 7
+  },
+  {
+    "character": "回",
+    "pinyin": "huí",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "to return"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "07",
+    "pack_position": 8
+  },
+  {
+    "character": "口",
+    "pinyin": "kǒu",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "mouth/opening"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "07",
+    "pack_position": 9
+  },
+  {
+    "character": "手",
+    "pinyin": "shǒu",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "hand"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "07",
+    "pack_position": 10
+  },
+  {
+    "character": "目",
+    "pinyin": "mù",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "eye"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "08",
+    "pack_position": 1
+  },
+  {
+    "character": "耳",
+    "pinyin": "ěr",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "ear"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "08",
+    "pack_position": 2
+  },
+  {
+    "character": "足",
+    "pinyin": "zú",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "foot/sufficient"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "08",
+    "pack_position": 3
+  },
+  {
+    "character": "头",
+    "pinyin": "tóu",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "head"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "08",
+    "pack_position": 4
+  },
+  {
+    "character": "土",
+    "pinyin": "tǔ",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "earth/soil"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "08",
+    "pack_position": 5
+  },
+  {
+    "character": "石",
+    "pinyin": "shí",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "stone/rock"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "08",
+    "pack_position": 6
+  },
+  {
+    "character": "风",
+    "pinyin": "fēng",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "wind"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "08",
+    "pack_position": 7
+  },
+  {
+    "character": "雨",
+    "pinyin": "yǔ",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "rain"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "08",
+    "pack_position": 8
+  },
+  {
+    "character": "云",
+    "pinyin": "yún",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "cloud"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "08",
+    "pack_position": 9
+  },
+  {
+    "character": "地",
+    "pinyin": "dì",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "earth/ground"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "08",
+    "pack_position": 10
+  },
+  {
+    "character": "花",
+    "pinyin": "huā",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "flower"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "09",
+    "pack_position": 1
+  },
+  {
+    "character": "草",
+    "pinyin": "cǎo",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "grass/plant"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "09",
+    "pack_position": 2
+  },
+  {
+    "character": "买",
+    "pinyin": "mǎi",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "to buy"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "09",
+    "pack_position": 3
+  },
+  {
+    "character": "卖",
+    "pinyin": "mài",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "to sell"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "09",
+    "pack_position": 4
+  },
+  {
+    "character": "给",
+    "pinyin": "gěi",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "to give/for"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "09",
+    "pack_position": 5
+  },
+  {
+    "character": "要",
+    "pinyin": "yào",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "to want/need"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "09",
+    "pack_position": 6
+  },
+  {
+    "character": "走",
+    "pinyin": "zǒu",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "to walk/go"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "09",
+    "pack_position": 7
+  },
+  {
+    "character": "跑",
+    "pinyin": "pǎo",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "to run"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "09",
+    "pack_position": 8
+  },
+  {
+    "character": "学",
+    "pinyin": "xué",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "to learn/study"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "09",
+    "pack_position": 9
+  },
+  {
+    "character": "工",
+    "pinyin": "gōng",
+    "tone": 1,
+    "type": "pictograph",
+    "english": [
+      "work/labor"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "09",
+    "pack_position": 10
+  },
+  {
+    "character": "会",
+    "pinyin": "huì",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "can/able to"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "10",
+    "pack_position": 1
+  },
+  {
+    "character": "想",
+    "pinyin": "xiǎng",
+    "tone": 3,
+    "type": "pictograph",
+    "english": [
+      "to think/want"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "10",
+    "pack_position": 2
+  },
+  {
+    "character": "能",
+    "pinyin": "néng",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "can/able"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "10",
+    "pack_position": 3
+  },
+  {
+    "character": "爱",
+    "pinyin": "ài",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "to love"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "10",
+    "pack_position": 4
+  },
+  {
+    "character": "和",
+    "pinyin": "hé",
+    "tone": 2,
+    "type": "pictograph",
+    "english": [
+      "and/with"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "10",
+    "pack_position": 5
+  },
+  {
+    "character": "呢",
+    "pinyin": "ne",
+    "tone": 0,
+    "type": "pictograph",
+    "english": [
+      "question particle"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "10",
+    "pack_position": 6
+  },
+  {
+    "character": "了",
+    "pinyin": "le",
+    "tone": 0,
+    "type": "pictograph",
+    "english": [
+      "completion particle"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "10",
+    "pack_position": 7
+  },
+  {
+    "character": "坐",
+    "pinyin": "zuò",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "to sit"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "10",
+    "pack_position": 8
+  },
+  {
+    "character": "站",
+    "pinyin": "zhàn",
+    "tone": 4,
+    "type": "pictograph",
+    "english": [
+      "to stand/station"
+    ],
+    "hsk_level": 1,
+    "hsk_order": 0,
+    "strokes": 0,
+    "radical": "",
+    "radical_pinyin": "",
+    "stroke_order": [],
+    "compounds": [],
+    "blueprint": "",
+    "formula": "",
+    "cultural_note": "",
+    "mnemonic": "",
+    "pack": "10",
+    "pack_position": 9
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "character": "人",
+    "cultural_note": "In oracle-bone script, 人 depicted a person walking <strong>in profile</strong> — the defining mark of humanity in ancient pictographs. The front-facing form, arms spread wide, became 大.",
+    "compounds": [
+      {
+        "zh": "人口",
+        "pinyin": "rénkǒu",
+        "en": "population"
+      },
+      {
+        "zh": "人民",
+        "pinyin": "rénmín",
+        "en": "the people"
+      },
+      {
+        "zh": "工人",
+        "pinyin": "gōngrén",
+        "en": "worker"
+      },
+      {
+        "zh": "大人",
+        "pinyin": "dàrén",
+        "en": "adult"
+      }
+    ],
+    "blueprint": "Two strokes — a person walking, seen in profile. The sweeping left stroke is the torso and leading leg; the right is the trailing leg. Compressed to <strong>亻</strong> on the left of person-related characters.",
+    "formula": "left leg <span class=\"han\">丿</span> + right leg <span class=\"han\">㇏</span> = <span class=\"han\">人</span>",
+    "mnemonic": "Two legs walking — a person seen from the side. The strokes ARE the legs."
+  },
+  {
+    "character": "水",
+    "cultural_note": "水 contracts to <strong>氵</strong> on the left of compounds — \"the three drops\" — giving its meaning to 河 (river), 海 (sea), 泳 (swim), 洗 (wash), and hundreds more.",
+    "compounds": [
+      {
+        "zh": "水果",
+        "pinyin": "shuǐguǒ",
+        "en": "fruit"
+      },
+      {
+        "zh": "水平",
+        "pinyin": "shuǐpíng",
+        "en": "level"
+      },
+      {
+        "zh": "喝水",
+        "pinyin": "hē shuǐ",
+        "en": "drink water"
+      },
+      {
+        "zh": "山水",
+        "pinyin": "shānshuǐ",
+        "en": "landscape"
+      }
+    ],
+    "blueprint": "A central downward current flanked by two droplets — water seen in cross-section. Its contracted radical <strong>氵</strong> (three drops) marks over 1,000 water-related characters.",
+    "formula": "central current <span class=\"han\">亅</span> + droplets <span class=\"han\">丶丶</span> = <span class=\"han\">水</span>",
+    "mnemonic": "A river in cross-section — the central current with droplets breaking off each side."
+  },
+  {
+    "character": "火",
+    "cultural_note": "火车 \"fire vehicle\" = <strong>train</strong>. When steam locomotives arrived in 19th-century China, the language reached for its oldest word for unstoppable, visible power.",
+    "compounds": [
+      {
+        "zh": "火车",
+        "pinyin": "huǒchē",
+        "en": "train"
+      },
+      {
+        "zh": "火山",
+        "pinyin": "huǒshān",
+        "en": "volcano"
+      },
+      {
+        "zh": "火锅",
+        "pinyin": "huǒguō",
+        "en": "hot pot"
+      },
+      {
+        "zh": "大火",
+        "pinyin": "dàhuǒ",
+        "en": "a big fire"
+      }
+    ],
+    "blueprint": "Two sparks above a flame body shaped like 人 — fire caught mid-leap. Contracted to <strong>灬</strong> (four dots) beneath characters it heats: 热 rè hot, 蒸 zhēng steam.",
+    "formula": "sparks <span class=\"han\">丶丶</span> + flame <span class=\"han\">人</span> = <span class=\"han\">火</span>",
+    "mnemonic": "A fire leaping — sparks at the top, the flame's legs spreading below."
+  },
+  {
+    "character": "山",
+    "cultural_note": "山水 — \"mountains and waters\" — names the genre of <strong>landscape painting</strong> that dominated Chinese classical art for a millennium. Two characters carry an entire artistic tradition.",
+    "compounds": [
+      {
+        "zh": "山水",
+        "pinyin": "shānshuǐ",
+        "en": "landscape"
+      },
+      {
+        "zh": "火山",
+        "pinyin": "huǒshān",
+        "en": "volcano"
+      },
+      {
+        "zh": "高山",
+        "pinyin": "gāoshān",
+        "en": "high mountain"
+      },
+      {
+        "zh": "上山",
+        "pinyin": "shàng shān",
+        "en": "climb a mountain"
+      }
+    ],
+    "blueprint": "Three peaks rising from a single baseline — one of the least-changed characters from oracle bone to today. 山 is its own radical, appearing in characters for peaks, ridges, and rugged terrain.",
+    "formula": "left peak + tallest peak + right peak = <span class=\"han\">山</span>",
+    "mnemonic": "A mountain range — three peaks sharing one base."
+  },
+  {
+    "character": "木",
+    "cultural_note": "木 loses its roots and gains a dot to become 本 (běn) — origin, basis, root. The dot marks <strong>where</strong> the root is. Adding a horizontal stroke at the top gives 末 (mò) — tip, end.",
+    "compounds": [
+      {
+        "zh": "木头",
+        "pinyin": "mùtou",
+        "en": "log/wood"
+      },
+      {
+        "zh": "木工",
+        "pinyin": "mùgōng",
+        "en": "carpentry"
+      },
+      {
+        "zh": "树木",
+        "pinyin": "shùmù",
+        "en": "trees"
+      },
+      {
+        "zh": "木耳",
+        "pinyin": "mù'ěr",
+        "en": "wood ear mushroom"
+      }
+    ],
+    "blueprint": "A cross-section of a standing tree: the horizontal stroke is the branches, the vertical is the trunk, and the two lower strokes are the roots. 木 appears in nearly every character related to wood or plants.",
+    "formula": "branches <span class=\"han\">一</span> + trunk <span class=\"han\">丨</span> + roots <span class=\"han\">丿㇏</span> = <span class=\"han\">木</span>",
+    "mnemonic": "A standing tree — trunk, spreading branch, and roots fanning below."
+  },
+  {
+    "character": "日",
+    "cultural_note": "日本 (Rìběn) — Japan — means <strong>\"origin of the sun\"</strong>, named from China's eastern perspective. The kanji 日本 is still used in Japanese today.",
+    "compounds": [
+      {
+        "zh": "日本",
+        "pinyin": "Rìběn",
+        "en": "Japan"
+      },
+      {
+        "zh": "日记",
+        "pinyin": "rìjì",
+        "en": "diary"
+      },
+      {
+        "zh": "今日",
+        "pinyin": "jīnrì",
+        "en": "today"
+      },
+      {
+        "zh": "日出",
+        "pinyin": "rìchū",
+        "en": "sunrise"
+      }
+    ],
+    "blueprint": "A circle with a dot at centre — the sun's disc and its blinding core. Squared off in clerical script. The central line distinguishes 日 (sun) from 口 (mouth), which is just an open box.",
+    "formula": "disc <span class=\"han\">⼝</span> + core <span class=\"han\">一</span> = <span class=\"han\">日</span>",
+    "mnemonic": "The sun — a bright disc with a gleam of light at its very centre."
+  },
+  {
+    "character": "月",
+    "cultural_note": "月饼 (yuèbǐng) — mooncakes — are eaten during the <strong>Mid-Autumn Festival</strong> (中秋节) when the moon is at its fullest. The round cake mirrors the full moon.",
+    "compounds": [
+      {
+        "zh": "月亮",
+        "pinyin": "yuèliang",
+        "en": "the moon"
+      },
+      {
+        "zh": "月份",
+        "pinyin": "yuèfèn",
+        "en": "month"
+      },
+      {
+        "zh": "上月",
+        "pinyin": "shàng yuè",
+        "en": "last month"
+      },
+      {
+        "zh": "月饼",
+        "pinyin": "yuèbǐng",
+        "en": "mooncake"
+      }
+    ],
+    "blueprint": "A crescent laid on its back, with two strokes inside indicating the moon's phases. 月 also doubles as the 'flesh/body' radical 肉 in many anatomical characters — same shape, different meaning.",
+    "formula": "crescent <span class=\"han\">⺆</span> + phases <span class=\"han\">二</span> = <span class=\"han\">月</span>",
+    "mnemonic": "A crescent moon laid on its back — the arc and two faint lines of its phases."
+  },
+  {
+    "character": "大",
+    "cultural_note": "大 at the top of 天 (tiān — sky/heaven) literally shows a person beneath the sky. The dot/stroke above the head indicates <strong>what is beyond</strong> the largest thing — heaven itself.",
+    "compounds": [
+      {
+        "zh": "大学",
+        "pinyin": "dàxué",
+        "en": "university"
+      },
+      {
+        "zh": "大家",
+        "pinyin": "dàjiā",
+        "en": "everyone"
+      },
+      {
+        "zh": "大人",
+        "pinyin": "dàrén",
+        "en": "adult"
+      },
+      {
+        "zh": "大山",
+        "pinyin": "dàshān",
+        "en": "great mountain"
+      }
+    ],
+    "blueprint": "A person (人) standing upright with arms flung wide — indicating size by embodying it. The oracle-bone form is explicitly a front-facing figure, arms outstretched.",
+    "formula": "person <span class=\"han\">人</span> + arms spread wide = <span class=\"han\">大</span>",
+    "mnemonic": "A person standing with arms wide — showing how big they are."
+  },
+  {
+    "character": "小",
+    "cultural_note": "小心 (xiǎoxīn) — <strong>be careful</strong> — literally means \"small heart.\" Caution requires a mind that notices small things. This compound appears on countless Chinese warning signs.",
+    "compounds": [
+      {
+        "zh": "小心",
+        "pinyin": "xiǎoxīn",
+        "en": "be careful"
+      },
+      {
+        "zh": "小学",
+        "pinyin": "xiǎoxué",
+        "en": "primary school"
+      },
+      {
+        "zh": "小时",
+        "pinyin": "xiǎoshí",
+        "en": "hour"
+      },
+      {
+        "zh": "大小",
+        "pinyin": "dàxiǎo",
+        "en": "size"
+      }
+    ],
+    "blueprint": "Three scattered dots — things dispersed and diminished. The central hook anchors what little remains; the outer dots drift apart. An antonym of 大 built entirely from absence.",
+    "formula": "central mark <span class=\"han\">亅</span> + two dots <span class=\"han\">丶丶</span> = <span class=\"han\">小</span>",
+    "mnemonic": "Three small scattered dots — things broken into pieces, made small."
+  },
+  {
+    "character": "心",
+    "cultural_note": "In Chinese medicine and philosophy, 心 is the <strong>seat of consciousness</strong> — not just emotion but thought, intention, and moral will. The mind-heart distinction that shapes Western thought does not apply.",
+    "compounds": [
+      {
+        "zh": "小心",
+        "pinyin": "xiǎoxīn",
+        "en": "be careful"
+      },
+      {
+        "zh": "心里",
+        "pinyin": "xīnlǐ",
+        "en": "in the heart/mind"
+      },
+      {
+        "zh": "开心",
+        "pinyin": "kāixīn",
+        "en": "happy"
+      },
+      {
+        "zh": "用心",
+        "pinyin": "yòngxīn",
+        "en": "attentive/diligent"
+      }
+    ],
+    "blueprint": "Oracle bone script drew the actual heart: a curved body with three blood vessels branching off. The hook is the heart itself; the dots are the aortic branches. As a radical (忄) it marks emotional states.",
+    "formula": "heart body <span class=\"han\">⺄</span> + vessels <span class=\"han\">丶丶丶</span> = <span class=\"han\">心</span>",
+    "mnemonic": "A heart with three blood vessels — an ancient anatomical drawing."
+  }
+]

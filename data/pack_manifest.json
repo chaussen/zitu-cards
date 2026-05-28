@@ -1,0 +1,201 @@
+{
+  "pack-01": {
+    "characters": [
+      "人",
+      "水",
+      "火",
+      "山",
+      "木",
+      "日",
+      "月",
+      "大",
+      "小",
+      "心"
+    ],
+    "title": "Elements",
+    "subtitle": "Foundational pictographs",
+    "description": "Not just a flashcard. Each character's <em>full story</em> on one page — the picture that made it, the parts that build it, and the words that grow out of it.",
+    "type_note": "Pack 01 = pictographs &amp; indicatives.",
+    "series": "一",
+    "volume": "01"
+  },
+  "pack-02": {
+    "characters": [
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十"
+    ],
+    "title": "Numbers",
+    "subtitle": "One to ten — the marks that count",
+    "description": "Not just a flashcard. Each character's <em>full story</em> on one page — the picture that made it, the parts that build it, and the words that grow out of it.",
+    "type_note": "Pack 02 = indicatives &amp; numeric pictographs.",
+    "series": "一",
+    "volume": "02"
+  },
+  "pack-03": {
+    "characters": [
+      "我",
+      "你",
+      "他",
+      "她",
+      "们",
+      "的",
+      "是",
+      "有",
+      "不",
+      "来"
+    ],
+    "title": "Pack 03",
+    "subtitle": "",
+    "description": "Not just a flashcard. Each character's <em>full story</em> on one page.",
+    "type_note": "",
+    "series": "一",
+    "volume": "03"
+  },
+  "pack-04": {
+    "characters": [
+      "去",
+      "说",
+      "看",
+      "听",
+      "做",
+      "吃",
+      "喝",
+      "写",
+      "读",
+      "年"
+    ],
+    "title": "Pack 04",
+    "subtitle": "",
+    "description": "Not just a flashcard. Each character's <em>full story</em> on one page.",
+    "type_note": "",
+    "series": "一",
+    "volume": "04"
+  },
+  "pack-05": {
+    "characters": [
+      "天",
+      "上",
+      "下",
+      "今",
+      "明",
+      "昨",
+      "时",
+      "分",
+      "中",
+      "里"
+    ],
+    "title": "Pack 05",
+    "subtitle": "",
+    "description": "Not just a flashcard. Each character's <em>full story</em> on one page.",
+    "type_note": "",
+    "series": "一",
+    "volume": "05"
+  },
+  "pack-06": {
+    "characters": [
+      "外",
+      "前",
+      "后",
+      "左",
+      "右",
+      "家",
+      "国",
+      "在",
+      "好",
+      "多"
+    ],
+    "title": "Pack 06",
+    "subtitle": "",
+    "description": "Not just a flashcard. Each character's <em>full story</em> on one page.",
+    "type_note": "",
+    "series": "一",
+    "volume": "06"
+  },
+  "pack-07": {
+    "characters": [
+      "少",
+      "高",
+      "冷",
+      "热",
+      "新",
+      "老",
+      "开",
+      "回",
+      "口",
+      "手"
+    ],
+    "title": "Pack 07",
+    "subtitle": "",
+    "description": "Not just a flashcard. Each character's <em>full story</em> on one page.",
+    "type_note": "",
+    "series": "一",
+    "volume": "07"
+  },
+  "pack-08": {
+    "characters": [
+      "目",
+      "耳",
+      "足",
+      "头",
+      "土",
+      "石",
+      "风",
+      "雨",
+      "云",
+      "地"
+    ],
+    "title": "Pack 08",
+    "subtitle": "",
+    "description": "Not just a flashcard. Each character's <em>full story</em> on one page.",
+    "type_note": "",
+    "series": "一",
+    "volume": "08"
+  },
+  "pack-09": {
+    "characters": [
+      "花",
+      "草",
+      "买",
+      "卖",
+      "给",
+      "要",
+      "走",
+      "跑",
+      "学",
+      "工"
+    ],
+    "title": "Pack 09",
+    "subtitle": "",
+    "description": "Not just a flashcard. Each character's <em>full story</em> on one page.",
+    "type_note": "",
+    "series": "一",
+    "volume": "09"
+  },
+  "pack-10": {
+    "characters": [
+      "会",
+      "想",
+      "能",
+      "爱",
+      "和",
+      "呢",
+      "了",
+      "坐",
+      "站"
+    ],
+    "title": "Pack 10",
+    "subtitle": "",
+    "description": "Not just a flashcard. Each character's <em>full story</em> on one page.",
+    "type_note": "",
+    "series": "一",
+    "volume": "10"
+  }
+}

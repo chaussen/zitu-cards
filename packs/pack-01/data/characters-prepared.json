@@ -1,0 +1,707 @@
+[
+  {
+    "character": "人",
+    "pinyin": "rén",
+    "tone": 2,
+    "character_type": "pictograph",
+    "english_primary": "person",
+    "english_secondary": [
+      "people",
+      "human"
+    ],
+    "hsk_level": 1,
+    "strokes": [
+      {
+        "order": 1,
+        "path": "M 475 485 Q 547 653 563 683 Q 573 695 565 708 Q 558 721 519 742 Q 491 757 480 754 Q 462 750 465 730 Q 484 537 292 308 Q 280 296 269 284 Q 212 217 68 102 Q 58 92 66 89 Q 76 86 90 92 Q 190 138 274 210 Q 380 294 462 456 L 475 485 Z",
+        "name_zh": "撇",
+        "name_py": "piě",
+        "name_en": "left-falling"
+      },
+      {
+        "order": 2,
+        "path": "M 462 456 Q 480 423 575 292 Q 666 171 733 101 Q 764 67 793 69 Q 881 75 958 79 Q 991 80 992 89 Q 993 98 956 112 Q 772 178 740 205 Q 617 304 490 466 Q 481 476 475 485 C 457 509 447 482 462 456 Z",
+        "name_zh": "捺",
+        "name_py": "nà",
+        "name_en": "right-falling"
+      }
+    ],
+    "stroke_count": 2,
+    "outline_path": null,
+    "radical": "人",
+    "radical_pinyin": "rén",
+    "compounds": [
+      {
+        "zh": "人口",
+        "pinyin": "rénkǒu",
+        "en": "population"
+      },
+      {
+        "zh": "人民",
+        "pinyin": "rénmín",
+        "en": "the people"
+      },
+      {
+        "zh": "工人",
+        "pinyin": "gōngrén",
+        "en": "worker"
+      },
+      {
+        "zh": "大人",
+        "pinyin": "dàrén",
+        "en": "adult"
+      }
+    ],
+    "cultural_note": "In oracle-bone script, 人 depicted a person walking <strong>in profile</strong> — the defining mark of humanity in ancient pictographs. The front-facing form, arms spread wide, became 大.",
+    "blueprint": "Two strokes — a person walking, seen in profile. The sweeping left stroke is the torso and leading leg; the right is the trailing leg. Compressed to <strong>亻</strong> on the left of person-related characters.",
+    "formula": "left leg <span class=\"han\">丿</span> + right leg <span class=\"han\">㇏</span> = <span class=\"han\">人</span>",
+    "mnemonic": "Two legs walking — a person seen from the side. The strokes ARE the legs.",
+    "pack": "01",
+    "pack_position": 1
+  },
+  {
+    "character": "水",
+    "pinyin": "shuǐ",
+    "tone": 3,
+    "character_type": "pictograph",
+    "english_primary": "water",
+    "english_secondary": [
+      "liquid",
+      "river"
+    ],
+    "hsk_level": 1,
+    "strokes": [
+      {
+        "order": 1,
+        "path": "M 535 506 Q 538 699 560 762 Q 578 793 520 817 Q 486 836 465 830 Q 447 823 463 799 Q 485 771 486 736 Q 490 697 478 121 Q 477 97 463 88 Q 454 81 432 88 Q 407 94 382 99 Q 348 111 351 100 Q 352 93 373 78 Q 440 24 457 -5 Q 476 -41 493 -42 Q 508 -43 524 -7 Q 543 41 541 117 Q 531 294 534 470 L 535 506 Z",
+        "name_zh": "竖钩",
+        "name_py": "shùgōu",
+        "name_en": "vertical-hook"
+      },
+      {
+        "order": 2,
+        "path": "M 154 501 Q 141 501 139 492 Q 138 485 153 477 Q 199 452 227 461 Q 333 489 343 489 Q 359 486 347 456 Q 296 326 249 262 Q 201 190 114 119 Q 99 106 110 103 Q 120 102 141 113 Q 217 153 281 224 Q 342 288 419 454 Q 429 478 441 489 Q 456 501 447 511 Q 437 524 399 537 Q 378 549 336 530 Q 270 509 154 501 Z",
+        "name_zh": "横撇",
+        "name_py": "héngpiě",
+        "name_en": "horizontal-falling"
+      },
+      {
+        "order": 3,
+        "path": "M 590 446 Q 630 476 766 584 Q 787 603 814 615 Q 838 627 825 647 Q 809 666 779 681 Q 752 696 738 692 Q 723 691 729 675 Q 735 639 659 553 Q 620 508 577 459 C 557 436 566 428 590 446 Z",
+        "name_zh": "撇",
+        "name_py": "piě",
+        "name_en": "left-falling"
+      },
+      {
+        "order": 4,
+        "path": "M 577 459 Q 555 484 535 506 C 515 528 516 494 534 470 Q 756 161 817 160 Q 898 169 967 175 Q 995 178 996 185 Q 997 192 964 205 Q 810 253 753 295 Q 690 346 590 446 L 577 459 Z",
+        "name_zh": "捺",
+        "name_py": "nà",
+        "name_en": "right-falling"
+      }
+    ],
+    "stroke_count": 4,
+    "outline_path": null,
+    "radical": "水",
+    "radical_pinyin": "shuǐ",
+    "compounds": [
+      {
+        "zh": "水果",
+        "pinyin": "shuǐguǒ",
+        "en": "fruit"
+      },
+      {
+        "zh": "水平",
+        "pinyin": "shuǐpíng",
+        "en": "level"
+      },
+      {
+        "zh": "喝水",
+        "pinyin": "hē shuǐ",
+        "en": "drink water"
+      },
+      {
+        "zh": "山水",
+        "pinyin": "shānshuǐ",
+        "en": "landscape"
+      }
+    ],
+    "cultural_note": "水 contracts to <strong>氵</strong> on the left of compounds — \"the three drops\" — giving its meaning to 河 (river), 海 (sea), 泳 (swim), 洗 (wash), and hundreds more.",
+    "blueprint": "A central downward current flanked by two droplets — water seen in cross-section. Its contracted radical <strong>氵</strong> (three drops) marks over 1,000 water-related characters.",
+    "formula": "central current <span class=\"han\">亅</span> + droplets <span class=\"han\">丶丶</span> = <span class=\"han\">水</span>",
+    "mnemonic": "A river in cross-section — the central current with droplets breaking off each side.",
+    "pack": "01",
+    "pack_position": 2
+  },
+  {
+    "character": "火",
+    "pinyin": "huǒ",
+    "tone": 3,
+    "character_type": "pictograph",
+    "english_primary": "fire",
+    "english_secondary": [
+      "flame",
+      "heat"
+    ],
+    "hsk_level": 1,
+    "strokes": [
+      {
+        "order": 1,
+        "path": "M 226 483 Q 254 443 285 393 Q 295 375 312 372 Q 324 369 333 381 Q 342 396 342 430 Q 342 472 235 536 Q 220 543 213 543 Q 206 540 204 526 Q 205 513 226 483 Z",
+        "name_zh": "点",
+        "name_py": "diǎn",
+        "name_en": "dot"
+      },
+      {
+        "order": 2,
+        "path": "M 690 568 Q 677 547 584 441 Q 571 422 592 425 Q 638 449 738 513 Q 762 532 791 543 Q 816 553 805 575 Q 789 597 759 615 Q 731 633 715 629 Q 700 628 704 612 Q 708 590 690 568 Z",
+        "name_zh": "撇",
+        "name_py": "piě",
+        "name_en": "left-falling"
+      },
+      {
+        "order": 3,
+        "path": "M 511 382 Q 520 439 529 618 Q 530 669 548 728 Q 554 741 543 750 Q 521 769 479 785 Q 454 795 434 789 Q 410 779 430 759 Q 464 725 465 690 Q 469 500 448 374 Q 427 209 284 106 Q 244 81 186 49 Q 170 43 167 39 Q 160 32 179 29 Q 197 28 258 48 Q 301 61 365 101 Q 414 131 442 172 Q 484 232 504 341 L 511 382 Z",
+        "name_zh": "撇",
+        "name_py": "piě",
+        "name_en": "left-falling"
+      },
+      {
+        "order": 4,
+        "path": "M 504 341 Q 597 175 715 40 Q 740 9 767 9 Q 843 13 911 17 Q 939 18 940 25 Q 941 32 910 48 Q 753 117 709 157 Q 592 268 511 382 C 493 406 489 367 504 341 Z",
+        "name_zh": "捺",
+        "name_py": "nà",
+        "name_en": "right-falling"
+      }
+    ],
+    "stroke_count": 4,
+    "outline_path": null,
+    "radical": "火",
+    "radical_pinyin": "huǒ",
+    "compounds": [
+      {
+        "zh": "火车",
+        "pinyin": "huǒchē",
+        "en": "train"
+      },
+      {
+        "zh": "火山",
+        "pinyin": "huǒshān",
+        "en": "volcano"
+      },
+      {
+        "zh": "火锅",
+        "pinyin": "huǒguō",
+        "en": "hot pot"
+      },
+      {
+        "zh": "大火",
+        "pinyin": "dàhuǒ",
+        "en": "a big fire"
+      }
+    ],
+    "cultural_note": "火车 \"fire vehicle\" = <strong>train</strong>. When steam locomotives arrived in 19th-century China, the language reached for its oldest word for unstoppable, visible power.",
+    "blueprint": "Two sparks above a flame body shaped like 人 — fire caught mid-leap. Contracted to <strong>灬</strong> (four dots) beneath characters it heats: 热 rè hot, 蒸 zhēng steam.",
+    "formula": "sparks <span class=\"han\">丶丶</span> + flame <span class=\"han\">人</span> = <span class=\"han\">火</span>",
+    "mnemonic": "A fire leaping — sparks at the top, the flame's legs spreading below.",
+    "pack": "01",
+    "pack_position": 3
+  },
+  {
+    "character": "山",
+    "pinyin": "shān",
+    "tone": 1,
+    "character_type": "pictograph",
+    "english_primary": "mountain",
+    "english_secondary": [
+      "hill",
+      "peak"
+    ],
+    "hsk_level": 1,
+    "strokes": [
+      {
+        "order": 1,
+        "path": "M 536 209 Q 546 407 552 587 Q 556 633 562 664 Q 569 691 574 710 Q 578 723 554 740 Q 512 762 484 767 Q 465 771 456 760 Q 447 751 457 734 Q 488 688 489 655 Q 499 444 488 200 C 487 170 534 179 536 209 Z",
+        "name_zh": "竖",
+        "name_py": "shù",
+        "name_en": "vertical"
+      },
+      {
+        "order": 2,
+        "path": "M 796 244 Q 657 232 536 209 L 488 200 Q 379 182 284 155 Q 256 148 263 180 Q 267 253 272 329 Q 275 357 263 373 Q 220 416 190 409 Q 178 403 188 382 Q 224 309 215 236 Q 211 166 182 133 Q 161 112 170 96 Q 183 78 203 66 Q 219 57 230 67 Q 243 83 283 99 Q 440 151 606 182 Q 757 210 789 197 C 819 193 826 247 796 244 Z",
+        "name_zh": "竖折",
+        "name_py": "shùzhé",
+        "name_en": "vertical-turn"
+      },
+      {
+        "order": 3,
+        "path": "M 789 197 Q 783 166 774 145 Q 756 118 785 55 Q 795 36 809 49 Q 837 73 846 173 Q 868 386 890 427 Q 900 443 889 460 Q 867 479 831 501 Q 816 510 802 503 Q 793 499 796 484 Q 823 435 796 244 L 789 197 Z",
+        "name_zh": "竖",
+        "name_py": "shù",
+        "name_en": "vertical"
+      }
+    ],
+    "stroke_count": 3,
+    "outline_path": null,
+    "radical": "山",
+    "radical_pinyin": "shān",
+    "compounds": [
+      {
+        "zh": "山水",
+        "pinyin": "shānshuǐ",
+        "en": "landscape"
+      },
+      {
+        "zh": "火山",
+        "pinyin": "huǒshān",
+        "en": "volcano"
+      },
+      {
+        "zh": "高山",
+        "pinyin": "gāoshān",
+        "en": "high mountain"
+      },
+      {
+        "zh": "上山",
+        "pinyin": "shàng shān",
+        "en": "climb a mountain"
+      }
+    ],
+    "cultural_note": "山水 — \"mountains and waters\" — names the genre of <strong>landscape painting</strong> that dominated Chinese classical art for a millennium. Two characters carry an entire artistic tradition.",
+    "blueprint": "Three peaks rising from a single baseline — one of the least-changed characters from oracle bone to today. 山 is its own radical, appearing in characters for peaks, ridges, and rugged terrain.",
+    "formula": "left peak + tallest peak + right peak = <span class=\"han\">山</span>",
+    "mnemonic": "A mountain range — three peaks sharing one base.",
+    "pack": "01",
+    "pack_position": 4
+  },
+  {
+    "character": "木",
+    "pinyin": "mù",
+    "tone": 4,
+    "character_type": "pictograph",
+    "english_primary": "tree",
+    "english_secondary": [
+      "wood",
+      "timber"
+    ],
+    "hsk_level": 1,
+    "strokes": [
+      {
+        "order": 1,
+        "path": "M 524 533 Q 537 536 755 560 Q 768 557 779 573 Q 780 586 754 600 Q 709 627 634 603 Q 526 582 524 580 L 479 572 Q 404 563 234 546 Q 200 542 226 521 Q 265 491 291 494 Q 309 503 446 521 L 524 533 Z",
+        "name_zh": "横",
+        "name_py": "héng",
+        "name_en": "horizontal"
+      },
+      {
+        "order": 2,
+        "path": "M 524 580 Q 524 682 544 758 Q 559 783 532 802 Q 516 814 485 833 Q 460 851 439 834 Q 433 828 440 813 Q 474 762 476 711 Q 477 647 479 572 L 477 458 Q 474 208 466 155 Q 442 46 456 5 Q 460 -7 466 -21 Q 473 -40 481 -43 Q 488 -50 495 -41 Q 504 -37 514 -15 Q 524 10 523 44 Q 522 90 523 480 L 524 580 Z",
+        "name_zh": "竖",
+        "name_py": "shù",
+        "name_en": "vertical"
+      },
+      {
+        "order": 3,
+        "path": "M 446 521 Q 368 337 127 132 Q 114 119 124 117 Q 134 113 146 119 Q 276 176 403 344 Q 472 450 477 458 C 528 538 464 563 446 521 Z",
+        "name_zh": "撇",
+        "name_py": "piě",
+        "name_en": "left-falling"
+      },
+      {
+        "order": 4,
+        "path": "M 523 480 Q 607 338 716 186 Q 737 159 774 157 Q 901 147 942 150 Q 954 151 957 157 Q 957 164 941 173 Q 773 251 721 302 Q 628 398 523 532 Q 523 533 524 533 L 524 533 C 506 558 508 506 523 480 Z",
+        "name_zh": "捺",
+        "name_py": "nà",
+        "name_en": "right-falling"
+      }
+    ],
+    "stroke_count": 4,
+    "outline_path": null,
+    "radical": "木",
+    "radical_pinyin": "mù",
+    "compounds": [
+      {
+        "zh": "木头",
+        "pinyin": "mùtou",
+        "en": "log/wood"
+      },
+      {
+        "zh": "木工",
+        "pinyin": "mùgōng",
+        "en": "carpentry"
+      },
+      {
+        "zh": "树木",
+        "pinyin": "shùmù",
+        "en": "trees"
+      },
+      {
+        "zh": "木耳",
+        "pinyin": "mù'ěr",
+        "en": "wood ear mushroom"
+      }
+    ],
+    "cultural_note": "木 loses its roots and gains a dot to become 本 (běn) — origin, basis, root. The dot marks <strong>where</strong> the root is. Adding a horizontal stroke at the top gives 末 (mò) — tip, end.",
+    "blueprint": "A cross-section of a standing tree: the horizontal stroke is the branches, the vertical is the trunk, and the two lower strokes are the roots. 木 appears in nearly every character related to wood or plants.",
+    "formula": "branches <span class=\"han\">一</span> + trunk <span class=\"han\">丨</span> + roots <span class=\"han\">丿㇏</span> = <span class=\"han\">木</span>",
+    "mnemonic": "A standing tree — trunk, spreading branch, and roots fanning below.",
+    "pack": "01",
+    "pack_position": 5
+  },
+  {
+    "character": "日",
+    "pinyin": "rì",
+    "tone": 4,
+    "character_type": "pictograph",
+    "english_primary": "sun",
+    "english_secondary": [
+      "day",
+      "daytime"
+    ],
+    "hsk_level": 1,
+    "strokes": [
+      {
+        "order": 1,
+        "path": "M 349 664 Q 348 665 347 666 Q 322 687 292 696 Q 282 697 274 689 Q 270 682 279 670 Q 331 531 294 261 Q 287 216 271 169 Q 262 141 267 118 Q 277 81 291 65 Q 304 50 314 66 Q 324 79 332 102 L 339 137 Q 349 186 350 238 Q 350 316 351 391 L 352 420 Q 353 576 361 626 C 364 652 364 652 349 664 Z",
+        "name_zh": "竖",
+        "name_py": "shù",
+        "name_en": "vertical"
+      },
+      {
+        "order": 2,
+        "path": "M 608 120 Q 641 78 665 39 Q 675 18 688 19 Q 707 20 724 59 Q 745 104 740 157 Q 728 310 721 593 Q 720 629 738 654 Q 748 669 738 681 Q 716 703 656 730 Q 635 740 617 729 Q 512 684 349 664 C 319 660 332 620 361 626 Q 410 635 590 672 Q 624 679 640 666 Q 691 615 658 164 Q 657 163 657 159 Q 653 143 640 144 C 621 121 602 128 608 120 Z",
+        "name_zh": "横折",
+        "name_py": "héngzhé",
+        "name_en": "horizontal-turn"
+      },
+      {
+        "order": 3,
+        "path": "M 351 391 Q 390 378 433 387 Q 493 399 554 411 Q 582 417 587 421 Q 596 428 591 437 Q 584 447 556 455 Q 531 461 450 435 Q 375 423 352 420 C 322 416 322 400 351 391 Z",
+        "name_zh": "横",
+        "name_py": "héng",
+        "name_en": "horizontal"
+      },
+      {
+        "order": 4,
+        "path": "M 332 102 Q 345 98 361 100 Q 440 115 608 120 C 638 121 661 122 640 144 Q 633 153 614 166 Q 596 178 561 170 Q 438 146 339 137 C 309 134 303 108 332 102 Z",
+        "name_zh": "横",
+        "name_py": "héng",
+        "name_en": "horizontal"
+      }
+    ],
+    "stroke_count": 4,
+    "outline_path": null,
+    "radical": "日",
+    "radical_pinyin": "rì",
+    "compounds": [
+      {
+        "zh": "日本",
+        "pinyin": "Rìběn",
+        "en": "Japan"
+      },
+      {
+        "zh": "日记",
+        "pinyin": "rìjì",
+        "en": "diary"
+      },
+      {
+        "zh": "今日",
+        "pinyin": "jīnrì",
+        "en": "today"
+      },
+      {
+        "zh": "日出",
+        "pinyin": "rìchū",
+        "en": "sunrise"
+      }
+    ],
+    "cultural_note": "日本 (Rìběn) — Japan — means <strong>\"origin of the sun\"</strong>, named from China's eastern perspective. The kanji 日本 is still used in Japanese today.",
+    "blueprint": "A circle with a dot at centre — the sun's disc and its blinding core. Squared off in clerical script. The central line distinguishes 日 (sun) from 口 (mouth), which is just an open box.",
+    "formula": "disc <span class=\"han\">⼝</span> + core <span class=\"han\">一</span> = <span class=\"han\">日</span>",
+    "mnemonic": "The sun — a bright disc with a gleam of light at its very centre.",
+    "pack": "01",
+    "pack_position": 6
+  },
+  {
+    "character": "月",
+    "pinyin": "yuè",
+    "tone": 4,
+    "character_type": "pictograph",
+    "english_primary": "moon",
+    "english_secondary": [
+      "month",
+      "lunar cycle"
+    ],
+    "hsk_level": 1,
+    "strokes": [
+      {
+        "order": 1,
+        "path": "M 398 390 Q 410 502 412 535 L 414 566 Q 417 717 420 735 C 422 758 422 758 405 766 Q 405 767 404 767 Q 353 791 337 787 Q 316 783 334 760 Q 373 697 357 455 Q 353 356 304 239 Q 271 154 155 37 Q 140 24 137 16 Q 136 9 148 10 Q 164 11 186 26 Q 246 69 281 112 Q 333 173 363 244 Q 382 296 394 361 L 398 390 Z",
+        "name_zh": "撇",
+        "name_py": "piě",
+        "name_en": "left-falling"
+      },
+      {
+        "order": 2,
+        "path": "M 420 735 Q 429 735 609 769 Q 631 773 637 762 Q 656 713 657 390 Q 657 128 640 101 Q 634 94 612 99 Q 581 105 549 111 Q 527 117 528 107 Q 595 55 633 16 Q 649 -3 665 -9 Q 675 -13 685 -2 Q 730 53 725 113 Q 712 321 709 657 Q 708 721 723 750 Q 736 772 723 783 Q 698 804 658 820 Q 639 827 621 820 Q 569 793 536 785 Q 493 773 405 766 C 375 763 390 730 420 735 Z",
+        "name_zh": "横折钩",
+        "name_py": "héngzhégōu",
+        "name_en": "horizontal-turn-hook"
+      },
+      {
+        "order": 3,
+        "path": "M 412 535 Q 442 529 533 542 Q 587 551 594 554 Q 603 561 599 569 Q 592 579 566 587 Q 538 594 511 583 Q 487 576 462 572 Q 440 568 414 566 C 384 564 382 540 412 535 Z",
+        "name_zh": "横",
+        "name_py": "héng",
+        "name_en": "horizontal"
+      },
+      {
+        "order": 4,
+        "path": "M 394 361 Q 428 351 561 374 Q 564 375 568 375 Q 590 379 594 382 Q 603 389 599 397 Q 592 407 566 415 Q 538 421 511 411 Q 484 404 456 397 Q 428 393 398 390 C 368 387 365 368 394 361 Z",
+        "name_zh": "横",
+        "name_py": "héng",
+        "name_en": "horizontal"
+      }
+    ],
+    "stroke_count": 4,
+    "outline_path": null,
+    "radical": "月",
+    "radical_pinyin": "yuè",
+    "compounds": [
+      {
+        "zh": "月亮",
+        "pinyin": "yuèliang",
+        "en": "the moon"
+      },
+      {
+        "zh": "月份",
+        "pinyin": "yuèfèn",
+        "en": "month"
+      },
+      {
+        "zh": "上月",
+        "pinyin": "shàng yuè",
+        "en": "last month"
+      },
+      {
+        "zh": "月饼",
+        "pinyin": "yuèbǐng",
+        "en": "mooncake"
+      }
+    ],
+    "cultural_note": "月饼 (yuèbǐng) — mooncakes — are eaten during the <strong>Mid-Autumn Festival</strong> (中秋节) when the moon is at its fullest. The round cake mirrors the full moon.",
+    "blueprint": "A crescent laid on its back, with two strokes inside indicating the moon's phases. 月 also doubles as the 'flesh/body' radical 肉 in many anatomical characters — same shape, different meaning.",
+    "formula": "crescent <span class=\"han\">⺆</span> + phases <span class=\"han\">二</span> = <span class=\"han\">月</span>",
+    "mnemonic": "A crescent moon laid on its back — the arc and two faint lines of its phases.",
+    "pack": "01",
+    "pack_position": 7
+  },
+  {
+    "character": "大",
+    "pinyin": "dà",
+    "tone": 4,
+    "character_type": "ideograph",
+    "english_primary": "big",
+    "english_secondary": [
+      "large",
+      "great"
+    ],
+    "hsk_level": 1,
+    "strokes": [
+      {
+        "order": 1,
+        "path": "M 494 476 Q 542 485 795 501 Q 817 502 822 512 Q 826 525 808 540 Q 750 580 707 569 Q 631 550 500 522 L 436 509 Q 331 490 213 469 Q 189 465 208 447 Q 241 420 294 432 Q 357 453 431 465 L 494 476 Z",
+        "name_zh": "横",
+        "name_py": "héng",
+        "name_en": "horizontal"
+      },
+      {
+        "order": 2,
+        "path": "M 487 437 Q 491 456 494 476 L 500 522 Q 510 711 528 763 Q 534 776 523 786 Q 501 805 459 822 Q 434 832 414 825 Q 390 816 410 796 Q 444 762 444 726 Q 445 602 436 509 L 431 465 Q 398 275 310 179 Q 303 173 297 166 Q 251 118 148 55 Q 133 48 130 43 Q 124 36 144 34 Q 195 34 300 104 Q 385 173 414 218 Q 444 266 480 396 L 487 437 Z",
+        "name_zh": "撇",
+        "name_py": "piě",
+        "name_en": "left-falling"
+      },
+      {
+        "order": 3,
+        "path": "M 480 396 Q 501 357 575 245 Q 657 124 718 56 Q 746 22 774 22 Q 856 28 928 32 Q 959 33 959 41 Q 960 50 927 66 Q 753 144 719 174 Q 614 267 500 419 Q 493 429 487 437 C 469 461 465 422 480 396 Z",
+        "name_zh": "捺",
+        "name_py": "nà",
+        "name_en": "right-falling"
+      }
+    ],
+    "stroke_count": 3,
+    "outline_path": null,
+    "radical": "大",
+    "radical_pinyin": "dà",
+    "compounds": [
+      {
+        "zh": "大学",
+        "pinyin": "dàxué",
+        "en": "university"
+      },
+      {
+        "zh": "大家",
+        "pinyin": "dàjiā",
+        "en": "everyone"
+      },
+      {
+        "zh": "大人",
+        "pinyin": "dàrén",
+        "en": "adult"
+      },
+      {
+        "zh": "大山",
+        "pinyin": "dàshān",
+        "en": "great mountain"
+      }
+    ],
+    "cultural_note": "大 at the top of 天 (tiān — sky/heaven) literally shows a person beneath the sky. The dot/stroke above the head indicates <strong>what is beyond</strong> the largest thing — heaven itself.",
+    "blueprint": "A person (人) standing upright with arms flung wide — indicating size by embodying it. The oracle-bone form is explicitly a front-facing figure, arms outstretched.",
+    "formula": "person <span class=\"han\">人</span> + arms spread wide = <span class=\"han\">大</span>",
+    "mnemonic": "A person standing with arms wide — showing how big they are.",
+    "pack": "01",
+    "pack_position": 8
+  },
+  {
+    "character": "小",
+    "pinyin": "xiǎo",
+    "tone": 3,
+    "character_type": "ideograph",
+    "english_primary": "small",
+    "english_secondary": [
+      "little",
+      "tiny"
+    ],
+    "hsk_level": 1,
+    "strokes": [
+      {
+        "order": 1,
+        "path": "M 499 695 Q 503 661 501 132 Q 500 110 488 101 Q 478 92 448 100 Q 414 107 383 113 Q 347 123 351 112 Q 352 105 375 91 Q 456 42 479 10 Q 504 -26 523 -25 Q 538 -26 552 11 Q 568 57 564 133 Q 531 583 572 723 Q 590 754 532 778 Q 498 797 477 789 Q 459 782 475 759 Q 497 731 499 695 Z",
+        "name_zh": "竖钩",
+        "name_py": "shùgōu",
+        "name_en": "vertical-hook"
+      },
+      {
+        "order": 2,
+        "path": "M 266 475 Q 223 408 170 349 Q 160 339 155 320 Q 148 292 154 273 Q 158 251 185 261 Q 213 274 237 308 Q 273 357 284 404 Q 297 441 293 470 Q 289 480 283 484 Q 273 484 266 475 Z",
+        "name_zh": "点",
+        "name_py": "diǎn",
+        "name_en": "dot"
+      },
+      {
+        "order": 3,
+        "path": "M 706 472 Q 769 411 842 323 Q 860 299 878 293 Q 888 292 897 303 Q 913 318 900 370 Q 887 431 709 508 Q 699 515 696 500 Q 695 484 706 472 Z",
+        "name_zh": "点",
+        "name_py": "diǎn",
+        "name_en": "dot"
+      }
+    ],
+    "stroke_count": 3,
+    "outline_path": null,
+    "radical": "小",
+    "radical_pinyin": "xiǎo",
+    "compounds": [
+      {
+        "zh": "小心",
+        "pinyin": "xiǎoxīn",
+        "en": "be careful"
+      },
+      {
+        "zh": "小学",
+        "pinyin": "xiǎoxué",
+        "en": "primary school"
+      },
+      {
+        "zh": "小时",
+        "pinyin": "xiǎoshí",
+        "en": "hour"
+      },
+      {
+        "zh": "大小",
+        "pinyin": "dàxiǎo",
+        "en": "size"
+      }
+    ],
+    "cultural_note": "小心 (xiǎoxīn) — <strong>be careful</strong> — literally means \"small heart.\" Caution requires a mind that notices small things. This compound appears on countless Chinese warning signs.",
+    "blueprint": "Three scattered dots — things dispersed and diminished. The central hook anchors what little remains; the outer dots drift apart. An antonym of 大 built entirely from absence.",
+    "formula": "central mark <span class=\"han\">亅</span> + two dots <span class=\"han\">丶丶</span> = <span class=\"han\">小</span>",
+    "mnemonic": "Three small scattered dots — things broken into pieces, made small.",
+    "pack": "01",
+    "pack_position": 9
+  },
+  {
+    "character": "心",
+    "pinyin": "xīn",
+    "tone": 1,
+    "character_type": "pictograph",
+    "english_primary": "heart",
+    "english_secondary": [
+      "mind",
+      "feeling"
+    ],
+    "hsk_level": 1,
+    "strokes": [
+      {
+        "order": 1,
+        "path": "M 171 459 Q 147 381 112 311 Q 91 269 117 230 Q 129 209 152 227 Q 177 249 190 289 Q 211 344 208 392 Q 211 432 199 462 Q 192 472 185 472 Q 175 469 171 459 Z",
+        "name_zh": "点",
+        "name_py": "diǎn",
+        "name_en": "dot"
+      },
+      {
+        "order": 2,
+        "path": "M 863 228 Q 859 243 834 262 Q 797 290 698 391 Q 691 398 685 398 Q 682 397 684 389 Q 708 338 732 281 Q 742 257 728 241 Q 689 208 550 226 Q 441 244 397 323 Q 370 377 355 435 Q 348 463 324 476 Q 306 486 299 478 Q 295 474 302 454 Q 312 429 335 363 Q 372 224 476 178 Q 495 171 521 163 Q 710 115 851 212 Q 866 221 863 228 Z",
+        "name_zh": "卧钩",
+        "name_py": "wògōu",
+        "name_en": "lying-hook"
+      },
+      {
+        "order": 3,
+        "path": "M 441 617 Q 475 578 511 531 Q 524 515 541 513 Q 553 512 561 525 Q 568 541 564 574 Q 560 619 444 670 Q 428 677 420 675 Q 414 672 414 658 Q 415 645 441 617 Z",
+        "name_zh": "点",
+        "name_py": "diǎn",
+        "name_en": "dot"
+      },
+      {
+        "order": 4,
+        "path": "M 760 585 Q 814 536 877 465 Q 896 441 914 437 Q 924 436 933 447 Q 948 463 932 514 Q 922 563 840 592 Q 789 613 761 621 Q 751 627 748 612 Q 747 596 760 585 Z",
+        "name_zh": "点",
+        "name_py": "diǎn",
+        "name_en": "dot"
+      }
+    ],
+    "stroke_count": 4,
+    "outline_path": null,
+    "radical": "心",
+    "radical_pinyin": "xīn",
+    "compounds": [
+      {
+        "zh": "小心",
+        "pinyin": "xiǎoxīn",
+        "en": "be careful"
+      },
+      {
+        "zh": "心里",
+        "pinyin": "xīnlǐ",
+        "en": "in the heart/mind"
+      },
+      {
+        "zh": "开心",
+        "pinyin": "kāixīn",
+        "en": "happy"
+      },
+      {
+        "zh": "用心",
+        "pinyin": "yòngxīn",
+        "en": "attentive/diligent"
+      }
+    ],
+    "cultural_note": "In Chinese medicine and philosophy, 心 is the <strong>seat of consciousness</strong> — not just emotion but thought, intention, and moral will. The mind-heart distinction that shapes Western thought does not apply.",
+    "blueprint": "Oracle bone script drew the actual heart: a curved body with three blood vessels branching off. The hook is the heart itself; the dots are the aortic branches. As a radical (忄) it marks emotional states.",
+    "formula": "heart body <span class=\"han\">⺄</span> + vessels <span class=\"han\">丶丶丶</span> = <span class=\"han\">心</span>",
+    "mnemonic": "A heart with three blood vessels — an ancient anatomical drawing.",
+    "pack": "01",
+    "pack_position": 10
+  }
+]
